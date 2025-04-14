@@ -9,9 +9,11 @@ from src.common.application.commands.notifications import (
     SendWhatsappSequenceCommand,
 )
 from src.common.infrastructure.context_builder import AppContextBuilder
-from src.notifications.application.handlers import SendEmailHandler
-from src.notifications.application.handlers.publish_stream_event import PublishStreamEventHandler
-from src.notifications.application.handlers.send_whatsapp import (
+from src.notifications.application.messaging.handlers import SendEmailHandler
+from src.notifications.application.messaging.handlers.publish_stream_event import (
+    PublishStreamEventHandler,
+)
+from src.notifications.application.messaging.handlers.send_whatsapp import (
     SendWhatsappHandler,
     SendWhatsappSequenceHandler,
 )

@@ -10,9 +10,9 @@ from src.common.application.mixins.tenant import GetCurrentTenantMixin
 from src.common.application.queries.auth import GetUserSessionTokenQuery
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.tenant_container import UserTenantContainer
-from src.common.domain.models.user import User
-from src.common.domain.models.user_session import TenantUserSession
+from src.common.domain.entities.tenant_container import UserTenantContainer
+from src.common.domain.entities.user import User
+from src.common.domain.entities.user_session import TenantUserSession
 from src.common.domain.value_objects import UserSessionToken
 
 

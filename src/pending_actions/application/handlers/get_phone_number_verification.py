@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 from src.common.application.queries.pending_actions import GetPhoneNumberVerificationQuery
 from src.common.domain.messaging.queries import QueryHandler, QueryBus
-from src.common.domain.models.pending_action_context import PendingActionContext
+from src.common.domain.entities.pending_action_context import PendingActionContext
 from src.pending_actions.application.use_cases.phone_number.verification_generator import (
     PhoneNumberVerificationGenerator,
 )

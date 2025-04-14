@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from src.common.application.presenters.pending_action import PendingActionPresenter
 from src.common.domain.context.locale import LocaleContext
 from src.common.domain.interfaces.responses import ApiResponse
-from src.common.domain.models.pending_action import PendingAction
+from src.common.domain.entities.pending_action import PendingAction
 
 
 @dataclass

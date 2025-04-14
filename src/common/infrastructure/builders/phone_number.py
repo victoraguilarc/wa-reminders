@@ -1,5 +1,5 @@
 from src.common.database.models import PhoneNumberORM
-from src.common.domain.models.phone_number import PhoneNumber
+from src.common.domain.entities.phone_number import PhoneNumber
 from src.common.domain.enums.countries import CountryIsoCode
 
 

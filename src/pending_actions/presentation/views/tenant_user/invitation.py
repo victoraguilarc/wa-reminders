@@ -8,11 +8,11 @@ from src.common.application.helpers.strings import clean_string
 from src.common.application.queries.tenants import GetTenantByIdQuery
 from src.common.application.queries.users import GetTenantUserByIdQuery
 from src.common.domain.enums.users import PendingActionCategory, PendingActionStatus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_result import PendingActionResult
-from src.common.domain.models.simple_person import SimplePerson
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_result import PendingActionResult
+from src.common.domain.entities.simple_person import SimplePerson
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.presentation.views.transaction_view import ActionView
 from src.pending_actions.application.use_cases.action_token_getter import PendingActionTokenGetter
 from src.pending_actions.application.use_cases.tenant_user.invitation_performer import TenantUserInvitationPerformer

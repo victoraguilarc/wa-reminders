@@ -3,7 +3,7 @@ from typing import List
 from rest_framework.pagination import BasePagination
 from rest_framework.request import Request
 
-from src.common.domain.models.list_filters import ListFilters
+from src.common.domain.entities.list_filters import ListFilters
 from src.common.infrastructure.query_params import QueryParams
 
 

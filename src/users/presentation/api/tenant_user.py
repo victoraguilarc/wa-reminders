@@ -4,8 +4,8 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.value_objects import TenantCustomerId, TenantUserId, TenantRoleId
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.value_objects import TenantCustomerId, TenantUserId
 from src.common.presentation.api import RequiredTenantUserAPIView
 from src.users.application.tenant_users.responses import TenantUserResponse
 from src.users.application.tenant_users.use_cases.deleter import TenantUserDeleter
@@ -40,10 +40,6 @@ class TenantUserView(RequiredTenantUserAPIView):
             updated_instance=TenantUser.from_payload(validated_data),
             updated_fields=list(validated_data.keys()),
             query_bus=self.bus_context.query_bus,
-            tenant_role_id=(
-                TenantRoleId(validated_data.get('tenant_role_id'))
-                if validated_data.get('tenant_role_id') else None
-            )
         ).execute()
 
         response = TenantUserResponse(instance=tenant_user)

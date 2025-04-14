@@ -9,9 +9,9 @@ from src.common.domain.enums.common import TaskResultStatus
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_result import PendingActionResult
-from src.common.domain.models.user import User
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_result import PendingActionResult
+from src.common.domain.entities.user import User
 from src.pending_actions.application.use_cases.mixins import UpdatePendingActionMixin
 from src.pending_actions.domain.exceptions import InvalidPendingActionError, CorruptedPendingActionError
 from src.pending_actions.domain.repositories import PendingActionRepository

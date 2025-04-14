@@ -8,9 +8,9 @@ from src.common.application.queries.pending_actions import GetEmailAddressVerifi
 from src.common.domain.exceptions.common import EmailIsAlreadyUsedError
 from src.common.domain.interfaces.services import ApiService
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_context import PendingActionContext
-from src.common.domain.models.user import User
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_context import PendingActionContext
+from src.common.domain.entities.user import User
 from src.pending_actions.domain.callback_builder import CallbackBuilder
 
 

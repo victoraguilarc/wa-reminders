@@ -8,9 +8,9 @@ from src.auth.domain.repositories import SessionRepository
 from src.common.application.mixins.tenant import GetCurrentTenantMixin
 from src.common.domain.exceptions.users import UserNotFoundError
 from src.common.domain.interfaces.services import UseCase
-from src.common.domain.models.tenant_container import UserTenantContainer
-from src.common.domain.models.user import User
-from src.common.domain.models.user_session import TenantUserSession
+from src.common.domain.entities.tenant_container import UserTenantContainer
+from src.common.domain.entities.user import User
+from src.common.domain.entities.user_session import TenantUserSession
 from src.common.domain.value_objects import UserId
 from src.users.domain.repositories.user import UserRepository
 

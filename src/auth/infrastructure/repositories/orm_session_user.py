@@ -4,9 +4,9 @@ from typing import Optional
 
 from src.auth.domain.repositories.session_user import SessionUserRepository
 from src.common.database.models import EmailAddressORM, PhoneNumberORM, UserORM
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.phone_number import PhoneNumber
-from src.common.domain.models.user import User
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.phone_number import PhoneNumber
+from src.common.domain.entities.user import User
 from src.common.domain.value_objects import RawPhoneNumber, UserId
 from src.common.infrastructure.builders.email_address import build_email_address
 from src.common.infrastructure.builders.user import build_user

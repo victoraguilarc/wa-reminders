@@ -8,7 +8,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from src.common.application.responses.tenant_customer import TenantCustomerResponse
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.value_objects import TenantCustomerId
 from src.common.presentation.api import RequiredTenantUserAPIView
 from src.users.application.tenant_customers.use_cases.deleter import TenantCustomerDeleter

@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import Dict
 
 from src.pending_actions.domain.callback_builder import CallbackBuilder
-from src.common.domain.models.pending_action import PendingAction
+from src.common.domain.entities.pending_action import PendingAction
 from src.common.domain.enums.auth import PendingActionNamespace
 from src.common.domain.interfaces.services import UseCase
 

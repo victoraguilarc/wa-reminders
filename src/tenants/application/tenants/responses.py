@@ -7,7 +7,7 @@ from src.common.application.presenters.tenant import TenantPresenter
 from src.common.constants import INSTANCE_DELETED_RESPONSE
 from src.common.domain.context.locale import LocaleContext
 from src.common.domain.interfaces.responses import ApiResponse
-from src.common.domain.models.tenant import Tenant
+from src.common.domain.entities.tenant import Tenant
 
 
 @dataclass

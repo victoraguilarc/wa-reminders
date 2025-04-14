@@ -6,8 +6,8 @@ from django.db.models import Q
 
 from src.common.database.models import TenantCustomerLeadORM, MembershipTenantCustomerORM
 from src.common.domain.enums.growth import TenantLeadStage
-from src.common.domain.models.pagination import Page
-from src.common.domain.models.tenant_customer_lead import TenantCustomerLead
+from src.common.domain.entities.pagination import Page
+from src.common.domain.entities.tenant_customer_lead import TenantCustomerLead
 from src.common.domain.value_objects import TenantCustomerId, TenantId, TenantCustomerLeadId
 from src.common.infrastructure.builders.tenant_customer_lead import build_tenant_customer_lead
 from src.common.infrastructure.mixins.pagination import ORMPaginationMixin

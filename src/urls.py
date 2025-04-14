@@ -7,5 +7,5 @@ urlpatterns = [
     path('v1/', include('src.auth.presentation.urls', namespace='auth')),
     path('v1/', include('src.tenants.presentation.urls', namespace='tenants')),
     path('v1/', include('src.users.presentation.urls', namespace='users')),
-    path('v1/', include('src.reminders.presentation.urls', namespace='reminders')),
+    path('v1/', include('src.notifications.presentation.urls', namespace='notifications')),
 ]

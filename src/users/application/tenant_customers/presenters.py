@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 
-from src.common.domain.models.user import User
+from src.common.domain.entities.user import User
 
 
 @dataclass

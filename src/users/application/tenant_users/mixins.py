@@ -7,11 +7,11 @@ from src.common.application.shortcuts.simple_buidlers.raw_phone_number import Ra
 from src.common.domain.exceptions.common import EmailIsAlreadyUsedError
 from src.common.domain.exceptions.users import UserNotFoundError, TenantUserNotFoundError
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_container import UserTenantContainer
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.models.user import User
-from src.common.domain.models.user_context import UserContext
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_container import UserTenantContainer
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.entities.user import User
+from src.common.domain.entities.user_context import UserContext
 from src.common.domain.value_objects import TenantId, TenantUserId, UserId
 from src.users.domain.exceptions import PhoneNumberIsAlreadyUsedError, TenantUserMustHaveAtLeastOneAuthMethodError
 from src.users.domain.repositories.tenant_user import TenantUserRepository

@@ -8,10 +8,10 @@ from src.common.application.queries.auth import GetUserSessionTokenQuery
 from src.common.application.queries.users import GetTenantCustomerByIdQuery
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.commands import CommandBus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.user import User
-from src.common.domain.models.user_session import TenantCustomerSession
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.user import User
+from src.common.domain.entities.user_session import TenantCustomerSession
 from src.common.domain.value_objects import UserSessionToken
 from src.pending_actions.application.use_cases.mixins import (
     PerformVerificationsMixin,

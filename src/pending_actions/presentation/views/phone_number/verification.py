@@ -2,8 +2,8 @@
 from django.shortcuts import render
 
 from src.common.domain.enums.users import PendingActionCategory, PendingActionStatus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_result import PendingActionResult
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_result import PendingActionResult
 from src.common.presentation.views.transaction_view import ActionView
 from src.pending_actions.application.use_cases.action_token_getter import PendingActionTokenGetter
 from src.pending_actions.application.use_cases.phone_number.verification_performer import (

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 from src.common.domain.interfaces.services import UseCase
-from src.common.domain.models.pending_action import PendingAction
+from src.common.domain.entities.pending_action import PendingAction
 from src.pending_actions.domain.exceptions import PendingActionNotFoundError
 from src.pending_actions.domain.repositories import PendingActionRepository
 

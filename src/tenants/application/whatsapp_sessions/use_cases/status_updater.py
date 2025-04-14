@@ -6,7 +6,7 @@ from src.common.domain.enums.tenants import WhatsappSessionStatus
 from src.common.domain.events import WhatsappSessionEvent
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.interfaces.stream_publisher import StreamEventPublisher
-from src.common.domain.models.stream_event import StreamEvent
+from src.common.domain.entities.stream_event import StreamEvent
 from src.tenants.application.whatsapp_sessions.mixins import GetTenantWhatsappSessionNameMixin
 from src.tenants.domain.repositories.tenant_wa_session import TenantWhatsappSessionRepository
 from src.tenants.domain.services.wa_session_manager import WhatsappSessionManager

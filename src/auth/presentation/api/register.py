@@ -6,8 +6,8 @@ from rest_framework.response import Response
 from src.auth.application.use_cases.user_register import UserRegister
 from src.auth.presentation.validators.session_user import CreateUserValidator
 from src.common.application.responses.pending_action import PendingActionResponse
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.user import User
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.user import User
 from src.common.presentation.api.tenant_api import DomainAPIView
 from src.common.presentation.helpers.callback_builder import get_composed_callback_builder
 

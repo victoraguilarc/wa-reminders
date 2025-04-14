@@ -7,9 +7,9 @@ from django.shortcuts import render
 
 from src.common.application.queries.users import GetUserByIdQuery
 from src.common.domain.enums.users import PendingActionCategory, PendingActionStatus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_result import PendingActionResult
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_result import PendingActionResult
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.presentation.views.transaction_view import ActionView
 from src.pending_actions.application.use_cases.action_token_getter import PendingActionTokenGetter
 from src.pending_actions.application.use_cases.user.reset_password_performer import (

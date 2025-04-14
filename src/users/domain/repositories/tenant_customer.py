@@ -4,10 +4,10 @@ from abc import ABC, abstractmethod
 from typing import List, Optional
 
 from src.common.domain.enums.users import TenantCustomerStatus, TenantCustomerCreationSource
-from src.common.domain.models.pagination import Page
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.user import SimplePerson
-from src.common.domain.models.user_context import UserContext
+from src.common.domain.entities.pagination import Page
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.user import SimplePerson
+from src.common.domain.entities.user_context import UserContext
 from src.common.domain.value_objects import (
     RawPhoneNumber,
     TenantCustomerId,

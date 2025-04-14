@@ -2,7 +2,7 @@
 
 from django.urls import path
 
-from src.tenants.presentation.api.tenant import TenantFromSiteView, TenantFromWhatsappSessionView
+from src.tenants.presentation.api.tenant import TenantFromWhatsappSessionView
 from src.tenants.presentation.api.tenant_wa_session import TenantWhatsappSessionView, TenantWhatsappSessionQRCodeView
 from src.tenants.presentation.api.tenant_wa_session_webhook import TenantWhatsappSessionStatusWebhookView
 from src.tenants.presentation.api.tenant_wa_sessions import TenantWhatsappSessionsView
@@ -14,11 +14,6 @@ urlpatterns = [
         'tenants/',
         view=TenantsView.as_view(),
         name='tenants',
-    ),
-    path(
-        'tenants/from-sites/',
-        view=TenantFromSiteView.as_view(),
-        name='tenant-from-site',
     ),
     path(
         'tenants/from-whasapp-session/',

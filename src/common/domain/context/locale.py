@@ -3,10 +3,10 @@ from dataclasses import dataclass
 from typing import Optional
 
 from src.common.domain.context.client import ConsumerClient
-from src.common.domain.models.country_config import CountryConfig
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.country_config import CountryConfig
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.domain.enums.locales import Language, TimeZone
 from src.common.domain.interfaces.locales import LocaleService
 

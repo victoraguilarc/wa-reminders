@@ -1,9 +1,9 @@
 from typing import Optional
 
 from src.common.database.models import PhoneNumberORM, TenantCustomerORM, UserORM
-from src.common.domain.models.phone_number import PhoneNumber
-from src.common.domain.models.user import User
-from src.common.domain.models.user_context import UserContext
+from src.common.domain.entities.phone_number import PhoneNumber
+from src.common.domain.entities.user import User
+from src.common.domain.entities.user_context import UserContext
 from src.common.domain.value_objects import RawPhoneNumber, UserId
 from src.common.infrastructure.builders.phone_number import build_phone_number
 from src.common.infrastructure.builders.user import build_user

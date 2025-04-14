@@ -4,7 +4,7 @@ from dataclasses import dataclass
 import pusher
 
 from src.common.domain.interfaces.stream_publisher import StreamEventPublisher
-from src.common.domain.models.stream_event import StreamEvent
+from src.common.domain.entities.stream_event import StreamEvent
 
 
 @dataclass

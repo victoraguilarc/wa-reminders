@@ -4,8 +4,8 @@ from typing import Optional
 from src.common.application.shortcuts.customers_site import get_members_callback_builder
 from src.common.domain.exceptions.users import TenantCustomerNotFoundError
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.value_objects import TenantCustomerId
 from src.pending_actions.domain.callback_builder import CallbackBuilder
 from src.users.domain.repositories import TenantCustomerRepository

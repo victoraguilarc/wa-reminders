@@ -2,7 +2,7 @@ from typing import Optional
 
 from src.common.application.queries.users import GetUserByEmailQuery
 from src.common.domain.exceptions.users import UserNotFoundError
-from src.common.domain.models.user import User
+from src.common.domain.entities.user import User
 
 
 class UserActionView(object):

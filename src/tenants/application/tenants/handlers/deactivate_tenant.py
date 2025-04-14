@@ -4,7 +4,7 @@ from src.common.application.commands.tenants import DeactivateTenantCommand
 from src.common.application.helpers.strings import get_short_hash
 from src.common.domain.enums.tenants import TenantStatus
 from src.common.domain.messaging.commands import CommandHandler
-from src.common.domain.models.tenant import Tenant
+from src.common.domain.entities.tenant import Tenant
 from src.common.domain.value_objects import TenantSlug
 from src.tenants.domain.repositories.tenant import TenantRepository
 

@@ -8,9 +8,9 @@ from src.common.domain.enums.users import PendingActionCategory
 from src.common.domain.exceptions.auth import EmailAddressIsAlreadyVerifiedError
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_context import PendingActionContext
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_context import PendingActionContext
 from src.pending_actions.domain.callback_builder import CallbackBuilder
 from src.pending_actions.domain.repositories import PendingActionRepository
 from src.pending_actions.domain.types.email_address_verification import EmailAddressVerification

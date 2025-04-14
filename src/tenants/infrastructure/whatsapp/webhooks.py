@@ -1,6 +1,6 @@
 from django.conf import settings
 
-from src.common.domain.models.wa_session import (
+from src.common.domain.entities.wa_session import (
     WhatsappSessionWebhook,
     WhatsappSessionWebhookEvent,
     WhatsappSessionWebhookHeader,

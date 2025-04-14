@@ -5,7 +5,7 @@ from typing import List, Optional
 from src.common.application.shortcuts.simple_buidlers.raw_phone_number import RawPhoneNumberBuilder
 from src.common.domain.exceptions.common import EmailIsAlreadyUsedError
 from src.common.domain.exceptions.users import TenantCustomerNotFoundError
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.value_objects import TenantCustomerId, TenantId
 from src.users.domain.exceptions import PhoneNumberIsAlreadyUsedError
 from src.users.domain.repositories.tenant_customer import TenantCustomerRepository

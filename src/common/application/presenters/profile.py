@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 
-from src.common.domain.models.user_profile import UserProfile
+from src.common.domain.entities.user_profile import UserProfile
 
 
 @dataclass

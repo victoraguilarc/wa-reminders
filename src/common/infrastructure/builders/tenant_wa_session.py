@@ -1,6 +1,6 @@
 from src.common.database.models.tenant_wa_session import TenantWhatsappSessionORM
 from src.common.domain.enums.tenants import WhatsappSessionStatus
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.value_objects import TenantWhatsappSessionId
 from src.common.infrastructure.builders.tenant import build_tenant
 

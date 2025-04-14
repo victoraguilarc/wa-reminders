@@ -67,7 +67,6 @@ LOCAL_APPS: Tuple[str, ...] = (
     'src.common.database.app.DatabaseConfig',
     'src.notifications.presentation.app.NotificationsConfig',
     'src.pending_actions.presentation.app.PendingActionsConfig',
-    'src.reminders.presentation.app.RemindersConfig',
     'src.tenants.presentation.app.TenantsConfig',
     'src.users.presentation.app.UsersConfig',
     'src.web.app.WebConfig',
@@ -137,7 +136,6 @@ SERVER_EMAIL = env('DJANGO_SERVER_EMAIL', default='Reports <server@mail.collecti
 WHATSAPP_API_KEY = env('WHATSAPP_API_KEY')
 WHATSAPP_API_HOSTNAME = env('WHATSAPP_API_HOSTNAME')
 
-WHATSAPP_API_AGENTS_WEBHOOK = env('WHATSAPP_API_AGENTS_WEBHOOK')
 WHATSAPP_API_SESSION_WEBHOOK = env('WHATSAPP_API_SESSION_WEBHOOK')
 WHATSAPP_API_SESSION_API_KEY = env('WHATSAPP_API_SESSION_API_KEY')
 

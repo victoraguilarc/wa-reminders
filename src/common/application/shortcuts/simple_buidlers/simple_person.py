@@ -1,7 +1,7 @@
 from typing import Optional
 
 from src.common.application.shortcuts.simple_buidlers.raw_phone_number import RawPhoneNumberBuilder
-from src.common.domain.models.simple_person import SimplePerson
+from src.common.domain.entities.simple_person import SimplePerson
 from src.common.domain.value_objects import RawPhoneNumber
 
 

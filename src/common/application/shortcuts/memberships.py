@@ -5,10 +5,10 @@ from src.common.application.commands.notifications import (
     PublishStreamEventCommand,
     SendEmailCommand,
 )
-from src.common.domain.models.membership import Membership
-from src.common.domain.models.stream_event import StreamEvent
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.membership import Membership
+from src.common.domain.entities.stream_event import StreamEvent
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.events import TenantCustomerEvent
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.value_objects import TenantCustomerId

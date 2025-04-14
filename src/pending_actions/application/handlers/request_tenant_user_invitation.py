@@ -7,7 +7,7 @@ from src.common.application.commands.pending_actions import (
 from src.common.application.queries.users import GetTenantUserByIdQuery
 from src.common.domain.messaging.commands import CommandBus, CommandHandler
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.domain.value_objects import TenantUserId, TenantId
 from src.common.presentation.helpers.callback_builder import get_composed_callback_builder
 from src.pending_actions.application.use_cases.tenant_user.invitation_generator import (

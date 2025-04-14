@@ -10,9 +10,9 @@ from src.common.domain.interfaces.services import UseCase
 from src.common.domain.interfaces.stream_publisher import StreamEventPublisher
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_result import PendingActionResult
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_result import PendingActionResult
 from src.pending_actions.application.use_cases.mixins import UpdatePendingActionMixin
 from src.pending_actions.application.use_cases.update_publisher import (
     PendingActionSSEventPublisher,

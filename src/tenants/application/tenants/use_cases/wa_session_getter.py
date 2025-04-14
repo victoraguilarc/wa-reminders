@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from typing import Optional
 
 from src.common.domain.interfaces.services import UseCase
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.tenants.domain.exceptions import TenantNotFoundError
 from src.tenants.domain.repositories.tenant import TenantRepository
 

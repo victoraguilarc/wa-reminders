@@ -5,7 +5,7 @@ from typing import List
 
 from src.common.domain.interfaces.services import ApiService
 from src.common.domain.messaging.commands import CommandBus
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.value_objects import TenantCustomerId, TenantId
 from src.users.application.mixins import GetTenantCustomerMixin
 from src.users.domain.repositories.tenant_customer import TenantCustomerRepository

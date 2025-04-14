@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from src.common.application.commands.notifications import SendEmailCommand
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.commands import CommandBus
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.tenant_user import TenantUser
 
 
 @dataclass

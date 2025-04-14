@@ -7,12 +7,12 @@ from django.db.models.functions import Concat
 
 from src.common.database.models import EmailAddressORM, PhoneNumberORM, TenantUserORM, UserORM
 from src.common.domain.enums.users import TenantUserStatus
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.pagination import Page
-from src.common.domain.models.phone_number import PhoneNumber
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.models.user import User
-from src.common.domain.models.user_context import UserContext
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.pagination import Page
+from src.common.domain.entities.phone_number import PhoneNumber
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.entities.user import User
+from src.common.domain.entities.user_context import UserContext
 from src.common.domain.value_objects import RawPhoneNumber, TenantId, TenantUserId, UserId
 from src.common.infrastructure.builders.email_address import build_email_address
 from src.common.infrastructure.builders.phone_number import build_phone_number

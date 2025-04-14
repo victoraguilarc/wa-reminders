@@ -3,7 +3,7 @@
 from abc import ABC, abstractmethod
 from typing import Optional
 
-from src.common.domain.models.email_address import EmailAddress
+from src.common.domain.entities.email_address import EmailAddress
 from src.common.domain.value_objects import EmailAddressId
 
 

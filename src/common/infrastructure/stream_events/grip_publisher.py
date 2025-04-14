@@ -3,7 +3,7 @@
 # from django_grip import publish
 from gripcontrol import HttpStreamFormat
 
-from src.common.domain.models.stream_event import StreamEvent
+from src.common.domain.entities.stream_event import StreamEvent
 from src.common.domain.interfaces.stream_publisher import StreamEventPublisher
 
 

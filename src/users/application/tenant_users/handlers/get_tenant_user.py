@@ -5,7 +5,7 @@ from src.common.application.queries.users import (
     GetTenantUserByIdQuery, GetTenantUserByEmailQuery,
 )
 from src.common.domain.messaging.queries import QueryHandler
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.tenant_user import TenantUser
 from src.users.domain.repositories.tenant_user import TenantUserRepository
 
 

@@ -1,4 +1,4 @@
-from src.common.domain.models.tenant import Tenant
+from src.common.domain.entities.tenant import Tenant
 
 
 def build_tenant_subdomain(

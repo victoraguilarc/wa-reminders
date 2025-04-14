@@ -3,7 +3,7 @@
 from typing import List, Optional
 
 from src.common.database.models.tenant_wa_session import TenantWhatsappSessionORM
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.value_objects import TenantId, TenantWhatsappSessionId
 from src.common.infrastructure.builders.tenant_wa_session import build_tenant_whatsapp_session
 from src.tenants.domain.repositories.tenant_wa_session import TenantWhatsappSessionRepository

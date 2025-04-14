@@ -5,7 +5,7 @@ from django.db.models import QuerySet
 from infinite_scroll_pagination import paginator
 
 from src.common.constants import DEFAULT_PAGINATION_LOOKUP_FIELD
-from src.common.domain.models.pagination import Page, PageIndex, PageParams
+from src.common.domain.entities.pagination import Page, PageIndex, PageParams
 
 
 class ORMPaginationMixin(object):

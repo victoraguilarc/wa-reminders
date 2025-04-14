@@ -4,10 +4,10 @@ from django.db.models import Q
 from rest_framework.request import Request
 
 from src.common.database.models import TenantCustomerORM, TenantORM, TenantUserORM, UserORM
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.models.user import User
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.entities.user import User
 from src.common.infrastructure.builders.tenant import build_tenant
 from src.common.infrastructure.builders.tenant_customer import build_tenant_customer
 from src.common.infrastructure.builders.tenant_user import build_tenant_user

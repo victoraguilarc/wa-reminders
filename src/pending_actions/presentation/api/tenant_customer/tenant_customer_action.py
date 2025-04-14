@@ -2,7 +2,7 @@ from typing import Optional
 
 from src.common.application.queries.users import GetTenantCustomerForSessionQuery, GetTenantCustomerByIdQuery
 from src.common.domain.exceptions.users import TenantCustomerNotFoundError, TenantCustomerNotReachableError
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.value_objects import RawPhoneNumber, TenantCustomerId
 
 

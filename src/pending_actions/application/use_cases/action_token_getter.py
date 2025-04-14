@@ -3,7 +3,7 @@ from typing import Optional
 
 from src.common.domain.enums.users import PendingActionCategory, PendingActionStatus
 from src.common.domain.interfaces.services import UseCase
-from src.common.domain.models.pending_action import PendingAction
+from src.common.domain.entities.pending_action import PendingAction
 from src.pending_actions.domain.exceptions import InvalidPendingActionError
 from src.pending_actions.domain.repositories import PendingActionRepository
 

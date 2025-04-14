@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from src.common.domain.context.locale import LocaleContext
-from src.common.domain.models.pagination import Page
+from src.common.domain.entities.pagination import Page
 from src.common.domain.interfaces.responses import ApiResponse
 
 

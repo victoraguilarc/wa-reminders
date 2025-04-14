@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Optional
 
-from src.common.domain.models.phone_number import PhoneNumber
-from src.common.domain.models.user import User
+from src.common.domain.entities.phone_number import PhoneNumber
+from src.common.domain.entities.user import User
 from src.common.domain.value_objects import RawPhoneNumber, UserId
 
 

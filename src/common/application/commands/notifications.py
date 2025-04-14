@@ -5,7 +5,7 @@ from typing import List, Optional
 
 from src.common.domain.interfaces.whatsapp import WhatsappMessage
 from src.common.domain.messaging.commands import Command
-from src.common.domain.models.stream_event import StreamEvent
+from src.common.domain.entities.stream_event import StreamEvent
 from src.common.domain.value_objects import TenantId
 
 

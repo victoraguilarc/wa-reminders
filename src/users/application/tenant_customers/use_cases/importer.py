@@ -17,15 +17,15 @@ from src.common.domain.exceptions.memberships import MembershipPlanNotFound
 from src.common.domain.exceptions.payments import PaymentMethodNotFound
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.country_config import CountryConfig
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.membership_plan import MembershipPlan
-from src.common.domain.models.membership_purchase_item import MembershipPurchaseItem
-from src.common.domain.models.payment_method import PaymentMethod
-from src.common.domain.models.phone_number import PhoneNumber
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.user import User
+from src.common.domain.entities.country_config import CountryConfig
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.membership_plan import MembershipPlan
+from src.common.domain.entities.membership_purchase_item import MembershipPurchaseItem
+from src.common.domain.entities.payment_method import PaymentMethod
+from src.common.domain.entities.phone_number import PhoneNumber
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.user import User
 from src.common.domain.value_objects import (
     EmailAddressId,
     MembershipPurchaseItemId,

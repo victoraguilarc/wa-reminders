@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from typing import Optional
 
 from src.common.domain.enums.users import PendingActionCategory, PendingActionStatus
-from src.common.domain.models.pending_action import PendingAction
+from src.common.domain.entities.pending_action import PendingAction
 
 
 class PendingActionRepository(ABC):

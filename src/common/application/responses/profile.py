@@ -7,7 +7,7 @@ from src.common.application.presenters.tenant import TenantPresenter
 from src.common.application.presenters.tenant_container import UserTenantContainerPresenter
 from src.common.domain.context.locale import LocaleContext
 from src.common.domain.interfaces.responses import ApiResponse
-from src.common.domain.models.user_profile_container import UserProfileContainer
+from src.common.domain.entities.user_profile_container import UserProfileContainer
 
 
 @dataclass

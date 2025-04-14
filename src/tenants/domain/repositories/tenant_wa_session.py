@@ -3,7 +3,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
 
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.value_objects import TenantWhatsappSessionId, TenantId
 
 

@@ -7,9 +7,9 @@ from typing import List
 from src.common.application.helpers.strings import get_short_hash
 from src.common.domain.enums.tenants import WhatsappSessionStatus
 from src.common.domain.interfaces.services import UseCase
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
-from src.common.domain.models.wa_session import WhatsappSession, WhatsappSessionWebhook
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.wa_session import WhatsappSession, WhatsappSessionWebhook
 from src.common.domain.value_objects import TenantWhatsappSessionId
 from src.tenants.domain.exceptions import TenantWhatsappSessionsLimitReachedError
 from src.tenants.domain.repositories.tenant_wa_session import TenantWhatsappSessionRepository

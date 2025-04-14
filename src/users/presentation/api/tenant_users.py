@@ -8,9 +8,8 @@ from rest_framework.response import Response
 
 from src.common.application.presenters.tenant_user import TenantUserPresenter
 from src.common.application.responses.pagination import PaginationResponse
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.domain.enums.users import TenantUserStatus
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.value_objects import TenantRoleId
 from src.common.infrastructure.query_params import QueryParams
 from src.common.presentation.api import RequiredTenantUserAPIView
 from src.users.application.tenant_users.responses import TenantUserResponse
@@ -52,10 +51,6 @@ class TenantUsersView(RequiredTenantUserAPIView):
             ),
             send_invitation=validated_data.get('send_invitation', False),
             send_async_invitation=not settings.DEBUG,
-            tenant_role_id=(
-                TenantRoleId(tenant_user_data.get('tenant_role_id'))
-                if tenant_user_data.get('tenant_role_id') else None
-            ),
         ).execute()
 
         response = TenantUserResponse(instance=tenant_user)

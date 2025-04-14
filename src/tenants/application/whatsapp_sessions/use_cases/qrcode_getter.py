@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 from src.common.domain.interfaces.services import UseCase
-from src.common.domain.models.wa_session import WhatsappSessionQRCode
+from src.common.domain.entities.wa_session import WhatsappSessionQRCode
 from src.common.domain.value_objects import TenantId, TenantWhatsappSessionId
 from src.tenants.application.whatsapp_sessions.mixins import GetTenantWhatsappSessionMixin
 from src.tenants.domain.exceptions import TenantWhatsappUnavailableQRCodeError

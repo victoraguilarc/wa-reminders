@@ -5,10 +5,10 @@ from typing import List, Optional
 from src.common.application.queries.tenants import GetUserTenantContainerQuery, GetUserTenantsQuery
 from src.common.domain.exceptions.users import UserNotFoundError
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_container import UserTenantContainer
-from src.common.domain.models.user import User
-from src.common.domain.models.user_context import UserContext
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_container import UserTenantContainer
+from src.common.domain.entities.user import User
+from src.common.domain.entities.user_context import UserContext
 from src.common.domain.value_objects import TenantId, UserId
 from src.users.domain.repositories import TenantCustomerRepository
 from src.users.domain.repositories.user import UserRepository

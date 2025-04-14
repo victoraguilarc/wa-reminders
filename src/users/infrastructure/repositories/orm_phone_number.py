@@ -3,7 +3,7 @@
 from typing import Optional
 
 from src.common.database.models import PhoneNumberORM
-from src.common.domain.models.phone_number import PhoneNumber
+from src.common.domain.entities.phone_number import PhoneNumber
 from src.common.domain.value_objects import PhoneNumberId, RawPhoneNumber
 from src.common.infrastructure.builders.phone_number import build_phone_number
 from src.users.domain.repositories.phone_number import PhoneNumberRepository

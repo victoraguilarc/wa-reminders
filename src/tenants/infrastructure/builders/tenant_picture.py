@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from src.common.database.models import TenantPictureORM
-from src.common.domain.models.tenant_picture import TenantPicture
+from src.common.domain.entities.tenant_picture import TenantPicture
 from src.common.domain.enums.tenants import TenantPictureCategory
 from src.common.domain.value_objects import TenantId, TenantPictureId
 

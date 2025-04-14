@@ -3,8 +3,8 @@ from typing import Optional
 
 from src.common.application.queries.tenants import GetUserTenantContainerQuery
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_container import UserTenantContainer
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_container import UserTenantContainer
 from src.common.domain.value_objects import TenantId, UserId
 from src.tenants.domain.exceptions import TenantNotFoundError
 from src.tenants.domain.repositories.tenant import TenantRepository

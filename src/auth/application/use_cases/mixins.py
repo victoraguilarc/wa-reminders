@@ -3,9 +3,9 @@ from typing import Optional
 
 from src.auth.domain.exceptions import InvalidCredentialsForTenant
 from src.auth.domain.repositories import SessionRepository
-from src.common.domain.models.tenant_container import UserTenantContainer
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.models.user import User
+from src.common.domain.entities.tenant_container import UserTenantContainer
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.entities.user import User
 
 
 @dataclass

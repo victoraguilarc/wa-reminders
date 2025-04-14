@@ -4,8 +4,8 @@ from dataclasses import dataclass
 
 from src.common.application.presenters.tenant import TenantPresenter
 from src.common.domain.context.locale import LocaleContext
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
-from src.common.domain.models.wa_session import WhatsappSessionQRCode
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.wa_session import WhatsappSessionQRCode
 
 
 @dataclass

@@ -7,7 +7,7 @@ from typing import List
 from loguru import logger
 
 from src.common.domain.interfaces.services import UseCase
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.value_objects import TenantId
 from src.tenants.application.whatsapp_sessions.mixins import RefreshTenantWhatsappSessionMixin
 from src.tenants.domain.repositories.tenant_wa_session import TenantWhatsappSessionRepository
@@ -52,7 +52,7 @@ class TenantWhatsappSessionsLister(RefreshTenantWhatsappSessionMixin, UseCase):
                 if not result:
                     continue
                 refreshed_instances.append(result)
-                
+
         return refreshed_instances
 
     def _refresh_single_instance(

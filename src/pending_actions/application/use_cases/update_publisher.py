@@ -2,8 +2,8 @@
 
 from dataclasses import dataclass
 
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.stream_event import StreamEvent
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.stream_event import StreamEvent
 from src.common.domain.events import PendingActionEvent
 from src.common.domain.interfaces.stream_publisher import StreamEventPublisher
 

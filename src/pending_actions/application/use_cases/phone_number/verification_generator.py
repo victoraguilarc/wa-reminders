@@ -8,9 +8,9 @@ from src.common.domain.enums.users import PendingActionCategory
 from src.common.domain.exceptions.auth import PhoneNumberIsAlreadyVerifiedError
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_context import PendingActionContext
-from src.common.domain.models.phone_number import PhoneNumber
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_context import PendingActionContext
+from src.common.domain.entities.phone_number import PhoneNumber
 from src.common.domain.value_objects import RawPhoneNumber
 from src.pending_actions.domain.callback_builder import CallbackBuilder
 from src.pending_actions.domain.repositories import PendingActionRepository

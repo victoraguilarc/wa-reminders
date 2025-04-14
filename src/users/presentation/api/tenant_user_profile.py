@@ -3,7 +3,7 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.presentation.api.tenant_api import RequiredTenantUserAPIView
 from src.users.application.tenant_users.responses import TenantUserResponse
 from src.users.application.tenant_users.use_cases.deactivator import TenantUserProfileDeleter

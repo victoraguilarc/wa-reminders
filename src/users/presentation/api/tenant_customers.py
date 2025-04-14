@@ -9,7 +9,7 @@ from src.common.application.helpers.users import get_customer_creation_source
 from src.common.application.presenters.tenant_customer import TenantCustomerPresenter
 from src.common.application.responses.pagination import PaginationResponse
 from src.common.application.responses.tenant_customer import TenantCustomerResponse
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.enums.users import TenantCustomerStatus
 from src.common.infrastructure.query_params import QueryParams
 from src.common.presentation.api import RequiredTenantUserAPIView

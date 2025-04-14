@@ -3,16 +3,14 @@
 from dataclasses import asdict, dataclass
 from typing import Optional
 
-from src.common.domain.enums.growth import TenantLeadChannel, TenantLeadStage
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.phone_number import PhoneNumber
+from src.common.domain.entities.simple_person import SimplePerson
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.entities.user import User
 from src.common.domain.enums.users import TenantCustomerStatus, TenantUserStatus, TenantCustomerCreationSource
 from src.common.domain.messaging.commands import Command
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.phone_number import PhoneNumber
-from src.common.domain.models.simple_person import SimplePerson
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.tenant_customer_lead import TenantCustomerLead
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.models.user import User
 from src.common.domain.value_objects import TenantCustomerId, TenantId, UserId
 
 
@@ -132,36 +130,6 @@ class PersistEmailAddressCommand(Command):
 
     @classmethod
     def from_dict(cls, kwargs: dict) -> 'PersistEmailAddressCommand':
-        return cls(**kwargs)
-
-
-@dataclass
-class CreateTenantLeadCommand(Command):
-    tenant_id: TenantId
-    person: SimplePerson
-    channel: TenantLeadChannel
-    status: TenantLeadStage
-
-    @property
-    def to_dict(self) -> dict:
-        return asdict(self)
-
-    @classmethod
-    def from_dict(cls, kwargs: dict) -> 'CreateTenantLeadCommand':
-        return cls(**kwargs)
-
-
-@dataclass
-class PersistTenantCustomerLeadCommand(Command):
-    tenant_id: TenantId
-    instance: TenantCustomerLead
-
-    @property
-    def to_dict(self) -> dict:
-        return asdict(self)
-
-    @classmethod
-    def from_dict(cls, kwargs: dict) -> 'PersistTenantCustomerLeadCommand':
         return cls(**kwargs)
 
 

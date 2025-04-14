@@ -11,10 +11,10 @@ from src.common.domain.context.client import ConsumerClient
 from src.common.domain.context.domain import DomainContext
 from src.common.domain.context.locale import LocaleContext, TenantContext
 from src.common.domain.data.countries import CountryConfigBuilder
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.models.user import User
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.entities.user import User
 from src.common.domain.enums.countries import CountryIsoCode
 from src.common.domain.enums.locales import Language, TimeZone
 from src.common.infrastructure.context_builder import AppContextBuilder

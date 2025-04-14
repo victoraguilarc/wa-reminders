@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 
 from src.common.domain.interfaces.services import UseCase
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
-from src.common.domain.models.wa_session import WhatsappSession
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.wa_session import WhatsappSession
 from src.common.domain.value_objects import TenantId, TenantWhatsappSessionId
 from src.tenants.application.whatsapp_sessions.mixins import GetTenantWhatsappSessionMixin
 from src.tenants.domain.repositories.tenant_wa_session import TenantWhatsappSessionRepository

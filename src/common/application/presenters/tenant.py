@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 from src.common.domain.context.locale import LocaleContext
-from src.common.domain.models.tenant import Tenant
+from src.common.domain.entities.tenant import Tenant
 from src.common.domain.enums.currencies import CurrencyCode
 
 

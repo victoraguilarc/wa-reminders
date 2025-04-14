@@ -6,8 +6,8 @@ from typing import Dict, List, Optional, Union
 from src.common.constants import INSTANCE_DELETED_RESPONSE
 from src.common.domain.context.locale import LocaleContext
 from src.common.domain.interfaces.responses import ApiResponse
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
-from src.common.domain.models.wa_session import WhatsappSessionQRCode
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.wa_session import WhatsappSessionQRCode
 from src.tenants.application.whatsapp_sessions.presenters import (
     TenantWhatsappSessionPresenter,
     AgentTenantWhatsappSessionPresenter, TenantWhatsappSessionQRCodePresenter,

@@ -4,7 +4,7 @@ from typing import List, Optional
 import requests
 
 from src.common.domain.enums.tenants import WhatsappSessionStatus
-from src.common.domain.models.wa_session import (
+from src.common.domain.entities.wa_session import (
     WhatsappSession,
     WhatsappAccount,
     WhatsappSessionQRCode,

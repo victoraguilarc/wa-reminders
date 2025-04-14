@@ -9,13 +9,12 @@ from src.common.database.models import (
     TenantUserORM,
     UserORM, TenantWhatsappSessionORM,
 )
+from src.common.domain.entities.list_filters import ListFilters
+from src.common.domain.entities.pagination import Page
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.enums.tenants import TenantStatus
 from src.common.domain.enums.users import TenantUserStatus
-from src.common.domain.models.list_filters import ListFilters
-from src.common.domain.models.pagination import Page
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
-from src.common.domain.types.permission import Permission
 from src.common.domain.value_objects import TenantId, TenantSlug, UserId
 from src.common.infrastructure.builders.tenant import build_tenant
 from src.common.infrastructure.builders.tenant_wa_session import build_tenant_whatsapp_session
@@ -90,13 +89,6 @@ class ORMTenantRepository(ORMPaginationMixin, TenantRepository):
     def switch_tenant(self, user_id: UserId, tenant_id: TenantId):
         UserORM.objects.filter(uuid=user_id).update(current_tenant_id=tenant_id)
 
-    def get_user_permissions(
-        self,
-        tenant_id: TenantId,
-        user_id: UserId,
-    ) -> List[Permission]:
-        # TODO: Implement this method
-        return []
 
     def get_owners_count(self, tenant_id: TenantId) -> int:
         return TenantUserORM.objects.filter(

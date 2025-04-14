@@ -6,7 +6,7 @@ from django.template.loader import render_to_string
 from django.utils import translation
 
 from src.common.domain.interfaces.whatsapp import WhatsappMessage
-from src.common.domain.models.whatsapp_message import (
+from src.common.domain.entities.whatsapp_message import (
     ImageWhatsappMessage,
     TemplateWhatsappMessage,
     TextWhatsappMessage,

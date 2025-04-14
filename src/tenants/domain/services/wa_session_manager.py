@@ -1,7 +1,7 @@
 from abc import abstractmethod, ABC
 from typing import List, Optional
 
-from src.common.domain.models.wa_session import WhatsappSession, WhatsappSessionQRCode, WhatsappSessionWebhook
+from src.common.domain.entities.wa_session import WhatsappSession, WhatsappSessionQRCode, WhatsappSessionWebhook
 
 
 class WhatsappSessionManager(ABC):

@@ -1,6 +1,6 @@
 from src.common.database.models import PendingActionORM
 from src.common.domain.enums.users import PendingActionCategory, PendingActionStatus
-from src.common.domain.models.pending_action import PendingAction
+from src.common.domain.entities.pending_action import PendingAction
 from src.common.domain.value_objects import PendingActionId
 
 

@@ -1,5 +1,3 @@
-from django.conf import settings
-
 from src.common.application.commands.tenants import (
     DeactivateTenantCommand,
 )
@@ -7,15 +5,11 @@ from src.common.application.queries.notifications import GetTenantWhatsappSessio
 from src.common.application.queries.tenants import (
     GetTenantByIdQuery,
     GetTenantContainerByIdQuery,
-    GetMembersSiteCallbackBuilderQuery,
     GetUserTenantContainerQuery,
     GetUserTenantsQuery,
 )
 from src.common.infrastructure.context_builder import AppContextBuilder
 from src.tenants.application.tenants.handlers.deactivate_tenant import DeactivateTenantCommandHandler
-from src.tenants.application.tenants.handlers.get_callback_url import (
-    GetMembersSiteCallbackBuilderHandler,
-)
 from src.tenants.application.tenants.handlers.get_tenant import (
     GetTenantByIdHandler,
     GetTenantContainerByIdHandler,
@@ -59,13 +53,6 @@ def wire_handlers():
     bus.query_bus.subscribe(
         query=GetUserTenantContainerQuery,
         handler=GetUserTenantContainerHandler(domain_context.tenant_repository),
-    )
-    bus.query_bus.subscribe(
-        query=GetMembersSiteCallbackBuilderQuery,
-        handler=GetMembersSiteCallbackBuilderHandler(
-            tenant_repository=domain_context.tenant_repository,
-            fallback_hostname=settings.PAGES_ROOT_HOSTNAME,
-        ),
     )
     bus.query_bus.subscribe(
         query=GetTenantWhatsappSessionNameQuery,

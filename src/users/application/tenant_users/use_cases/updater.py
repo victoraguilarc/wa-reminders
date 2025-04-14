@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from dataclasses import dataclass
-from typing import List, Optional
+from typing import List
 
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.domain.interfaces.services import ApiService
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.value_objects import TenantId, TenantUserId, TenantRoleId
+from src.common.domain.value_objects import TenantId, TenantUserId
 from src.users.application.tenant_users.mixins import GetTenantUserMixin, TenantUserValidationsMixin
 from src.users.domain.repositories.tenant_user import TenantUserRepository
 
@@ -19,7 +19,6 @@ class TenantUserUpdater(GetTenantUserMixin, TenantUserValidationsMixin, ApiServi
     updated_instance: TenantUser
     updated_fields: List[str]
     query_bus: QueryBus
-    tenant_role_id: Optional[TenantRoleId] = None
 
     def execute(self, *args, **kwargs) -> TenantUser:
         tenant_user = self.get_tenant_user()

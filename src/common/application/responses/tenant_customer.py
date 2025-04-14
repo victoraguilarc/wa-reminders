@@ -9,7 +9,7 @@ from src.common.application.presenters.tenant_customer import (
 from src.common.constants import INSTANCE_DELETED_RESPONSE
 from src.common.domain.context.locale import LocaleContext
 from src.common.domain.interfaces.responses import ApiResponse
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 
 
 @dataclass

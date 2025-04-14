@@ -5,7 +5,7 @@ from django.db.models import Q
 
 from src.common.database.models import PendingActionORM
 from src.common.domain.enums.users import PendingActionCategory, PendingActionStatus
-from src.common.domain.models.pending_action import PendingAction
+from src.common.domain.entities.pending_action import PendingAction
 from src.common.infrastructure.builders.pending_action import build_pending_action
 from src.pending_actions.domain.repositories import PendingActionRepository
 

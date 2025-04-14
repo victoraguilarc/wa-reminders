@@ -1,7 +1,7 @@
 from src.common.database.models.tenant_user import TenantUserORM
 from src.common.domain.enums.locales import Language
 from src.common.domain.enums.users import TenantUserStatus, Gender
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.domain.value_objects import TenantCustomerId, TenantId
 from src.common.infrastructure.builders.user import build_user
 

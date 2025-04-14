@@ -12,10 +12,10 @@ from src.common.domain.enums.common import TaskResultStatus
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_result import PendingActionResult
-from src.common.domain.models.simple_person import SimplePerson
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_result import PendingActionResult
+from src.common.domain.entities.simple_person import SimplePerson
+from src.common.domain.entities.tenant_user import TenantUser
 from src.pending_actions.application.use_cases.mixins import (
     PerformVerificationsMixin,
     UpdatePendingActionMixin,

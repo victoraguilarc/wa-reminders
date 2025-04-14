@@ -2,19 +2,19 @@
 
 from django.urls import path
 
-from src.notifications.presentation.api.notification import NotificationView
-from src.notifications.presentation.api.notifications import NotificationsView
+from src.notifications.presentation.api.reminder import ReminderView
+from src.notifications.presentation.api.reminders import RemindersView
 
-app_name = 'retention'
+app_name = 'notifications'
 urlpatterns = [
     path(
-        'notifications/',
-        view=NotificationsView.as_view(),
-        name='notifications',
+        'reminders/',
+        view=RemindersView.as_view(),
+        name='reminders',
     ),
     path(
-        'notifications/<uuid:notification_id>/',
-        view=NotificationView.as_view(),
-        name='notification',
+        'reminders/<uuid:reminder_id>/',
+        view=ReminderView.as_view(),
+        name='reminder',
     ),
 ]

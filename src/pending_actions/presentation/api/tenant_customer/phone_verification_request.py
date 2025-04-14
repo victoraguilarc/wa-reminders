@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from src.common.application.responses.pending_action import PendingActionResponse
 from src.common.application.shortcuts.customers_site import get_members_callback_builder
 from src.common.constants import DEFAULT_PHONE_VERIFICATION_SUB_PATH
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.value_objects import TenantCustomerId
 from src.common.presentation.api.tenant_api import RequiredTenantUserAPIView
 from src.pending_actions.application.use_cases.phone_number.verification_generator import (

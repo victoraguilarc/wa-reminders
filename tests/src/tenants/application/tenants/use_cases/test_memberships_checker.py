@@ -4,7 +4,7 @@ import pytest
 from expects import be_false, be_true, equal, expect
 
 from src.common.application.commands.memberships import RefreshMembershipsStatusCommand
-from src.common.domain.models.tenant import Tenant
+from src.common.domain.entities.tenant import Tenant
 from src.common.domain.messaging.commands import CommandBus
 from src.tenants.application.tenants.use_cases.memberships_checker import TenantMembershipsChecker
 from src.tenants.domain.repositories.tenant import TenantRepository

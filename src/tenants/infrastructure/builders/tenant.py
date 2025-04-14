@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from src.common.application.helpers.time import utc_now
-from src.common.domain.models.picture import Picture
-from src.common.domain.models.tenant import Tenant
+from src.common.domain.entities.picture import Picture
+from src.common.domain.entities.tenant import Tenant
 from src.common.domain.enums.countries import CountryIsoCode
 from src.common.domain.enums.currencies import CurrencyCode
 from src.common.domain.enums.locales import TimeZone

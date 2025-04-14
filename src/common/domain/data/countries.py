@@ -3,7 +3,7 @@ from typing import Dict
 from src.common.domain.enums.countries import CountryIsoCode
 from src.common.domain.enums.currencies import CurrencyCode
 from src.common.domain.enums.locales import TimeZone
-from src.common.domain.models.country_config import CountryConfig
+from src.common.domain.entities.country_config import CountryConfig
 
 COUNTRIES = [
     CountryConfig(

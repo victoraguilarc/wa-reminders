@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from typing import Optional
 
 from src.common.domain.messaging.queries import Query
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.domain.value_objects import RawPhoneNumber
 from src.pending_actions.domain.callback_builder import CallbackBuilder
 

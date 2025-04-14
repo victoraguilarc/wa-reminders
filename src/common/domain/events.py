@@ -18,18 +18,6 @@ class PaymentIntentEvent(BaseEnum):
     UPDATED = 'PaymentIntent.Updated'
 
 
-class StudentEnrollmentProcessEvent(BaseEnum):
-    UPDATED = 'StudentEnrollmentProcess.Updated'
-
-
-class MembershipPurchaseEvent(BaseEnum):
-    UPDATED = 'MembershipPurchase.Updated'
-
-
-class MembershipChangeEvent(BaseEnum):
-    UPDATED = 'MembershipChange.Updated'
-
-
 class WhatsappSessionEvent(BaseEnum):
     STATUS_UPDATED = 'WhatsappSession.StatusUpdated'
     REFRESH_SESSIONS = 'WhatsappSession.RefreshSessions'

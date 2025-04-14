@@ -4,9 +4,9 @@ from abc import ABC, abstractmethod
 from typing import List, Optional
 
 from src.common.domain.enums.users import TenantUserStatus
-from src.common.domain.models.pagination import Page
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.models.user_context import UserContext
+from src.common.domain.entities.pagination import Page
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.entities.user_context import UserContext
 from src.common.domain.value_objects import RawPhoneNumber, TenantId, TenantUserId, UserId
 from src.users.domain.filters.tenant_users import TenantUsersFilters
 

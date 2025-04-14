@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 
-from src.common.domain.models.pagination import Page
+from src.common.domain.entities.pagination import Page
 from src.common.domain.interfaces.services import ApiService
 from src.common.domain.value_objects import TenantId
 from src.users.domain.filters.tenant_users import TenantUsersFilters

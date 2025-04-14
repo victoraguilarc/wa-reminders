@@ -7,8 +7,8 @@ from src.common.application.presenters.tenant_customer import TenantCustomerPres
 from src.common.application.presenters.tenant_user import TenantUserPresenter
 from src.common.domain.context.locale import LocaleContext
 from src.common.domain.interfaces.responses import ApiResponse
-from src.common.domain.models.user_profile import UserProfile
-from src.common.domain.models.user_session import TenantCustomerSession, TenantUserSession
+from src.common.domain.entities.user_profile import UserProfile
+from src.common.domain.entities.user_session import TenantCustomerSession, TenantUserSession
 
 
 @dataclass

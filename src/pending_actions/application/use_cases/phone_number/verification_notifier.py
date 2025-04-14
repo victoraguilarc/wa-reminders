@@ -4,7 +4,7 @@ from src.common.application.commands.notifications import SendWhatsappSequenceCo
 from src.common.domain.enums.locales import Language
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.commands import CommandBus
-from src.common.domain.models.whatsapp_message import TemplateWhatsappMessage, TextWhatsappMessage
+from src.common.domain.entities.whatsapp_message import TemplateWhatsappMessage, TextWhatsappMessage
 from src.common.domain.value_objects import RawPhoneNumber
 
 

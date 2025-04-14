@@ -9,7 +9,7 @@ from src.common.application.queries.users import (
     GetTenantCustomerForSessionQuery,
 )
 from src.common.domain.messaging.queries import QueryHandler
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.users.domain.repositories import TenantCustomerRepository
 
 

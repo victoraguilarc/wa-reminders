@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass
 
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.interfaces.services import ApiService
 from src.common.domain.value_objects import TenantCustomerId, TenantId
 from src.users.application.mixins import GetTenantCustomerMixin

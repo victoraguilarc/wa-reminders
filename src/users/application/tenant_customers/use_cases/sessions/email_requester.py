@@ -9,9 +9,9 @@ from src.common.constants import DEFAULT_SESSION_REDEMPTION_SUB_PATH
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_context import PendingActionContext
-from src.common.domain.models.tenant import Tenant
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_context import PendingActionContext
+from src.common.domain.entities.tenant import Tenant
 from src.common.domain.value_objects import TenantCustomerId
 from src.users.application.tenant_customers.common.mixins import TenantCustomerCallbackUrlMixin
 from src.users.domain.repositories import TenantCustomerRepository

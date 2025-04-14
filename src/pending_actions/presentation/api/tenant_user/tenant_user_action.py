@@ -2,7 +2,7 @@ from typing import Optional
 
 from src.common.application.queries.users import GetTenantUserByEmailQuery, GetTenantUserByIdQuery
 from src.common.domain.exceptions.users import TenantUserNotFoundError
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.domain.value_objects import TenantUserId
 
 

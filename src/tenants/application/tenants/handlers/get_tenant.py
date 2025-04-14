@@ -3,8 +3,8 @@ from dataclasses import dataclass
 from typing import Optional
 
 from src.common.application.queries.tenants import GetTenantByIdQuery, GetTenantContainerByIdQuery
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_container import TenantContainer
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_container import TenantContainer
 from src.common.domain.messaging.queries import QueryHandler
 from src.tenants.domain.repositories.tenant import TenantRepository
 

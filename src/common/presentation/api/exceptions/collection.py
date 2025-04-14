@@ -13,29 +13,11 @@ from src.common.domain.exceptions.auth import (
     EmailAddressIsAlreadyVerifiedError,
     PhoneNumberIsAlreadyVerifiedError,
 )
-from src.common.domain.exceptions.classes import (
-    PaymentPlanNotFound,
-)
 from src.common.domain.exceptions.common import (
     DomainEmptyPage,
     DomainException,
     EmailIsAlreadyUsedError,
     UnAuthenticated,
-)
-from src.common.domain.exceptions.enrollments import (
-    StudentEnrollmentProcessNotFound,
-)
-from src.common.domain.exceptions.memberships import (
-    InactiveMembershipError,
-    InvalidMembershipError,
-    MembershipNotFoundError,
-    MembershipPlanNotFound,
-    MembershipPurchaseFromPaymentNotFound,
-    MembershipPurchaseNotFound,
-    MembershipRechargeFromPaymentNotFound,
-    MembershipRechargeNotFound,
-    ExpiredMembershipError,
-    InsufficientPassesBalanceError,
 )
 from src.common.domain.exceptions.users import (
     NotEnoughTenantPermissions,
@@ -56,7 +38,6 @@ from src.common.presentation.api.exceptions.base import (
     APIUnauthorized,
     GenericError,
 )
-from src.notifications.domain.exceptions import NotificationNotFound
 from src.pending_actions.domain.exceptions import (
     InvalidPendingActionError,
     PendingActionNotFoundError,
@@ -142,59 +123,6 @@ error_codes = {
         detail=_('Picture Not Found'),
     ),
     UnAuthenticated: NOT_AUTHENTICATED,
-    PaymentPlanNotFound: APINotFound(
-        code='classes.PaymentPlanNotFound',
-        detail=_('Payment Plan not Found'),
-    ),
-    StudentEnrollmentProcessNotFound: APINotFound(
-        code='enrollments.StudentEnrollmentProcessNotFound',
-        detail=_('Student Enrollment Process Not Found'),
-    ),
-    NotificationNotFound: APINotFound(
-        code='retention.NotificationNotFound',
-        detail=_('Notification Not Found'),
-    ),
-
-    MembershipPlanNotFound: APINotFound(
-        code='memberships.MembershipPlanNotFound',
-        detail=_('Membership Plan Not Found'),
-    ),
-    MembershipPurchaseNotFound: APINotFound(
-        code='memberships.MembershipPurchaseNotFound',
-        detail=_('Membership Purchase Not Found'),
-    ),
-    MembershipRechargeNotFound: APINotFound(
-        code='memberships.MembershipRechargeNotFound',
-        detail=_('Membership Recharge Not Found'),
-    ),
-    MembershipPurchaseFromPaymentNotFound: APINotFound(
-        code='memberships.MembershipPurchaseFromPaymentNotFound',
-        detail=_('There is no MembershipPurchase associated to this PaymentRequest'),
-    ),
-    MembershipRechargeFromPaymentNotFound: APINotFound(
-        code='memberships.MembershipRechargeFromPaymentNotFound',
-        detail=_('There is no MembershipRecharge associated to this PaymentRequest'),
-    ),
-    MembershipNotFoundError: APINotFound(
-        code='memberships.MembershipNotFound',
-        detail=_('Membership Not Found'),
-    ),
-    InvalidMembershipError: APIBadRequest(
-        code='memberships.InvalidMembership',
-        detail=_('Membership does not match the requirements'),
-    ),
-    InactiveMembershipError: APIBadRequest(
-        code='memberships.InactiveMembership',
-        detail=_('Membership is not active'),
-    ),
-    ExpiredMembershipError: APIBadRequest(
-        code='memberships.ExpiredMembership',
-        detail=_('Membership is expired'),
-    ),
-    InsufficientPassesBalanceError: APIBadRequest(
-        code='memberships.InsufficientPassesBalance',
-        detail=_('Insufficient membership passes balance'),
-    ),
     TenantNotFoundError: APINotFound(
         code='tenants.TenantNotFound',
         detail=_('Tenant Not Found'),

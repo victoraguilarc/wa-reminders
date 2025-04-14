@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from src.common.application.queries.pending_actions import GetEmailAddressVerificationQuery
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.messaging.queries import QueryHandler, QueryBus
-from src.common.domain.models.pending_action_context import PendingActionContext
+from src.common.domain.entities.pending_action_context import PendingActionContext
 from src.pending_actions.application.use_cases.email_address.verification_generator import (
     EmailAddressVerificationGenerator,
 )

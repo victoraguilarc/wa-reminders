@@ -1,10 +1,7 @@
 from dataclasses import dataclass
 from typing import List, Optional
 
-from src.common.domain.enums.growth import TenantLeadStage, TenantLeadChannel
-from src.common.domain.enums.users import TenantCustomerStatus, TenantCustomerCreationSource
 from src.common.domain.messaging.queries import Query
-from src.common.domain.models.simple_person import SimplePerson
 from src.common.domain.value_objects import RawPhoneNumber, TenantCustomerId, TenantId, TenantUserId, UserId
 
 
@@ -67,28 +64,6 @@ class GetUserByIdQuery(Query):
 class GetTenantCustomersByIdsQuery(Query):
     tenant_id: TenantId
     tenant_customer_ids: List[TenantCustomerId]
-
-
-@dataclass
-class GetTenantCustomerLeadByEmailQuery(Query):
-    tenant_id: TenantId
-    email: str
-
-
-@dataclass
-class GetTenantCustomerLeadQuery(Query):
-    tenant_id: TenantId
-    tenant_customer_id: TenantCustomerId
-
-
-@dataclass
-class GetOrUpdateTenantCustomerLeadQuery(Query):
-    tenant_id: TenantId
-    person: SimplePerson
-    status: Optional[TenantCustomerStatus] = None
-    creation_source: Optional[TenantCustomerCreationSource] = None
-    stage: Optional[TenantLeadStage] = None
-    channel: Optional[TenantLeadChannel] = None
 
 
 @dataclass

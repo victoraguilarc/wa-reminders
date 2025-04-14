@@ -25,23 +25,20 @@ class DomainContext(object):
     # Common
     tenant_repository: TenantRepository
     whatsapp_session_manager: WhatsappSessionManager
+    whatsapp_session_repository: TenantWhatsappSessionRepository
 
-    # Users
+    # Users & Auth
     user_repository: UserRepository
     phone_number_repository: PhoneNumberRepository
     email_address_repository: EmailAddressRepository
     tenant_user_repository: TenantUserRepository
     tenant_customer_repository: TenantCustomerRepository
-
-    # auth & onboarding
     session_user_repository: SessionUserRepository
 
     # Pending Actions
     pending_action_repository: PendingActionRepository
 
     # tenants
-    whatsapp_session_repository: TenantWhatsappSessionRepository
-
     task_scheduler: TaskScheduler
     stream_events_publisher: StreamEventPublisher
 

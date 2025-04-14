@@ -3,7 +3,7 @@
 from typing import Optional
 
 from src.common.database.models import EmailAddressORM
-from src.common.domain.models.email_address import EmailAddress
+from src.common.domain.entities.email_address import EmailAddress
 from src.common.domain.value_objects import EmailAddressId
 from src.common.infrastructure.builders.email_address import build_email_address
 from src.users.domain.repositories.email_address import EmailAddressRepository

@@ -13,16 +13,15 @@ from src.common.database.models import (
     UserORM,
 )
 from src.common.domain.enums.users import TenantCustomerStatus, TenantCustomerCreationSource
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.list_filters import ListFilters
-from src.common.domain.models.pagination import Page
-from src.common.domain.models.phone_number import PhoneNumber
-from src.common.domain.models.simple_person import SimplePerson
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.user import User
-from src.common.domain.models.user_context import UserContext
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.list_filters import ListFilters
+from src.common.domain.entities.pagination import Page
+from src.common.domain.entities.phone_number import PhoneNumber
+from src.common.domain.entities.simple_person import SimplePerson
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.user import User
+from src.common.domain.entities.user_context import UserContext
 from src.common.domain.value_objects import (
-    MembershipId,
     RawPhoneNumber,
     TenantCustomerId,
     TenantId,
@@ -330,16 +329,6 @@ class ORMTenantCustomerRepository(ORMPaginationMixin, TenantCustomerRepository):
             },
         )
         return build_tenant_customer(persisted_instance)
-
-
-    def get_memberhip_sessions_paginated(
-        self,
-        tenant_id: TenantId,
-        tenant_customer_id: TenantCustomerId,
-        membership_id: MembershipId,
-        list_filters: ListFilters,
-    ) -> Page:
-        pass
 
     def _filter(
         self,

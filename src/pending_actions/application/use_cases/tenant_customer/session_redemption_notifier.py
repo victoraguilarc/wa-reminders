@@ -6,10 +6,10 @@ from src.common.application.queries.pending_actions import GetTenantCustomerSess
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.pending_action_context import PendingActionContext
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.whatsapp_message import (
+from src.common.domain.entities.pending_action_context import PendingActionContext
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.whatsapp_message import (
     TemplateWhatsappMessage,
     TextWhatsappMessage,
 )

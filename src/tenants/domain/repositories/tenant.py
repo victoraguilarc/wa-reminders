@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
 
-from src.common.domain.models.list_filters import ListFilters
-from src.common.domain.models.pagination import Page
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.list_filters import ListFilters
+from src.common.domain.entities.pagination import Page
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.value_objects import TenantId, TenantSlug, UserId
 
 

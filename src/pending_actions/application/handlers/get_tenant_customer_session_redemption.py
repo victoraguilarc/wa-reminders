@@ -6,7 +6,7 @@ from src.common.application.queries.pending_actions import (
     GetTenantCustomerSessionRedemptionQuery,
 )
 from src.common.domain.messaging.queries import QueryHandler
-from src.common.domain.models.pending_action_context import PendingActionContext
+from src.common.domain.entities.pending_action_context import PendingActionContext
 from src.pending_actions.application.use_cases.tenant_customer.session_redemption_generator import (
     TenantCustomerSessionRedemptionGenerator,
 )

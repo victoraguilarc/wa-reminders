@@ -1,5 +1,5 @@
 from src.common.database.models import EmailAddressORM
-from src.common.domain.models.email_address import EmailAddress
+from src.common.domain.entities.email_address import EmailAddress
 from src.common.domain.value_objects import EmailAddressId
 
 

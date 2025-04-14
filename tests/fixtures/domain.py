@@ -22,14 +22,14 @@ from src.common.domain.enums.users import (
     PendingActionStatus, TenantUserStatus,
 )
 from src.common.domain.interfaces.faker import FakerInterface
-from src.common.domain.models.email_address import EmailAddress
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.phone_number import PhoneNumber
-from src.common.domain.models.simple_person import SimplePerson
-from src.common.domain.models.tenant import Tenant
-from src.common.domain.models.tenant_customer import TenantCustomer
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.models.user import User
+from src.common.domain.entities.email_address import EmailAddress
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.phone_number import PhoneNumber
+from src.common.domain.entities.simple_person import SimplePerson
+from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_user import TenantUser
+from src.common.domain.entities.user import User
 from src.common.domain.value_objects import (
     UserId,
     TenantId,

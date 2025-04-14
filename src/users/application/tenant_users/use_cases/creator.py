@@ -1,14 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from dataclasses import dataclass
-from typing import Optional
 
 from src.common.application.commands.pending_actions import RequestTenantUserInvitationCommand
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.domain.interfaces.services import UseCase
 from src.common.domain.messaging.commands import CommandBus
 from src.common.domain.messaging.queries import QueryBus
-from src.common.domain.models.tenant_user import TenantUser
-from src.common.domain.value_objects import TenantRoleId
 from src.users.application.tenant_users.mixins import TenantUserValidationsMixin
 from src.users.domain.repositories.tenant_user import TenantUserRepository
 
@@ -21,7 +19,6 @@ class TenantUserCreator(TenantUserValidationsMixin, UseCase):
     query_bus: QueryBus
     send_async_invitation: bool = False
     send_invitation: bool = False
-    tenant_role_id: Optional[TenantRoleId] = None
 
     def execute(self) -> TenantUser:
         self._check_auth_methods(self.new_instance)

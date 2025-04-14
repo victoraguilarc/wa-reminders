@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from src.common.domain.models.tenant_container import UserTenantContainer
+from src.common.domain.entities.tenant_container import UserTenantContainer
 from src.common.domain.value_objects import TenantId, UserId
 from src.tenants.domain.repositories.tenant import TenantRepository
 

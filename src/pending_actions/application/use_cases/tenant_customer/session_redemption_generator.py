@@ -3,9 +3,9 @@ from dataclasses import dataclass
 
 from src.common.domain.enums.users import PendingActionCategory
 from src.common.domain.interfaces.services import ApiService
-from src.common.domain.models.pending_action import PendingAction
-from src.common.domain.models.pending_action_context import PendingActionContext
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.pending_action import PendingAction
+from src.common.domain.entities.pending_action_context import PendingActionContext
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.pending_actions.domain.callback_builder import CallbackBuilder
 from src.pending_actions.domain.repositories import PendingActionRepository
 from src.pending_actions.domain.types.tenant_customer_session_redemption import (

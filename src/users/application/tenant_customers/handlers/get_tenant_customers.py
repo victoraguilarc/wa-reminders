@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import List
 
 from src.common.application.queries.users import GetTenantCustomersByIdsQuery
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.messaging.queries import QueryHandler
 from src.users.domain.repositories import TenantCustomerRepository
 

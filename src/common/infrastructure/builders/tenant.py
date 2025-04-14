@@ -1,9 +1,9 @@
 from src.common.database.models import TenantORM
+from src.common.domain.entities.tenant import Tenant
 from src.common.domain.enums.countries import CountryIsoCode
 from src.common.domain.enums.currencies import CurrencyCode
 from src.common.domain.enums.locales import TimeZone, Language
 from src.common.domain.enums.tenants import TenantStatus
-from src.common.domain.models.tenant import Tenant
 from src.common.domain.value_objects import TenantId, TenantSlug, UserId
 
 
@@ -23,8 +23,6 @@ def build_tenant(orm_instance: TenantORM) -> Tenant:
         grace_period=orm_instance.grace_period,
         checkin_from_in_hours=orm_instance.checkin_from_in_hours,
         checkin_until_in_hours=orm_instance.checkin_until_in_hours,
-        address=None,  # TODO: move this to facilities feature
-        # address=build_address(orm_instance.address) if orm_instance.address else None,
         reference=orm_instance.reference,
         status=TenantStatus.from_value(orm_instance.status),
         logo_url=orm_instance.logo_url,

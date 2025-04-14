@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 from src.common.application.responses.generics import TaskResultResponse
 from src.common.domain.enums.users import PendingActionCategory, PendingActionStatus
-from src.common.domain.models.simple_person import SimplePerson
+from src.common.domain.entities.simple_person import SimplePerson
 from src.common.helpers.dicts import validate_mandatory
 from src.common.presentation.api.tenant_api import DomainAPIView
 from src.pending_actions.application.use_cases.action_token_getter import PendingActionTokenGetter

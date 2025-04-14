@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from src.common.domain.models.user import User
+from src.common.domain.entities.user import User
 from src.common.domain.value_objects import UserSessionToken
 
 

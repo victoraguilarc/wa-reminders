@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import List
 
 from src.common.domain.enums.growth import TenantLeadChannel, TenantLeadStage
-from src.common.domain.models.list_filters import ListFilters
+from src.common.domain.entities.list_filters import ListFilters
 
 
 @dataclass

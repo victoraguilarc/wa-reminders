@@ -1,7 +1,7 @@
 from src.common.database.models import TenantCustomerORM
 from src.common.domain.enums.locales import Language
 from src.common.domain.enums.users import Gender, TenantCustomerStatus, TenantCustomerCreationSource
-from src.common.domain.models.tenant_customer import TenantCustomer
+from src.common.domain.entities.tenant_customer import TenantCustomer
 from src.common.domain.value_objects import TenantCustomerId, TenantId
 from src.common.infrastructure.builders.email_address import build_email_address
 from src.common.infrastructure.builders.phone_number import build_phone_number

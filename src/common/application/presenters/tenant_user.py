@@ -3,7 +3,7 @@
 from dataclasses import dataclass
 
 from src.common.domain.context.locale import LocaleContext
-from src.common.domain.models.tenant_user import TenantUser
+from src.common.domain.entities.tenant_user import TenantUser
 from src.common.helpers.time import TimeUtils
 
 

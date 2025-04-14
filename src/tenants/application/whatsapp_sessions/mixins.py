@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
-from src.common.domain.models.tenant_wa_session import TenantWhatsappSession
+from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.value_objects import TenantId, TenantWhatsappSessionId
 from src.tenants.domain.exceptions import TenantWhatsappSessionNotFoundError
 from src.tenants.domain.repositories.tenant_wa_session import TenantWhatsappSessionRepository

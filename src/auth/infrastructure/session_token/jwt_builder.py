@@ -5,7 +5,7 @@ from django.contrib.auth.base_user import AbstractBaseUser
 from rest_framework_simplejwt.tokens import RefreshToken
 
 from src.auth.domain.interfaces import UserSessionTokenBuilder
-from src.common.domain.models.user import User
+from src.common.domain.entities.user import User
 from src.common.domain.value_objects import UserSessionToken
 
 
