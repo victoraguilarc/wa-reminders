@@ -1,6 +1,6 @@
 services:
   django:
-    image: ghcr.io/xiberty/xiberty-api-prod:latest
+    image: ghcr.io/victoraguilarc/wa-reminders-prod:latest
     environment:
       - DJANGO_ENV=production
       - DJANGO_STAGE=${DJANGO_STAGE}

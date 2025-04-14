@@ -1,6 +1,6 @@
 ## Whatsapp Reminders
 
-SaaS Platform small & medium academies to manage their assets.
+Programatic reminders for whatsapp.
 
 ![styleguide](https://img.shields.io/badge/styleguide-flake8-blue)
 ![Coverage](src/web/badges/coverage.svg)

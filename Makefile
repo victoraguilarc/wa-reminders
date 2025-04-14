@@ -5,7 +5,7 @@
 COMPOSE := @docker compose -f docker-compose.yml
 COMPOSE_PROD := @docker compose -f docker-compose.prod.yml
 COMPOSE_TEST := @docker compose -f docker-compose.yml
-CHAMBER_NAMESPACE := xiberty-api-dev
+CHAMBER_NAMESPACE := wa-reminders-dev
 
 ARG=
 

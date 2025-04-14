@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-22 06:12+0000\n"
+"POT-Creation-Date: 2025-04-14 14:14+0000\n"
 "PO-Revision-Date: 2024-10-22 06:14+0000\n"
 "Last-Translator: Anonymous User <anonymous@user.tld>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.1\n"
 
-#: config/settings/components/common.py:123
+#: config/settings/components/common.py:114
 msgid "Spanish"
 msgstr "Español"
 
-#: config/settings/components/common.py:124
+#: config/settings/components/common.py:115
 msgid "English"
 msgstr "Inglés"
 
@@ -36,18 +36,6 @@ msgstr "Escribe tu contraseña dee nuevo"
 #: tests/src/auth/presentation/forms/test_reset_password.py:20
 msgid "Passwords Mismatch"
 msgstr "Las constraseñas no coinciden"
-
-#: src/common/database/admin/notification.py:34
-msgid "Strategies"
-msgstr "Estratégias"
-
-#: src/common/database/admin/tenant_class.py:14
-msgid "Schedule"
-msgstr "Horario"
-
-#: src/common/database/admin/tenant_class.py:15
-msgid "Schedules"
-msgstr "Horario"
 
 #: src/common/database/admin/user.py:23
 msgid "Email"
@@ -132,7 +120,7 @@ msgid "Payment Reminder"
 msgstr "Recordatorio de Pago"
 
 #: src/common/presentation/api/exceptions/base.py:31
-#: src/common/presentation/api/exceptions/collection.py:107
+#: src/common/presentation/api/exceptions/collection.py:84
 #: src/web/templates/errors/500.html:4
 msgid "Server Error"
 msgstr "Error en el Servidor"
@@ -146,7 +134,7 @@ msgid "Incorrect authentication credentials."
 msgstr "Credenciales de Autenticación Incorrectas"
 
 #: src/common/presentation/api/exceptions/base.py:55
-#: src/common/presentation/api/exceptions/collection.py:112
+#: src/common/presentation/api/exceptions/collection.py:89
 msgid "Authentication credentials were not provided."
 msgstr "No se agregaron credenciales de autorización"
 
@@ -166,286 +154,196 @@ msgstr "Método no permitido"
 msgid "Tenant not implemented."
 msgstr "Tenant no Implementado"
 
-#: src/common/presentation/api/exceptions/collection.py:116
+#: src/common/presentation/api/exceptions/collection.py:93
 msgid "Invalid or Expired token"
 msgstr "Token Incorrecto o expirado"
 
-#: src/common/presentation/api/exceptions/collection.py:120
+#: src/common/presentation/api/exceptions/collection.py:97
 msgid "Authentication Fails"
 msgstr "La autenticación falló"
 
-#: src/common/presentation/api/exceptions/collection.py:124
-#: src/common/presentation/api/exceptions/collection.py:314
+#: src/common/presentation/api/exceptions/collection.py:101
+#: src/common/presentation/api/exceptions/collection.py:200
 msgid "Tenant Not Found"
 msgstr "Usuario no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:128
+#: src/common/presentation/api/exceptions/collection.py:105
 msgid "Tenant User Not Found"
 msgstr "Usuario no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:132
+#: src/common/presentation/api/exceptions/collection.py:109
 msgid "Tenant Customer Not Found"
 msgstr "Cliente no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:136
+#: src/common/presentation/api/exceptions/collection.py:113
 msgid "User Not Found"
 msgstr "Usuario no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:140
+#: src/common/presentation/api/exceptions/collection.py:117
 msgid "Tenant Access Unauthorized"
 msgstr "Acceso al tenant no autorizado"
 
-#: src/common/presentation/api/exceptions/collection.py:144
+#: src/common/presentation/api/exceptions/collection.py:121
 msgid "Has no enough permissions to perform this action"
 msgstr "No tienes permisos para ejecutar esta acción"
 
-#: src/common/presentation/api/exceptions/collection.py:148
+#: src/common/presentation/api/exceptions/collection.py:125
 msgid "There are no more items"
 msgstr "No hay más artículos"
 
-#: src/common/presentation/api/exceptions/collection.py:157
-msgid "Class Session Not Found"
-msgstr "Usuario no encontrado"
-
-#: src/common/presentation/api/exceptions/collection.py:161
-msgid "Attendee Not Found"
-msgstr "Estudiante no encontrado"
-
-#: src/common/presentation/api/exceptions/collection.py:165
-msgid "Invalid Attendee Checkin"
-msgstr "Escaneo de asistencia inválido"
-
-#: src/common/presentation/api/exceptions/collection.py:169
-msgid "This student does not belong to this class"
-msgstr "Este estudiante ya no pertenece a esta clase"
-
-#: src/common/presentation/api/exceptions/collection.py:173
-msgid "This session schedule does not exist"
-msgstr "No existe una sesión en este horario"
-
-#: src/common/presentation/api/exceptions/collection.py:177
-msgid "Current time is out of the class schedule time"
-msgstr "Estás en horario fuera de clase"
-
-#: src/common/presentation/api/exceptions/collection.py:181
-msgid "You can not book a past session"
-msgstr "No puedes reservar en una clase pasada"
-
-#: src/common/presentation/api/exceptions/collection.py:185
-msgid "This session is invalid or not exist"
-msgstr "Esta sesión es incorrecta o no existe"
-
-#: src/common/presentation/api/exceptions/collection.py:189
+#: src/common/presentation/api/exceptions/collection.py:134
 msgid "Invalid Credentials"
 msgstr "Credenciales Incorrectas"
 
-#: src/common/presentation/api/exceptions/collection.py:193
+#: src/common/presentation/api/exceptions/collection.py:138
 msgid "Invalid Credentials for Tenant"
 msgstr "Credenciales Incorrectas"
 
-#: src/common/presentation/api/exceptions/collection.py:197
+#: src/common/presentation/api/exceptions/collection.py:142
 msgid "Picture Not Found"
 msgstr "Imagen no encontrada"
 
-#: src/common/presentation/api/exceptions/collection.py:202
-msgid "Class Not Found"
-msgstr "Clase no encontrada"
-
-#: src/common/presentation/api/exceptions/collection.py:206
+#: src/common/presentation/api/exceptions/collection.py:147
 msgid "Payment Plan not Found"
 msgstr "Plan de pago no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:210
+#: src/common/presentation/api/exceptions/collection.py:151
 msgid "Student Enrollment Process Not Found"
 msgstr "Inscripción no encontrada"
 
-#: src/common/presentation/api/exceptions/collection.py:214
-msgid "Payment Request Not Found"
-msgstr "Solicitud de pago no encontrado"
-
-#: src/common/presentation/api/exceptions/collection.py:218
-msgid "Invoice and payment currency codes does not match"
-msgstr "Los códigos de moneda de factura y pago no coinciden"
-
-#: src/common/presentation/api/exceptions/collection.py:222
-msgid "Payment Not Found"
-msgstr "Pago no encontrado"
-
-#: src/common/presentation/api/exceptions/collection.py:226
-msgid "Student Subscription is not completed"
-msgstr "La suscripción de estudiante no está completa"
-
-#: src/common/presentation/api/exceptions/collection.py:230
-msgid "Notification Template Not Found"
-msgstr "No se encontró esta plantilla"
-
-#: src/common/presentation/api/exceptions/collection.py:234
+#: src/common/presentation/api/exceptions/collection.py:155
 msgid "Notification Not Found"
 msgstr "Notificación no encontrada"
 
-#: src/common/presentation/api/exceptions/collection.py:238
-msgid "Payment Intent Not Found"
-msgstr "Intento de Pago no encontrado"
-
-#: src/common/presentation/api/exceptions/collection.py:242
-msgid "Processed Payment Intent cant't be updated"
-msgstr "La intención de pago procesada no se puede actualizar"
-
-#: src/common/presentation/api/exceptions/collection.py:246
-msgid "Subscriptions aren't supported for this type of object"
-msgstr "Las suscripciones no son compatibles con este tipo de objeto."
-
-#: src/common/presentation/api/exceptions/collection.py:250
-msgid "One time payments aren't supported for this type of object"
-msgstr "Los pagos únicos no se admiten para este tipo de objeto"
-
-#: src/common/presentation/api/exceptions/collection.py:254
-msgid "Not Sincronized Payment Plan"
-msgstr "Plan de pago Corrompido"
-
-#: src/common/presentation/api/exceptions/collection.py:258
-msgid "Payment Method Not Found"
-msgstr "Método de pago no encontrado"
-
-#: src/common/presentation/api/exceptions/collection.py:262
-msgid "Payment Method Not Implemented"
-msgstr "Método de pago no Implementado"
-
-#: src/common/presentation/api/exceptions/collection.py:266
-msgid "Payment Account Not Configured"
-msgstr "Cuenta de pago no configurada"
-
-#: src/common/presentation/api/exceptions/collection.py:270
+#: src/common/presentation/api/exceptions/collection.py:160
 msgid "Membership Plan Not Found"
 msgstr "Plan de membresía no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:274
+#: src/common/presentation/api/exceptions/collection.py:164
 msgid "Membership Purchase Not Found"
 msgstr "Compra de membresía no encontrada"
 
-#: src/common/presentation/api/exceptions/collection.py:278
+#: src/common/presentation/api/exceptions/collection.py:168
 msgid "Membership Recharge Not Found"
 msgstr "Compra de membresía no encontrada"
 
-#: src/common/presentation/api/exceptions/collection.py:282
+#: src/common/presentation/api/exceptions/collection.py:172
 msgid "There is no MembershipPurchase associated to this PaymentRequest"
 msgstr "No hay ninguna compra de membresía asociada a esta solicitud de pago"
 
-#: src/common/presentation/api/exceptions/collection.py:286
+#: src/common/presentation/api/exceptions/collection.py:176
 msgid "There is no MembershipRecharge associated to this PaymentRequest"
 msgstr "No hay ninguna compra de membresía asociada a esta solicitud de pago"
 
-#: src/common/presentation/api/exceptions/collection.py:290
+#: src/common/presentation/api/exceptions/collection.py:180
 msgid "Membership Not Found"
 msgstr "Membresía no encontrada"
 
-#: src/common/presentation/api/exceptions/collection.py:294
+#: src/common/presentation/api/exceptions/collection.py:184
 msgid "Membership does not match the requirements"
 msgstr "La membresía no cumple con los requisitos."
 
-#: src/common/presentation/api/exceptions/collection.py:298
+#: src/common/presentation/api/exceptions/collection.py:188
 msgid "Membership is not active"
 msgstr "La membresía no está activa"
 
-#: src/common/presentation/api/exceptions/collection.py:302
+#: src/common/presentation/api/exceptions/collection.py:192
 msgid "Membership is expired"
 msgstr "La membresía expiró"
 
-#: src/common/presentation/api/exceptions/collection.py:306
+#: src/common/presentation/api/exceptions/collection.py:196
 msgid "Insufficient membership passes balance"
 msgstr "No tienen pases suficientes en tu membresía"
 
-#: src/common/presentation/api/exceptions/collection.py:310
-msgid "Payment Intent has invalid payload"
-msgstr "La intención de pago tiene una carga útil no válida"
-
-#: src/common/presentation/api/exceptions/collection.py:318
+#: src/common/presentation/api/exceptions/collection.py:204
 msgid "Tenant Picture Not Found"
 msgstr "Imagen no encontrada"
 
-#: src/common/presentation/api/exceptions/collection.py:322
+#: src/common/presentation/api/exceptions/collection.py:208
 msgid "Tenant limit excedeed"
 msgstr "Limite de organizaciones excedido"
 
-#: src/common/presentation/api/exceptions/collection.py:326
+#: src/common/presentation/api/exceptions/collection.py:212
 msgid "Tenant Customer not found"
 msgstr "Cliente no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:330
+#: src/common/presentation/api/exceptions/collection.py:216
 msgid "Tenant Customer is not reachable"
 msgstr "Cliente no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:334
+#: src/common/presentation/api/exceptions/collection.py:220
 msgid "Tenant Customer Lead not found"
 msgstr "Prospecto no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:338
+#: src/common/presentation/api/exceptions/collection.py:224
 msgid "Tenant User not found"
 msgstr "Usuario no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:342
-msgid "Invalid enrollments metadata"
-msgstr "Metadatos de inscripciones no válidos"
+#: src/common/presentation/api/exceptions/collection.py:228
+#, fuzzy
+#| msgid "Class Session Not Found"
+msgid "Whatsapp Session not found"
+msgstr "Usuario no encontrado"
 
-#: src/common/presentation/api/exceptions/collection.py:346
+#: src/common/presentation/api/exceptions/collection.py:232
+msgid "Whatsapp Sessions limit reached"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:236
+msgid "Whatsapp QR Code is unavailable"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:240
 msgid "Invalid Password"
 msgstr "Contraseña Inválida"
 
-#: src/common/presentation/api/exceptions/collection.py:350
+#: src/common/presentation/api/exceptions/collection.py:244
 msgid "The new password must be different from the current password"
 msgstr "La nueva contraseña debe ser diferente de la contraseña actual"
 
-#: src/common/presentation/api/exceptions/collection.py:354
+#: src/common/presentation/api/exceptions/collection.py:248
 msgid "This email is already being used"
 msgstr "Este correo ya está siendo usado"
 
-#: src/common/presentation/api/exceptions/collection.py:358
+#: src/common/presentation/api/exceptions/collection.py:252
 msgid "This email is already verified"
 msgstr "Este correo ya está verificado"
 
-#: src/common/presentation/api/exceptions/collection.py:362
+#: src/common/presentation/api/exceptions/collection.py:256
 msgid "This phone number is already being used"
 msgstr "Este correo ya está siendo usado"
 
-#: src/common/presentation/api/exceptions/collection.py:366
+#: src/common/presentation/api/exceptions/collection.py:260
 msgid "This phone number is already verified"
 msgstr "Este teléfono ya esta verificado"
 
-#: src/common/presentation/api/exceptions/collection.py:370
+#: src/common/presentation/api/exceptions/collection.py:264
 msgid "User must have at least one auth method"
 msgstr "El usuario debe tener al menos un método de autenticación"
 
-#: src/common/presentation/api/exceptions/collection.py:374
+#: src/common/presentation/api/exceptions/collection.py:268
 msgid "Customer has no email address"
 msgstr "El cliente no tiene dirección de correo electrónico"
 
-#: src/common/presentation/api/exceptions/collection.py:378
+#: src/common/presentation/api/exceptions/collection.py:272
 msgid "Customer's email is already verified"
 msgstr "Tu dirección de correo electrónico ya ha sido verificada"
 
-#: src/common/presentation/api/exceptions/collection.py:382
+#: src/common/presentation/api/exceptions/collection.py:276
 msgid "Customer has no phone number"
 msgstr "El cliente no tiene número de teléfono"
 
-#: src/common/presentation/api/exceptions/collection.py:386
+#: src/common/presentation/api/exceptions/collection.py:280
 msgid "Customer's phone number is already verified"
 msgstr "El número de teléfono del cliente ya está verificado"
 
-#: src/common/presentation/api/exceptions/collection.py:390
+#: src/common/presentation/api/exceptions/collection.py:284
 msgid "Pending Action not found"
 msgstr "Acción Pendiente no encontrada"
 
-#: src/common/presentation/api/exceptions/collection.py:394
+#: src/common/presentation/api/exceptions/collection.py:288
 msgid "the provided token is invalid"
 msgstr "El token provisto es incorrecto"
-
-#: src/common/presentation/api/exceptions/collection.py:398
-msgid "Invalid Permission"
-msgstr "Permiso Inválido"
-
-#: src/common/presentation/api/exceptions/collection.py:402
-msgid "Tenant Role not found"
-msgstr "Rol no encontrado"
 
 #: src/common/presentation/api/exceptions/handler.py:64
 msgid "There are validation errors in the request"
@@ -471,90 +369,11 @@ msgstr "Por favor cargue un archivo válido."
 msgid "The type of the file couldn't be determined."
 msgstr "No se pudo determinar el tipo de archivo."
 
-#: src/permissions/infrastructure/permissions.py:14
-#: src/permissions/infrastructure/permissions.py:87
-msgid "View Customers"
-msgstr "Vew Clientes"
-
-#: src/permissions/infrastructure/permissions.py:19
-#: src/permissions/infrastructure/permissions.py:92
-msgid "View Leads"
-msgstr "Ver Prospectos"
-
-#: src/permissions/infrastructure/permissions.py:24
-msgid "View Collaborators"
-msgstr "Ver Colaboradores"
-
-#: src/permissions/infrastructure/permissions.py:29
-#: src/permissions/infrastructure/permissions.py:97
-msgid "View Memberships"
-msgstr "Ver Membresías"
-
-#: src/permissions/infrastructure/permissions.py:34
-msgid "View Plans"
-msgstr "Ver Planes"
-
-#: src/permissions/infrastructure/permissions.py:39
-msgid "View Payments"
-msgstr "Ver Pagos"
-
-#: src/permissions/infrastructure/permissions.py:44
-msgid "View Classes"
-msgstr "Ver Clases"
-
-#: src/permissions/infrastructure/permissions.py:49
-#: src/permissions/infrastructure/permissions.py:102
-msgid "View Sessions"
-msgstr "Ver Sesiones"
-
-#: src/permissions/infrastructure/permissions.py:54
-#: src/permissions/infrastructure/permissions.py:107
-msgid "View Attendees"
-msgstr "Ver Asistentes"
-
-#: src/permissions/infrastructure/permissions.py:59
-msgid "View Metrics"
-msgstr "Ver Métricas"
-
-#: src/permissions/infrastructure/permissions.py:64
-msgid "View Events"
-msgstr "Ver Eventos"
-
-#: src/permissions/infrastructure/permissions.py:69
-msgid "View Roles"
-msgstr "Ver Roles"
-
-#: src/permissions/infrastructure/permissions.py:74
-#: src/permissions/infrastructure/permissions.py:112
-msgid "Open Scan"
-msgstr "Abrir Escaner"
-
-#: src/permissions/infrastructure/permissions.py:79
-msgid "Register membership"
-msgstr "Registrar Membresía"
-
-#: src/permissions/infrastructure/permissions.py:117
-msgid "Register Membership"
-msgstr "Registrar Membresía"
-
-#: src/permissions/infrastructure/permissions.py:128
-msgid "Unknown Permission"
-msgstr "Permiso desconocido"
-
-#: src/permissions/infrastructure/permissions.py:141
-msgid "Admin"
-msgstr "Administrador"
-
-#: src/permissions/infrastructure/permissions.py:157
-msgid "Staff"
-msgstr "Colaborador"
-
 #: src/users/presentation/exceptions.py:9
 msgid "Invalid Phone Number"
 msgstr "Número de teléfono incorrecto"
 
-#: src/web/templates/actions/base.html:24
-#: src/web/templates/errors/base.html:20
+#: src/web/templates/actions/base.html:24 src/web/templates/errors/base.html:20
 msgid "Back to Home"
 msgstr "Ir al Inicio"
 
@@ -573,7 +392,8 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"Tu cuenta no esta activa aún, por favor contada con un administrador para resolverlo."
+"Tu cuenta no esta activa aún, por favor contada con un administrador para "
+"resolverlo."
 
 #: src/web/templates/actions/common/inactive_feature.html:5
 msgid "Inactive Feature"
@@ -590,7 +410,8 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"Este funcionalidad no esta activa aún, por favor contacta con un administrador para más información."
+"Este funcionalidad no esta activa aún, por favor contacta con un "
+"administrador para más información."
 
 #: src/web/templates/actions/common/invalid_pending_action.html:5
 msgid "Invalid Action"
@@ -603,11 +424,13 @@ msgstr "Acción Inválida"
 #: src/web/templates/actions/common/invalid_pending_action.html:13
 msgid ""
 "\n"
-"    The action link <b>is invalid or is expired.</b> Try with another new one.\n"
+"    The action link <b>is invalid or is expired.</b> Try with another new "
+"one.\n"
 "  "
 msgstr ""
 "\n"
-"Este enlace <b>es inválido o esta expirado.</b> Intenta con otro enlace nuevamente."
+"Este enlace <b>es inválido o esta expirado.</b> Intenta con otro enlace "
+"nuevamente."
 
 #: src/web/templates/actions/email_address/verification.html:5
 #: src/web/templates/emails/actions/email_address/verification/message.html:9
@@ -632,7 +455,25 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"El correo electrónico de su cuenta: <b>%(email)s</b> ha sido verificado ¡Exitosamente!"
+"El correo electrónico de su cuenta: <b>%(email)s</b> ha sido verificado "
+"¡Exitosamente!"
+
+#: src/web/templates/actions/email_address/verification.html:30
+#: src/web/templates/actions/phone_number/verification.html:30
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "        Please click the button below to complete the phone "
+#| "verification.\n"
+#| "      "
+msgid ""
+"\n"
+"            Please return to the application where you started the "
+"verification.\n"
+"        "
+msgstr ""
+"\n"
+"Por favor haga clic en el botón  para completar la verificación de teléfono"
 
 #: src/web/templates/actions/phone_number/verification.html:5
 #: src/web/templates/emails/actions/phone_number/verification/message.html:9
@@ -648,11 +489,13 @@ msgstr "¡Verificación de teléfono exitosa!"
 #, python-format
 msgid ""
 "\n"
-"    Your phone number: <b>%(phone_number)s</b> has been verified Successfully!!.\n"
+"    Your phone number: <b>%(phone_number)s</b> has been verified "
+"Successfully!!.\n"
 "    "
 msgstr ""
 "\n"
-"Tu número de teléfono <b>%(phone_number)s</b> ha sido verificado ¡Exitosamente!"
+"Tu número de teléfono <b>%(phone_number)s</b> ha sido verificado "
+"¡Exitosamente!"
 
 #: src/web/templates/actions/tenant_user/invitation.html:5
 msgid "User Invitation"
@@ -756,7 +599,8 @@ msgid ""
 "      "
 msgstr ""
 "\n"
-"Por favor haga clic en el botón  para completar la verificación de correo electrónico."
+"Por favor haga clic en el botón  para completar la verificación de correo "
+"electrónico."
 
 #: src/web/templates/emails/actions/email_address/verification/message.html:20
 msgid "CONFIRM EMAIL"
@@ -773,7 +617,8 @@ msgstr ""
 "\n"
 "Verificación de correo electrónico\n"
 "\n"
-"Por favor haga clic en el botón para completar la verificación de correo electrónico.\n"
+"Por favor haga clic en el botón para completar la verificación de correo "
+"electrónico.\n"
 
 #: src/web/templates/emails/actions/phone_number/verification/message.html:14
 msgid ""
@@ -821,21 +666,17 @@ msgstr ""
 "Hola %(first_name)s,"
 
 #: src/web/templates/emails/actions/tenant_customer/access_code/message.html:20
-#| msgid ""
-#| "\n"
-#| "      We sent you this email because you requested to restore your account's password,\n"
-#| "      to do it just click on the button below.\n"
-#| "    "
 msgid ""
 "\n"
 "    We sent you this email because you requested your QR Access Code.\n"
 "  "
 msgstr ""
 "\n"
-"Te enviamos este correo electrónico porque has solicitado tu Código QR de Acceso."
+"Te enviamos este correo electrónico porque has solicitado tu Código QR de "
+"Acceso."
 
 #: src/web/templates/emails/actions/tenant_customer/access_code/message.html:31
-#: src/web/templates/emails/actions/tenant_customer/session_redemption/message.html:31
+#: src/web/templates/emails/actions/tenant_customer/session_redemption/message.html:26
 msgid "LOGIN"
 msgstr "Inicio de Sesión"
 
@@ -869,11 +710,13 @@ msgstr ""
 #: src/web/templates/emails/actions/tenant_customer/session_redemption/message.html:20
 msgid ""
 "\n"
-"    You have requested to log in, please click the button below to complete the process.\n"
+"    You have requested to log in, please click the button below to complete "
+"the process.\n"
 "  "
 msgstr ""
 "\n"
-"Ha solicitado iniciar sesión, haga clic en el botón a continuación para completar el proceso."
+"Ha solicitado iniciar sesión, haga clic en el botón a continuación para "
+"completar el proceso."
 
 #: src/web/templates/emails/actions/tenant_customer/session_redemption/message.txt:3
 #, python-format
@@ -881,12 +724,14 @@ msgid ""
 "\n"
 "Hello %(first_name)s,\n"
 "\n"
-"You have requested to log in at %(tenant_name)s, please click the link below to complete the process\n"
+"You have requested to log in at %(tenant_name)s, please click the link below "
+"to complete the process\n"
 msgstr ""
 "\n"
 "Hola %(first_name)s, \n"
 "\n"
-"Ha solicitado iniciar sesión en %(tenant_name)s,  por favor haga clic en el link para completar el proceso.\n"
+"Ha solicitado iniciar sesión en %(tenant_name)s,  por favor haga clic en el "
+"link para completar el proceso.\n"
 
 #: src/web/templates/emails/actions/tenant_customer/session_redemption/subject.txt:1
 msgid "Login"
@@ -896,12 +741,14 @@ msgstr "Inicio de Sesion"
 #, python-format
 msgid ""
 "\n"
-"      You were invited to become part of <b>%(tenant_name)s</b> collaborators team,\n"
+"      You were invited to become part of <b>%(tenant_name)s</b> "
+"collaborators team,\n"
 "      please click on the button below to complete the invitation.\n"
 "    "
 msgstr ""
 "\n"
-"Has sido invitado a formar parte de <b>%(tenant_name)s</b> como colaborador.\n"
+"Has sido invitado a formar parte de <b>%(tenant_name)s</b> como "
+"colaborador.\n"
 "\n"
 "Por favor da click en el link para completar la invitación"
 
@@ -921,7 +768,8 @@ msgstr ""
 "\n"
 "Invitación como Colaborador\n"
 "\n"
-"Has sido invitado a formar parte de \"%(tenant_name)s\"  como colaborador,  por favor haga clic en el link para completar el proceso.\n"
+"Has sido invitado a formar parte de \"%(tenant_name)s\"  como colaborador,  "
+"por favor haga clic en el link para completar el proceso.\n"
 
 #: src/web/templates/emails/actions/tenant_user/invitation/subject.txt:1
 msgid "Collaborator Invitation!"
@@ -930,12 +778,14 @@ msgstr "Invitación de Colaborador!"
 #: src/web/templates/emails/actions/user/reset_password/message.html:15
 msgid ""
 "\n"
-"      We sent you this email because you requested to restore your account's password,\n"
+"      We sent you this email because you requested to restore your account's "
+"password,\n"
 "      to do it just click on the button below.\n"
 "    "
 msgstr ""
 "\n"
-"Le enviamos este correo electrónico porque solicitó restaurar la contraseña de su cuenta.\n"
+"Le enviamos este correo electrónico porque solicitó restaurar la contraseña "
+"de su cuenta.\n"
 "para hacerlo simplemente haga clic en el botón de abajo."
 
 #: src/web/templates/emails/actions/user/reset_password/message.html:23
@@ -947,12 +797,15 @@ msgid ""
 "\n"
 "Reset Password\n"
 "\n"
-"We sent you this email because you requested to restore your account's password, to do it just click on the link below.\n"
+"We sent you this email because you requested to restore your account's "
+"password, to do it just click on the link below.\n"
 msgstr ""
 "\n"
 "Restablecer la contraseña\n"
 "\n"
-"Le enviamos este correo electrónico porque solicitó restaurar la contraseña de su cuenta, para hacerlo simplemente haga clic en el enlace a continuación.\n"
+"Le enviamos este correo electrónico porque solicitó restaurar la contraseña "
+"de su cuenta, para hacerlo simplemente haga clic en el enlace a "
+"continuación.\n"
 
 #: src/web/templates/emails/class_session/trial_booking/created/message.html:9
 msgid ""
@@ -967,12 +820,16 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"      You've successfully reserved a trial class for: <i><b>\"%(session_name)s\"</b></i> session at\n"
-"      <b>%(session_time)sHrs</b> on <i><b>%(session_date)s</b></i>, at the <b>\"%(tenant_name)s\"</b> academy\n"
+"      You've successfully reserved a trial class for: "
+"<i><b>\"%(session_name)s\"</b></i> session at\n"
+"      <b>%(session_time)sHrs</b> on <i><b>%(session_date)s</b></i>, at the "
+"<b>\"%(tenant_name)s\"</b> academy\n"
 "    "
 msgstr ""
 "\n"
-"Has reservado una clase de prueba para: <i><b>\"%(session_name)s\"</b></i> para el <i><b>%(session_date)s</b></i>, a las <b>%(session_time)sHrs</b>, en la academia <b>\"%(tenant_name)s\"</b>."
+"Has reservado una clase de prueba para: <i><b>\"%(session_name)s\"</b></i> "
+"para el <i><b>%(session_date)s</b></i>, a las <b>%(session_time)sHrs</b>, en "
+"la academia <b>\"%(tenant_name)s\"</b>."
 
 #: src/web/templates/emails/class_session/trial_booking/created/message.html:22
 msgid ""
@@ -1012,7 +869,9 @@ msgstr "IR A MI CUENTA"
 #, python-format
 msgid ""
 "\n"
-"You've successfully reserved a trial class for: \"%(session_name)s\" session at %(session_time)sHrs on %(session_date)s, at the \"%(tenant_name)s\" academy\n"
+"You've successfully reserved a trial class for: \"%(session_name)s\" session "
+"at %(session_time)sHrs on %(session_date)s, at the \"%(tenant_name)s\" "
+"academy\n"
 "\n"
 "This is your access code, it will help you to enter the class.\n"
 "\n"
@@ -1021,7 +880,8 @@ msgid ""
 "You can also check your account by opening the link below.\n"
 msgstr ""
 "\n"
-"Has reservado con éxito una clase de prueba para: \"%(session_name)s\" a las %(session_time)sHrs el %(session_date)s, en la academia \"%(tenant_name)s\"\n"
+"Has reservado con éxito una clase de prueba para: \"%(session_name)s\" a las "
+"%(session_time)sHrs el %(session_date)s, en la academia \"%(tenant_name)s\"\n"
 "\n"
 "Este es tu código de acceso, te ayudará a ingresar a la clase.\n"
 "\n"
@@ -1055,11 +915,13 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"      You have activated a membership: <i><b>\"%(membership_plan_name)s\"</b></i> at <b>\"%(tenant_name)s\"</b>.\n"
+"      You have activated a membership: <i><b>\"%(membership_plan_name)s\"</"
+"b></i> at <b>\"%(tenant_name)s\"</b>.\n"
 "    "
 msgstr ""
 "\n"
-"Has activado una membresía: <i><b>\"%(membership_plan_name)s\"</b></i> en <b>\"%(tenant_name)s\"</b>."
+"Has activado una membresía: <i><b>\"%(membership_plan_name)s\"</b></i> en "
+"<b>\"%(tenant_name)s\"</b>."
 
 #: src/web/templates/emails/membership/change/completed/message.html:22
 #: src/web/templates/emails/membership/change/partially_paid/message.html:24
@@ -1079,7 +941,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"You have activated a membership: \"%(membership_plan_name)s\" at \"%(tenant_name)s\".\n"
+"You have activated a membership: \"%(membership_plan_name)s\" at "
+"\"%(tenant_name)s\".\n"
 "This is your access code, it will help you to enter in classes.\n"
 "\n"
 "%(access_code)s\n"
@@ -1087,7 +950,8 @@ msgid ""
 "You can also check your account by opening the link below.\n"
 msgstr ""
 "\n"
-"Has activado una membresía: \"%(membership_plan_name)s\" en \"%(tenant_name)s\". \n"
+"Has activado una membresía: \"%(membership_plan_name)s\" en "
+"\"%(tenant_name)s\". \n"
 "Este es tu código de acceso, te ayudará a ingresar a las clases. \n"
 "\n"
 "%(access_code)s \n"
@@ -1104,19 +968,23 @@ msgstr "Membresía Actualizada"
 #: src/web/templates/emails/membership/recharge/partially_paid/message.html:20
 msgid ""
 "\n"
-"      Your membership still has a <b>pending payment</b>, don't forget to complete the payment in the next classes.\n"
+"      Your membership still has a <b>pending payment</b>, don't forget to "
+"complete the payment in the next classes.\n"
 "    "
 msgstr ""
 "\n"
-"Tu membresía aún tiene un <b>pago pendiente</b>, no olvides completar el pago en las próximas clases."
+"Tu membresía aún tiene un <b>pago pendiente</b>, no olvides completar el "
+"pago en las próximas clases."
 
 #: src/web/templates/emails/membership/change/partially_paid/message.txt:2
 #: src/web/templates/emails/membership/purchase/partially_paid/message.txt:2
 #, python-format
 msgid ""
 "\n"
-"You have activated a membership: \"%(membership_plan_name)s\" at \"%(tenant_name)s\".\n"
-"Your membership still has a pending payment, don't forget to complete the payment in the next classes.\n"
+"You have activated a membership: \"%(membership_plan_name)s\" at "
+"\"%(tenant_name)s\".\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment in the next classes.\n"
 "This is your access code, it will help you to enter in classes.\n"
 "\n"
 "%(access_code)s\n"
@@ -1124,8 +992,10 @@ msgid ""
 "You can also check your account by opening the link below.\n"
 msgstr ""
 "\n"
-"Has activado una membresía: \"%(membership_plan_name)s\" en \"%(tenant_name)s\".\n"
-"Tu membresía aún tiene un pago pendiente, no olvides completar el pago en las próximas clases.\n"
+"Has activado una membresía: \"%(membership_plan_name)s\" en "
+"\"%(tenant_name)s\".\n"
+"Tu membresía aún tiene un pago pendiente, no olvides completar el pago en "
+"las próximas clases.\n"
 "\n"
 "Este es tu código de acceso, te ayudará a ingresar a las clases.\n"
 "\n"
@@ -1141,23 +1011,27 @@ msgstr "Membresía desactivada"
 #, python-format
 msgid ""
 "\n"
-"    Your membership <i>%(membership_plan_name)s</i> has been deactivated in <b>%(tenant_name)s</b>.\n"
+"    Your membership <i>%(membership_plan_name)s</i> has been deactivated in "
+"<b>%(tenant_name)s</b>.\n"
 "    You can also check your account by clicking the button below.\n"
 "  "
 msgstr ""
 "\n"
-"Tu membresía <i>%(membership_plan_name)s</i> ha sido desactivada en <b>%(tenant_name)s</b>.\n"
+"Tu membresía <i>%(membership_plan_name)s</i> ha sido desactivada en "
+"<b>%(tenant_name)s</b>.\n"
 "Puedes consultar su cuenta haciendo clic en el botón a continuación."
 
 #: src/web/templates/emails/membership/deactivation/message.txt:3
 #, python-format
 msgid ""
 "\n"
-"Your membership \"{ membership_plan_name }}\" has been deactivated in %(tenant_name)s.\n"
+"Your membership \"{ membership_plan_name }}\" has been deactivated in "
+"%(tenant_name)s.\n"
 "You can also check your account by opening the link below.\n"
 msgstr ""
 "\n"
-"Tu membresía \"{ member_plan_name }}\" has sido desactivó en %(tenant_name)s. \n"
+"Tu membresía \"{ member_plan_name }}\" has sido desactivó en "
+"%(tenant_name)s. \n"
 "Puedes consultar su cuenta abriendo el enlace a continuación.\n"
 
 #: src/web/templates/emails/membership/deactivation/subject.txt:1
@@ -1168,11 +1042,13 @@ msgstr "Membresía desactivada"
 #, python-format
 msgid ""
 "\n"
-"    You have activated a membership: <i><b>\"%(membership_plan_name)s\"</b></i> at <b>\"%(tenant_name)s\"</b>.\n"
+"    You have activated a membership: <i><b>\"%(membership_plan_name)s\"</b></"
+"i> at <b>\"%(tenant_name)s\"</b>.\n"
 "  "
 msgstr ""
 "\n"
-"Has activado una membresía: <i><b>\"%(membership_plan_name)s\"</b></i> en <b>\"%(tenant_name)s\"</b>."
+"Has activado una membresía: <i><b>\"%(membership_plan_name)s\"</b></i> en "
+"<b>\"%(tenant_name)s\"</b>."
 
 #: src/web/templates/emails/membership/purchase/completed/message.html:22
 msgid ""
@@ -1209,19 +1085,22 @@ msgstr "¡Membresía renovada!"
 #, python-format
 msgid ""
 "\n"
-"      You have renewed your membership: <i><b>\"%(membership_plan_name)s\"</b></i> at <b>\"%(tenant_name)s\"</b>.\n"
+"      You have renewed your membership: <i><b>\"%(membership_plan_name)s\"</"
+"b></i> at <b>\"%(tenant_name)s\"</b>.\n"
 "      You can now continue enjoying the classes.\n"
 "    "
 msgstr ""
 "\n"
-"Has renovado tu membresía: <i><b>\"%(membership_plan_name)s\"</b></i> en <b>\"%(tenant_name)s\"</b>. \n"
+"Has renovado tu membresía: <i><b>\"%(membership_plan_name)s\"</b></i> en "
+"<b>\"%(tenant_name)s\"</b>. \n"
 "Ya puedes seguir disfrutando de las clases."
 
 #: src/web/templates/emails/membership/recharge/completed/message.txt:3
 #, python-format
 msgid ""
 "\n"
-"You have renewed your membership: \"%(membership_plan_name)s\" at \"%(tenant_name)s\".\n"
+"You have renewed your membership: \"%(membership_plan_name)s\" at "
+"\"%(tenant_name)s\".\n"
 "You can now continue enjoying the classes.\n"
 "\n"
 "This is your access code, it will help you to enter in classes.\n"
@@ -1231,7 +1110,8 @@ msgid ""
 "You can also check your account by clicking the button below.\n"
 msgstr ""
 "\n"
-"Has renovado tu membresía: \"%(membership_plan_name)s\" en \"%(tenant_name)s\".\n"
+"Has renovado tu membresía: \"%(membership_plan_name)s\" en "
+"\"%(tenant_name)s\".\n"
 "Ya puedes seguir disfrutando de las clases.\n"
 "\n"
 "Este es tu código de acceso, te ayudará a ingresar a las clases.\n"
@@ -1244,9 +1124,11 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"You have renewed your membership: \"%(membership_plan_name)s\" at \"%(tenant_name)s\".\n"
+"You have renewed your membership: \"%(membership_plan_name)s\" at "
+"\"%(tenant_name)s\".\n"
 "You can now continue enjoying the classes.\n"
-"Your membership still has a pending payment, don't forget to complete the payment in the next classes.\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment in the next classes.\n"
 "This is your access code, it will help you to enter in classes.\n"
 "\n"
 "%(access_code)s\n"
@@ -1254,28 +1136,37 @@ msgid ""
 "You can also check your account by clicking the button below.\n"
 msgstr ""
 "\n"
-"Has renovado tu membresía: \"%(membership_plan_name)s\" en \"%(tenant_name)s\".\n"
+"Has renovado tu membresía: \"%(membership_plan_name)s\" en "
+"\"%(tenant_name)s\".\n"
 "Ya puedes seguir disfrutando de las clases.\n"
 "\n"
-"Tu membresía aún tiene un pago pendiente, no olvides completar el pago en las próximas clases.\n"
+"Tu membresía aún tiene un pago pendiente, no olvides completar el pago en "
+"las próximas clases.\n"
 "\n"
 "Este es tu código de acceso, te ayudará a ingresar a las clases.\n"
 "\n"
 "%(access_code)s\n"
 "\n"
-"También puedes consultar su cuenta haciendo clic en el botón a continuación.\n"
+"También puedes consultar su cuenta haciendo clic en el botón a "
+"continuación.\n"
 
 #: src/web/templates/emails/tenants/new_tenant/message.html:9
-#: src/web/templates/emails/tenants/new_tenant/subject.txt:1
-msgid "Welcome to Collectives"
+#, fuzzy
+#| msgid "Welcome to Collectives"
+msgid "Welcome to Xiberty"
 msgstr "Bienvenido a Collectives"
 
 #: src/web/templates/emails/tenants/new_tenant/message.html:14
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "      You have registered the <b>%(tenant_name)s</b> academy,\n"
+#| "      thanks for joining Collectives.\n"
+#| "    "
 msgid ""
 "\n"
 "      You have registered the <b>%(tenant_name)s</b> academy,\n"
-"      thanks for joining Collectives.\n"
+"      thanks for joining Xiberty.\n"
 "    "
 msgstr ""
 "\n"
@@ -1293,7 +1184,12 @@ msgstr ""
 "\n"
 "¡Bienvenido a Collectives!. \n"
 "\n"
-"Gracias por unirte a nosotros, ahora puedes comenzar a utilizar nuestros servicios en %(tenant_name)s.\n"
+"Gracias por unirte a nosotros, ahora puedes comenzar a utilizar nuestros "
+"servicios en %(tenant_name)s.\n"
+
+#: src/web/templates/emails/tenants/new_tenant/subject.txt:1
+msgid "Welcome to Collectives"
+msgstr "Bienvenido a Collectives"
 
 #: src/web/templates/errors/400.html:4
 msgid "Bad Request"
@@ -1353,11 +1249,13 @@ msgstr "¡Error del servidor interno!"
 #: src/web/templates/errors/500.html:9
 msgid ""
 "\n"
-"  It's occurred an error in the server, please contact us to get more information at\n"
+"  It's occurred an error in the server, please contact us to get more "
+"information at\n"
 "  "
 msgstr ""
 "\n"
-"Ha ocurrido un error en el servidor, por favor contáctenos para obtener más información"
+"Ha ocurrido un error en el servidor, por favor contáctenos para obtener más "
+"información"
 
 #: src/web/templates/errors/base.html:23
 msgid "Contact support"
@@ -1375,18 +1273,25 @@ msgstr ""
 "\n"
 "Por favor abre el enlace  para completar la verificación de teléfono 👇\n"
 
-#: src/web/templates/whatsapp/actions/tenant_customer/access_code.txt:1
-#, python-format
+#: src/web/templates/whatsapp/actions/tenant_customer/access_code.txt:2
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "*🔒 QR Access Code for  _%(tenant_name)s_*\n"
+#| "\n"
+#| "👋 Hello %(first_name)s.\n"
 msgid ""
 "\n"
-"*🔒 QR Access Code for  _%(tenant_name)s_*\n"
-"\n"
-"👋 Hello %(first_name)s.\n"
+"*🔒Access Code in \"_%(tenant_name)s_*\"\n"
 msgstr ""
 "\n"
 "*🔒 Código QR de Acceso para _%(tenant_name)s_*\n"
 "\n"
 "👋 Hola %(first_name)s.\n"
+
+#: src/web/templates/whatsapp/actions/tenant_customer/access_code.txt:5
+msgid "Hello"
+msgstr ""
 
 #: src/web/templates/whatsapp/actions/tenant_customer/session_redemption.txt:1
 #, python-format
@@ -1395,29 +1300,40 @@ msgid ""
 "*🔒 Login at %(tenant_name)s*\n"
 "\n"
 "👋 Hello %(first_name)s,\n"
-"You have requested to log in, ✨ please open the link below to complete the process 👇\n"
+"You have requested to log in, ✨ please open the link below to complete the "
+"process 👇\n"
 msgstr ""
 "\n"
 "*🔒 Iniciar Sesión en %(tenant_name)s*\n"
 " \n"
 "👋 Hola %(first_name)s, \n"
-"Has solicitado iniciar sesión, ✨ por favor abre el enlace para completar el proceso👇\n"
+"Has solicitado iniciar sesión, ✨ por favor abre el enlace para completar el "
+"proceso👇\n"
 
-#: src/web/templates/whatsapp/class_session/trial_bookings/created.txt:1
+#: src/web/templates/whatsapp/class_session/trial_booking/created.txt:1
 #, python-format
 msgid ""
 "\n"
 "*⚡️Booking confirmation!*\n"
 "\n"
-"You've successfully reserved a trial class for: _*\"%(session_name)s\"*_ session at *%(session_time)sHrs* on _*%(session_date)s*_, at the *\"%(tenant_name)s\"* academy\n"
+"You've successfully reserved a trial class for: _*\"%(session_name)s\"*_ "
+"session at *%(session_time)sHrs* on _*%(session_date)s*_, at the "
+"*\"%(tenant_name)s\"* academy\n"
 msgstr ""
 "\n"
 "*⚡️Confirmación de Reserva!*\n"
 "\n"
-"Has reservado una clase de prueba para:  _*\"%(session_name)s\"* para el _*%(session_date)s*_, a las *%(session_time)sHrs*, en la academia *\"%(tenant_name)s\"*.\n"
+"Has reservado una clase de prueba para:  _*\"%(session_name)s\"* para el "
+"_*%(session_date)s*_, a las *%(session_time)sHrs*, en la academia "
+"*\"%(tenant_name)s\"*.\n"
 
 #: src/web/templates/whatsapp/common/access_code.txt:1
-msgid "🔑 This is your access code, it will help you to enter in classes"
+#, fuzzy, python-format
+#| msgid "🔑 This is your access code, it will help you to enter in classes"
+msgid ""
+"\n"
+"🔒 This is your access code in \"*%(tenant_name)s*\", it will help you to "
+"enter in classes 🔑"
 msgstr "🔑 Este es tu código de acceso, te ayudará a ingresar a las clases"
 
 #: src/web/templates/whatsapp/common/customer_account.txt:1
@@ -1431,12 +1347,14 @@ msgid ""
 "\n"
 "*⏫ Membership Updated!*\n"
 "\n"
-"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 _*%(tenant_name)s*_\n"
+"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
 msgstr ""
 "\n"
 "*⏫ Membresía Actualizada!*\n"
 "\n"
-"Has activado una membresía: *\"%(membership_plan_name)s\"* en 🏫 _*%(tenant_name)s*_\n"
+"Has activado una membresía: *\"%(membership_plan_name)s\"* en 🏫 "
+"_*%(tenant_name)s*_\n"
 
 #: src/web/templates/whatsapp/membership/change/partially_paid.txt:1
 #, python-format
@@ -1444,14 +1362,18 @@ msgid ""
 "\n"
 "*⏫ Membership Updated!*\n"
 "\n"
-"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 _*%(tenant_name)s*_\n"
-"Your membership still has a pending payment, don't forget to complete the payment 💸 in the next classes\n"
+"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment 💸 in the next classes\n"
 msgstr ""
 "\n"
 "*⏫ Membresía Actualizada!*\n"
 "\n"
-"Has activado una membresía: *\"%(membership_plan_name)s\"* en 🏫 _*%(tenant_name)s*_\n"
-"Tu membresía aún tiene un pago pendiente, no olvides completar el pago 💸 en las próximas clases\n"
+"Has activado una membresía: *\"%(membership_plan_name)s\"* en 🏫 "
+"_*%(tenant_name)s*_\n"
+"Tu membresía aún tiene un pago pendiente, no olvides completar el pago 💸 en "
+"las próximas clases\n"
 
 #: src/web/templates/whatsapp/membership/deactivation.txt:1
 #, python-format
@@ -1459,12 +1381,14 @@ msgid ""
 "\n"
 "*❌Membership Deactivated!*\n"
 "\n"
-"You membership: *\"%(membership_plan_name)s\"* has been deactivaed at 🏫 _*%(tenant_name)s*_\n"
+"You membership: *\"%(membership_plan_name)s\"* has been deactivaed at 🏫 "
+"_*%(tenant_name)s*_\n"
 msgstr ""
 "\n"
 "*❌Membresía Desactivada!*\n"
 "\n"
-"Has desactivado una membresía: *\"%(membership_plan_name)s\"* en 🏫 _*%(tenant_name)s*_\n"
+"Has desactivado una membresía: *\"%(membership_plan_name)s\"* en 🏫 "
+"_*%(tenant_name)s*_\n"
 
 #: src/web/templates/whatsapp/membership/purchase/completed.txt:1
 #, python-format
@@ -1472,12 +1396,14 @@ msgid ""
 "\n"
 "*⚡️Membership Activated!*\n"
 "\n"
-"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 _*%(tenant_name)s*_\n"
+"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
 msgstr ""
 "\n"
 "*⚡️Membresía Activada!*\n"
 "\n"
-"Has activado una membresía: *\"%(membership_plan_name)s\"* en 🏫 _*%(tenant_name)s*_\n"
+"Has activado una membresía: *\"%(membership_plan_name)s\"* en 🏫 "
+"_*%(tenant_name)s*_\n"
 
 #: src/web/templates/whatsapp/membership/purchase/partially_paid.txt:1
 #, python-format
@@ -1485,14 +1411,18 @@ msgid ""
 "\n"
 "*⚡️Membership Updated!*\n"
 "\n"
-"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 _*%(tenant_name)s*_\n"
-"Your membership still has a pending payment, don't forget to complete the payment 💸 in the next classes\n"
+"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment 💸 in the next classes\n"
 msgstr ""
 "\n"
 "*⚡️Membresía Activada!*\n"
 "\n"
-"Has activado una membresía: *\"%(membership_plan_name)s\"* en 🏫 _*%(tenant_name)s*_\n"
-"Tu membresía aún tiene un pago pendiente, no olvides completar el pago 💸 en las próximas clases\n"
+"Has activado una membresía: *\"%(membership_plan_name)s\"* en 🏫 "
+"_*%(tenant_name)s*_\n"
+"Tu membresía aún tiene un pago pendiente, no olvides completar el pago 💸 en "
+"las próximas clases\n"
 
 #: src/web/templates/whatsapp/membership/recharge/completed.txt:1
 #, python-format
@@ -1500,12 +1430,14 @@ msgid ""
 "\n"
 "*🔄️ Membership Renewed!*\n"
 "\n"
-"You have renewed your membership: *\"%(membership_plan_name)s\"* at 🏫 _*%(tenant_name)s*_\n"
+"You have renewed your membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
 msgstr ""
 "\n"
 "*🔄️ Membresía Renovada!*\n"
 "\n"
-"Has renovado you membresía:: *\"%(membership_plan_name)s\"* en 🏫 _*%(tenant_name)s*_\n"
+"Has renovado you membresía:: *\"%(membership_plan_name)s\"* en 🏫 "
+"_*%(tenant_name)s*_\n"
 
 #: src/web/templates/whatsapp/membership/recharge/partially_paid.txt:1
 #, python-format
@@ -1513,19 +1445,161 @@ msgid ""
 "\n"
 "*🔄 Membership Renewed!*\n"
 "\n"
-"You have renewed your membership: *\"%(membership_plan_name)s\"* at 🏫 _*%(tenant_name)s*_.\n"
-"Your membership still has a pending payment, don't forget to complete the payment 💸 in the next classes.\n"
+"You have renewed your membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_.\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment 💸 in the next classes.\n"
 msgstr ""
 "\n"
 "*🔄️ Membresía Renovada!*\n"
 "\n"
-"Has renovado you membresía:: *\"%(membership_plan_name)s\"* en 🏫 _*%(tenant_name)s*_\n"
-"Tu membresía aún tiene un pago pendiente, no olvides completar el pago 💸 en las próximas clases\n"
+"Has renovado you membresía:: *\"%(membership_plan_name)s\"* en 🏫 "
+"_*%(tenant_name)s*_\n"
+"Tu membresía aún tiene un pago pendiente, no olvides completar el pago 💸 en "
+"las próximas clases\n"
 
 #: tests/src/auth/presentation/forms/test_reset_password.py:27
 #: tests/src/auth/presentation/forms/test_reset_password.py:28
 msgid "This field is required."
 msgstr "Este campo es obligatorio."
+
+#~ msgid "Strategies"
+#~ msgstr "Estratégias"
+
+#~ msgid "Schedule"
+#~ msgstr "Horario"
+
+#~ msgid "Schedules"
+#~ msgstr "Horario"
+
+#~ msgid "Attendee Not Found"
+#~ msgstr "Estudiante no encontrado"
+
+#~ msgid "Invalid Attendee Checkin"
+#~ msgstr "Escaneo de asistencia inválido"
+
+#~ msgid "This student does not belong to this class"
+#~ msgstr "Este estudiante ya no pertenece a esta clase"
+
+#~ msgid "This session schedule does not exist"
+#~ msgstr "No existe una sesión en este horario"
+
+#~ msgid "Current time is out of the class schedule time"
+#~ msgstr "Estás en horario fuera de clase"
+
+#~ msgid "You can not book a past session"
+#~ msgstr "No puedes reservar en una clase pasada"
+
+#~ msgid "This session is invalid or not exist"
+#~ msgstr "Esta sesión es incorrecta o no existe"
+
+#~ msgid "Class Not Found"
+#~ msgstr "Clase no encontrada"
+
+#~ msgid "Payment Request Not Found"
+#~ msgstr "Solicitud de pago no encontrado"
+
+#~ msgid "Invoice and payment currency codes does not match"
+#~ msgstr "Los códigos de moneda de factura y pago no coinciden"
+
+#~ msgid "Payment Not Found"
+#~ msgstr "Pago no encontrado"
+
+#~ msgid "Student Subscription is not completed"
+#~ msgstr "La suscripción de estudiante no está completa"
+
+#~ msgid "Notification Template Not Found"
+#~ msgstr "No se encontró esta plantilla"
+
+#~ msgid "Payment Intent Not Found"
+#~ msgstr "Intento de Pago no encontrado"
+
+#~ msgid "Processed Payment Intent cant't be updated"
+#~ msgstr "La intención de pago procesada no se puede actualizar"
+
+#~ msgid "Subscriptions aren't supported for this type of object"
+#~ msgstr "Las suscripciones no son compatibles con este tipo de objeto."
+
+#~ msgid "One time payments aren't supported for this type of object"
+#~ msgstr "Los pagos únicos no se admiten para este tipo de objeto"
+
+#~ msgid "Not Sincronized Payment Plan"
+#~ msgstr "Plan de pago Corrompido"
+
+#~ msgid "Payment Method Not Found"
+#~ msgstr "Método de pago no encontrado"
+
+#~ msgid "Payment Method Not Implemented"
+#~ msgstr "Método de pago no Implementado"
+
+#~ msgid "Payment Account Not Configured"
+#~ msgstr "Cuenta de pago no configurada"
+
+#~ msgid "Payment Intent has invalid payload"
+#~ msgstr "La intención de pago tiene una carga útil no válida"
+
+#~ msgid "Invalid enrollments metadata"
+#~ msgstr "Metadatos de inscripciones no válidos"
+
+#~ msgid "Invalid Permission"
+#~ msgstr "Permiso Inválido"
+
+#~ msgid "Tenant Role not found"
+#~ msgstr "Rol no encontrado"
+
+#~ msgid "View Customers"
+#~ msgstr "Vew Clientes"
+
+#~ msgid "View Leads"
+#~ msgstr "Ver Prospectos"
+
+#~ msgid "View Collaborators"
+#~ msgstr "Ver Colaboradores"
+
+#~ msgid "View Memberships"
+#~ msgstr "Ver Membresías"
+
+#~ msgid "View Plans"
+#~ msgstr "Ver Planes"
+
+#~ msgid "View Payments"
+#~ msgstr "Ver Pagos"
+
+#~ msgid "View Classes"
+#~ msgstr "Ver Clases"
+
+#~ msgid "View Sessions"
+#~ msgstr "Ver Sesiones"
+
+#~ msgid "View Attendees"
+#~ msgstr "Ver Asistentes"
+
+#~ msgid "View Metrics"
+#~ msgstr "Ver Métricas"
+
+#~ msgid "View Events"
+#~ msgstr "Ver Eventos"
+
+#~ msgid "View Roles"
+#~ msgstr "Ver Roles"
+
+#~ msgid "Open Scan"
+#~ msgstr "Abrir Escaner"
+
+#~ msgid "Register membership"
+#~ msgstr "Registrar Membresía"
+
+#~ msgid "Register Membership"
+#~ msgstr "Registrar Membresía"
+
+#~ msgid "Unknown Permission"
+#~ msgstr "Permiso desconocido"
+
+#~ msgid "Admin"
+#~ msgstr "Administrador"
+
+#~ msgid "Staff"
+#~ msgstr "Colaborador"
 
 #~ msgid "All rights reserved"
 #~ msgstr "Reservados todos los derechos"
@@ -1534,12 +1608,15 @@ msgstr "Este campo es obligatorio."
 #~ msgid ""
 #~ "\n"
 #~ "    This account is inactive, please contact\n"
-#~ "    <a href=\"mailto:%(project_support_email)s\">%(project_support_email)s</a>\n"
+#~ "    <a href=\"mailto:"
+#~ "%(project_support_email)s\">%(project_support_email)s</a>\n"
 #~ "    for more details.\n"
 #~ "  "
 #~ msgstr ""
 #~ "\n"
-#~ "Esta cuenta está inactiva, por favor contacte <a href=\"mailto:%(project_support_email)s\">%(project_support_email)s</a> para más detalles"
+#~ "Esta cuenta está inactiva, por favor contacte <a href=\"mailto:"
+#~ "%(project_support_email)s\">%(project_support_email)s</a> para más "
+#~ "detalles"
 
 #~ msgid "Email Confirmation"
 #~ msgstr "Confirmación de correo electrónico"
@@ -1573,12 +1650,14 @@ msgstr "Este campo es obligatorio."
 
 #~ msgid ""
 #~ "\n"
-#~ "            This link to restore password <b>has expired or has already been used.</b>\n"
+#~ "            This link to restore password <b>has expired or has already "
+#~ "been used.</b>\n"
 #~ "            Please try another link.\n"
 #~ "            "
 #~ msgstr ""
 #~ "\n"
-#~ "Este enlace para restaurar la contraseña <b>ha caducado o ya se ha utilizado.</b> Por favor prueba con otro enlace."
+#~ "Este enlace para restaurar la contraseña <b>ha caducado o ya se ha "
+#~ "utilizado.</b> Por favor prueba con otro enlace."
 
 #~ msgid "Restore Changed"
 #~ msgstr "Restaurar cambiado"
@@ -1598,20 +1677,25 @@ msgstr "Este campo es obligatorio."
 #~ msgid ""
 #~ "\n"
 #~ "                This account is deactivated, please contact\n"
-#~ "                  <a href=\"mailto:%(project_support_email)s\"><b>%(project_support_email)s</b></a>\n"
+#~ "                  <a href=\"mailto:"
+#~ "%(project_support_email)s\"><b>%(project_support_email)s</b></a>\n"
 #~ "              for more details.\n"
 #~ "            "
 #~ msgstr ""
 #~ "\n"
-#~ "Esta cuenta está desactivada, por favor contacte <a href=\"mailto:%(project_support_email)s\"><b>%(project_support_email)s</b></a> para más detalles."
+#~ "Esta cuenta está desactivada, por favor contacte <a href=\"mailto:"
+#~ "%(project_support_email)s\"><b>%(project_support_email)s</b></a> para más "
+#~ "detalles."
 
 #~ msgid ""
 #~ "\n"
-#~ "        This link to restore password <b>has expired or has already been used.</b> Please try another link.\n"
+#~ "        This link to restore password <b>has expired or has already been "
+#~ "used.</b> Please try another link.\n"
 #~ "      "
 #~ msgstr ""
 #~ "\n"
-#~ "Este enlace para restaurar la contraseña <b>ha caducado o ya se ha utilizado.</b> Pruebe con otro enlace"
+#~ "Este enlace para restaurar la contraseña <b>ha caducado o ya se ha "
+#~ "utilizado.</b> Pruebe con otro enlace"
 
 #~ msgid "START SESSION"
 #~ msgstr "INICIAR SESION"
@@ -1621,22 +1705,27 @@ msgstr "Este campo es obligatorio."
 #~ "\n"
 #~ "Staff Invitation\n"
 #~ "\n"
-#~ "We sent you this email because you requested to restore your account's password, to do it just click on the link below.\n"
+#~ "We sent you this email because you requested to restore your account's "
+#~ "password, to do it just click on the link below.\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Restablecer la contraseña\n"
 #~ "\n"
-#~ "Le enviamos este correo electrónico porque solicitó restaurar la contraseña de su cuenta, para hacerlo simplemente haga clic en el enlace a continuación.\n"
+#~ "Le enviamos este correo electrónico porque solicitó restaurar la "
+#~ "contraseña de su cuenta, para hacerlo simplemente haga clic en el enlace "
+#~ "a continuación.\n"
 
 #, python-format
 #~ msgid ""
 #~ "\n"
-#~ "    You have renewed your membership: <i><b>\"%(membership_plan_name)s\"</b></i> at <b>\"%(tenant_name)s\"</b>. \n"
+#~ "    You have renewed your membership: <i><b>\"%(membership_plan_name)s\"</"
+#~ "b></i> at <b>\"%(tenant_name)s\"</b>. \n"
 #~ "    You can now continue enjoying the classes.\n"
 #~ "  "
 #~ msgstr ""
 #~ "\n"
-#~ "Ha renovado su membresía: <i><b>\"%(membership_plan_name)s\"</b></i> en <b>\"%(tenant_name)s\"</b>.\n"
+#~ "Ha renovado su membresía: <i><b>\"%(membership_plan_name)s\"</b></i> en "
+#~ "<b>\"%(tenant_name)s\"</b>.\n"
 #~ "Ya puedes seguir disfrutando de las clases."
 
 #~ msgid "Membership Renewal Not Found"
@@ -1653,8 +1742,10 @@ msgstr "Este campo es obligatorio."
 #~ "  "
 #~ msgstr ""
 #~ "\n"
-#~ "Hemos recibido un intento de inicio de sesión para este correo electrónico.\n"
-#~ "Para completar el proceso de inicio de sesión, haga clic en el botón a continuación:"
+#~ "Hemos recibido un intento de inicio de sesión para este correo "
+#~ "electrónico.\n"
+#~ "Para completar el proceso de inicio de sesión, haga clic en el botón a "
+#~ "continuación:"
 
 #~ msgid ""
 #~ "\n"
@@ -1670,19 +1761,23 @@ msgstr "Este campo es obligatorio."
 #~ "\n"
 #~ "Hola %(first_name)s,\n"
 #~ "\n"
-#~ "Hemos recibido un intento de inicio de sesión para este correo electrónico.\n"
-#~ "Para completar el proceso de inicio de sesión, haga clic en el siguiente enlace:\n"
+#~ "Hemos recibido un intento de inicio de sesión para este correo "
+#~ "electrónico.\n"
+#~ "Para completar el proceso de inicio de sesión, haga clic en el siguiente "
+#~ "enlace:\n"
 
 #~ msgid "Enjoy you Membership!"
 #~ msgstr "¡Disfruta de tu membresía!"
 
 #~ msgid ""
 #~ "\n"
-#~ "    You can also see the validity of your membership on the academy's student page.\n"
+#~ "    You can also see the validity of your membership on the academy's "
+#~ "student page.\n"
 #~ "  "
 #~ msgstr ""
 #~ "\n"
-#~ "También puedes ver la validez de tu membresía en la página de estudiantes de la academia."
+#~ "También puedes ver la validez de tu membresía en la página de estudiantes "
+#~ "de la academia."
 
 #~ msgid "Enjoy your membership!"
 #~ msgstr "¡Disfruta de tu membresía!"
@@ -1692,22 +1787,26 @@ msgstr "Este campo es obligatorio."
 
 #~ msgid ""
 #~ "\n"
-#~ "      Thank you for renewing a membership <i>%(membership_plan_name)s</i> at <b>%(tenant_name)s</b> academy. \n"
+#~ "      Thank you for renewing a membership <i>%(membership_plan_name)s</i> "
+#~ "at <b>%(tenant_name)s</b> academy. \n"
 #~ "      Continue enjoing our classes.\n"
 #~ "  "
 #~ msgstr ""
 #~ "\n"
-#~ "Gracias por renovar su membresía <i>%(membership_plan_name)s</i> en <b>%(tenant_name)s</b>,\n"
+#~ "Gracias por renovar su membresía <i>%(membership_plan_name)s</i> en "
+#~ "<b>%(tenant_name)s</b>,\n"
 #~ "Sigue disfrutando de nuestras clases."
 
 #~ msgid ""
 #~ "\n"
 #~ "*Phone Number Verification*,\n"
-#~ "You are almost done, just click the link below to verify your phone number.\n"
+#~ "You are almost done, just click the link below to verify your phone "
+#~ "number.\n"
 #~ msgstr ""
 #~ "\n"
 #~ "*Verificación del número de teléfono*, \n"
-#~ "Ya casi ha terminado, simplemente haga clic en el enlace a continuación para verificar su número de teléfono.\n"
+#~ "Ya casi ha terminado, simplemente haga clic en el enlace a continuación "
+#~ "para verificar su número de teléfono.\n"
 
 #~ msgid "%d verification email sent."
 #~ msgid_plural "%d verification emails sent."
@@ -1832,11 +1931,13 @@ msgstr "Este campo es obligatorio."
 
 #~ msgid ""
 #~ "\n"
-#~ "      Thanks to join us, now you can start using our services in <b>%(tenant_name)s</b>.\n"
+#~ "      Thanks to join us, now you can start using our services in "
+#~ "<b>%(tenant_name)s</b>.\n"
 #~ "    "
 #~ msgstr ""
 #~ "\n"
-#~ "Gracias por unirte a nosotros, ahora puedes comenzar a utilizar nuestros servicios en %(tenant_name)s."
+#~ "Gracias por unirte a nosotros, ahora puedes comenzar a utilizar nuestros "
+#~ "servicios en %(tenant_name)s."
 
 #~ msgid "translation test"
 #~ msgstr "Prueba de traduccion"
@@ -1995,5 +2096,5 @@ msgstr "Este campo es obligatorio."
 #~ "Enter a valid username. This value may contain only letters, numbers and "
 #~ "@/./+/-/_ characters."
 #~ msgstr ""
-#~ "Escribe un nombre de usuario válido. Este valor puedee contener solo letras,"
-#~ " números y caracteres @/./+/-/_."
+#~ "Escribe un nombre de usuario válido. Este valor puedee contener solo "
+#~ "letras, números y caracteres @/./+/-/_."
