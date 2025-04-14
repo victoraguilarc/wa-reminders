@@ -1,0 +1,34 @@
+{% extends "emails/base.html" %}
+{% load i18n static %}
+
+{% block icon %}
+  {% static 'emails/email.png' %}
+{% endblock %}
+
+{% block title %}
+    {% trans "Email Verification" %}
+{% endblock %}
+
+{% autoescape off %}
+  {% block message %}
+      {% blocktranslate %}
+        Please click the button below to complete the email verification.
+      {% endblocktranslate %}
+  {% endblock %}
+
+  {% block action_label %}
+    {% trans 'CONFIRM EMAIL' %}
+  {% endblock %}
+{% endautoescape %}
+
+
+
+
+
+
+
+
+
+
+
+

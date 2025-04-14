@@ -1,0 +1,40 @@
+{% extends "emails/base.html" %}
+{% load i18n static %}
+
+{% block icon %}
+  {% static 'emails/email.png' %}
+{% endblock %}
+
+{% block title %}
+  {% blocktranslate %}
+    Login at {{ tenant_name }}
+  {% endblocktranslate %}
+{% endblock %}
+
+{% autoescape off %}
+{% block message %}
+  {% blocktranslate %}
+    Hello {{ first_name }},
+  {% endblocktranslate %}
+  <br>
+  {% blocktranslate %}
+    You have requested to log in, please click the button below to complete the process.
+  {% endblocktranslate %}
+{% endblock %}
+  
+{% block action_label %}
+  {% trans 'LOGIN' %}
+{% endblock %}
+{% endautoescape %}
+
+
+
+
+
+
+
+
+
+
+
+

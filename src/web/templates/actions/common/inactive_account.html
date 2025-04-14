@@ -1,0 +1,17 @@
+{% extends "actions/base.html" %}
+{% load i18n static %}
+
+{% block title %}
+  {% trans 'Inactive Account' %}
+{% endblock %}
+
+{% block content_title %}
+  {% trans 'Inactive Account!' %}
+{% endblock %}
+
+{% block content_message %}
+  {% blocktrans %}
+    Your account is not active now, please contact the admin to solve it.
+  {% endblocktrans %}
+{% endblock %}
+

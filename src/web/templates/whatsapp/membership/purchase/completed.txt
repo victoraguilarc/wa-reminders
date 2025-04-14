@@ -1,0 +1,5 @@
+{% load i18n %}{% blocktrans %}
+*⚡️Membership Activated!*
+
+You have activated a membership: *"{{ membership_plan_name }}"* at 🏫 _*{{ tenant_name }}*_
+{% endblocktrans %}

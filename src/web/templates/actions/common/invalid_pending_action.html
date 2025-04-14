@@ -1,0 +1,17 @@
+{% extends "actions/base.html" %}
+{% load i18n static %}
+
+{% block title %}
+  {% trans 'Invalid Action' %}
+{% endblock %}
+
+{% block content_title %}
+  {% trans 'Invalid Action!' %}
+{% endblock %}
+
+{% block content_message %}
+  {% blocktrans %}
+    The action link <b>is invalid or is expired.</b> Try with another new one.
+  {% endblocktrans %}
+{% endblock %}
+

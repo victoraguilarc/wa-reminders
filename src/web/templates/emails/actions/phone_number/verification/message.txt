@@ -1,0 +1,12 @@
+{% load i18n %}
+
+{% blocktrans %}
+Phone Verification
+
+Please click the link below to complete the phone verification.
+{% endblocktrans %}
+
+{{action_link}}
+
+---
+Collectives

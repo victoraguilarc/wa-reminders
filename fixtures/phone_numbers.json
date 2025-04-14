@@ -1,0 +1,132 @@
+[
+  {
+    "model": "database.phonenumberorm",
+    "pk": "105c9337-09f6-4eb9-b244-d0495422c3f1",
+    "fields": {
+      "created_at": "2024-01-30T20:40:54.127Z",
+      "updated_at": "2024-01-30T20:40:54.127Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544586680",
+      "prefix": "1",
+      "is_verified": true
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "27a72551-4e51-46a3-a804-bb8ec56679ee",
+    "fields": {
+      "created_at": "2021-09-09T20:54:11.723Z",
+      "updated_at": "2021-09-09T20:54:11.723Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332204",
+      "prefix": null,
+      "is_verified": false
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "2c3231ac-a7d4-4a08-9b9c-e593826bb5dd",
+    "fields": {
+      "created_at": "2021-09-09T20:55:22.009Z",
+      "updated_at": "2021-09-09T20:55:22.009Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332207",
+      "prefix": null,
+      "is_verified": false
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "2fc518a4-111d-4425-9083-4c259b634374",
+    "fields": {
+      "created_at": "2021-09-09T20:54:31.748Z",
+      "updated_at": "2021-09-09T20:54:31.748Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332205",
+      "prefix": null,
+      "is_verified": false
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "46c57578-63e8-49ee-b37e-c7068b76cbc5",
+    "fields": {
+      "created_at": "2021-09-09T20:53:35.698Z",
+      "updated_at": "2021-09-09T20:53:35.698Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332202",
+      "prefix": null,
+      "is_verified": false
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "51bac693-1e47-4838-8218-591eb638c936",
+    "fields": {
+      "created_at": "2021-09-09T20:54:53.032Z",
+      "updated_at": "2021-09-09T20:54:53.032Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332206",
+      "prefix": null,
+      "is_verified": false
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "71125cd0-dce4-42d9-8714-0fd8502cc8e1",
+    "fields": {
+      "created_at": "2021-09-09T20:53:55.638Z",
+      "updated_at": "2021-09-09T20:53:55.638Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332203",
+      "prefix": null,
+      "is_verified": false
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "da802db9-924e-485f-a293-95b7278ec5dc",
+    "fields": {
+      "created_at": "2021-09-09T20:55:44.831Z",
+      "updated_at": "2021-09-09T20:55:44.831Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332208",
+      "prefix": null,
+      "is_verified": false
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "e9c88371-17f0-4764-aa2f-0c67aec351e7",
+    "fields": {
+      "created_at": "2021-09-09T20:53:09.685Z",
+      "updated_at": "2021-09-09T20:53:09.685Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332201",
+      "prefix": null,
+      "is_verified": true
+    }
+  },
+  {
+    "model": "database.phonenumberorm",
+    "pk": "ef450c90-f93f-4fb1-b93e-b90acb098873",
+    "fields": {
+      "created_at": "2021-09-09T20:56:05.530Z",
+      "updated_at": "2021-09-09T20:56:05.530Z",
+      "iso_code": "MX",
+      "dial_code": 52,
+      "phone_number": "5544332209",
+      "prefix": null,
+      "is_verified": true
+    }
+  }
+]

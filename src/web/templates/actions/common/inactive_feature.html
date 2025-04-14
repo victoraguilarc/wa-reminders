@@ -1,0 +1,17 @@
+{% extends "actions/base.html" %}
+{% load i18n static %}
+
+{% block title %}
+  {% trans 'Inactive Feature' %}
+{% endblock %}
+
+{% block content_title %}
+  {% trans 'Inactive Feature!' %}
+{% endblock %}
+
+{% block content_message %}
+  {% blocktrans %}
+    This feature is not active yet, please contact the admin for more info.
+  {% endblocktrans %}
+{% endblock %}
+

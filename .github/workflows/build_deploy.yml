@@ -1,0 +1,83 @@
+name: Build & Deploy
+
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+    tags:
+      - v.*
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-22.04
+#    runs-on: self-hosted
+    environment: ${{ github.ref == 'refs/heads/main' && 'Production' || github.ref == 'refs/heads/dev' && 'Development' }}
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Extract docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ vars.DEPLOYMENT_REPOSITORY_URI }}
+          tags: |
+            latest
+            type=sha,format=short
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          context: .
+          file: Dockerfile
+          push: true
+          target: production
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Safe wating before deployment
+        run: sleep 10s
+        shell: bash
+
+      - name: Deploy in Portainer
+        uses: cssnr/portainer-stack-deploy-action@v1
+        with:
+          token: ${{ secrets.PORTAINER_TOKEN }}
+          repo: ${{ github.repository }}
+          ref: ${{ github.ref }}
+          url: ${{ vars.PORTAINER_URL }}
+          name: ${{ vars.DEPLOYMENT_SERVICE }}
+          file: ${{ vars.DEPLOYMENT_COMPOSE_FILE }}
+          standalone: true
+          prune: true
+          pull: true
+          type: repo
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          env_json: >
+            {
+              "DJANGO_ENV": "production",
+              "DJANGO_STAGE": "${{ vars.DJANGO_STAGE }}",
+              "CHAMBER_NAMESPACE": "${{ vars.CHAMBER_NAMESPACE }}",
+              "AWS_ACCESS_KEY_ID": "${{ secrets.AWS_ACCESS_KEY_ID }}",
+              "AWS_SECRET_ACCESS_KEY": "${{ secrets.AWS_SECRET_ACCESS_KEY }}",
+              "AWS_DEFAULT_REGION": "${{ secrets.AWS_REGION }}"
+            }
+

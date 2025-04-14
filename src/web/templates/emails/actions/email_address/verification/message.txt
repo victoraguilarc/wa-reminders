@@ -1,0 +1,11 @@
+{% load i18n %}
+
+{% blocktrans %}
+Email Verification
+
+Please click the link below to complete the email verification.
+
+{% endblocktrans %}
+{{action_link}}
+---
+Collectives

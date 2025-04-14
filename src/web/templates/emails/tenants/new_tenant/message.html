@@ -1,0 +1,19 @@
+{% extends "emails/base.html" %}
+{% load i18n static %}
+
+{% block icon %}
+  {% static 'emails/email.png' %}
+{% endblock %}
+
+{% block title %}
+  {% trans 'Welcome to Xiberty' %}
+{% endblock %}
+
+{% autoescape off %}
+  {% block message %}
+    {% blocktranslate %}
+      You have registered the <b>{{ tenant_name }}</b> academy,
+      thanks for joining Xiberty.
+    {% endblocktranslate %}
+  {% endblock %}
+{% endautoescape %}

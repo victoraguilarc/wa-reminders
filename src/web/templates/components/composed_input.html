@@ -1,0 +1,24 @@
+<div class="pb-4">
+  <label for="{{ input_id }}" class="block font-sans text-sm font-medium leading-5 text-gray-900">
+    {{ input_label }}
+  </label>
+
+  <div class="relative mt-2 rounded-md shadow-sm">
+    <input type="{{ input_type }}" id="{{ input_id }}" name="{{ input_name }}" {% if required %}required{% endif %}
+           class="block w-full rounded-md border-0 py-2 pr-10 ring-1 ring-inset  focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6 {% if form.password1.errors %}text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500{% else %} text-gray-900 ring-gray-300 placeholder:text-gray-300 focus:ring-gray-500{% endif %}"
+           value="{{ input_value }}"
+           {% if has_error %}aria-invalid="true"{% endif %}
+    >
+    {% if errors %}
+      {% include 'components/error_icon.html' %}
+    {% endif %}
+  </div>
+
+  {% if input_errors %}
+    <div class="mdc-text-field-helper-line error-feedback">
+      {% for input_error in input_errors %}
+        <p class="mt-2 text-sm text-red-600" id="email-error">{{ input_error|escape }}</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

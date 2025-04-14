@@ -1,0 +1,24 @@
+{% extends "emails/base.html" %}
+{% load i18n static %}
+
+{% block icon %}
+  {% static 'emails/email.png' %}
+{% endblock %}
+
+{% block title %}
+  {% trans "Collaborator Invitation" %}
+{% endblock %}
+
+{% autoescape off %}
+
+{% block message %}
+    {% blocktranslate %}
+      You were invited to become part of <b>{{ tenant_name }}</b> collaborators team,
+      please click on the button below to complete the invitation.
+    {% endblocktranslate %}
+{% endblock %}
+
+{% block action_label %}
+  {% trans 'COMPLETE INVITATION' %}
+{% endblock %}
+{% endautoescape %}

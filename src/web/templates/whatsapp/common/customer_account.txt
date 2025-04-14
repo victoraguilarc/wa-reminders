@@ -1,0 +1,1 @@
+{% load i18n %}{% blocktrans %}You can check your student account by opening the link below 👇️{% endblocktrans %}

@@ -1,0 +1,50 @@
+[
+  {
+    "model": "database.tenantuserorm",
+    "pk": "5b65ee37-c775-4fc3-a27f-2917e11ae504",
+    "fields": {
+      "created_at": "2024-01-30T20:45:19.147Z",
+      "updated_at": "2024-01-30T20:45:19.147Z",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "first_name": "Admin",
+      "paternal_surname": null,
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "user": "00000000-0000-0000-0000-000000000001",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "database.tenantuserorm",
+    "pk": "86e2934e-3393-4dff-8519-4cdab3ae79e0",
+    "fields": {
+      "created_at": "2024-01-30T20:49:31.753Z",
+      "updated_at": "2024-01-30T20:49:31.753Z",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "first_name": "QA",
+      "paternal_surname": null,
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "user": "92f94211-483e-4a7e-ad04-aad173374c1b",
+      "status": "ACTIVE"
+    }
+  },
+  {
+    "model": "database.tenantuserorm",
+    "pk": "ca11d3d3-076a-4990-bb2c-d3eafc477990",
+    "fields": {
+      "created_at": "2024-01-30T20:49:51.150Z",
+      "updated_at": "2024-01-30T20:49:51.150Z",
+      "tenant": "0550ca75-d89f-49a3-9b2b-08e2be96c681",
+      "first_name": null,
+      "paternal_surname": null,
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "user": "92f94211-483e-4a7e-ad04-aad173374c1b",
+      "status": "ACTIVE"
+    }
+  }
+]

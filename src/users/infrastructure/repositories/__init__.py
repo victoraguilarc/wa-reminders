@@ -1,0 +1,1 @@
+from .orm_tenant_customer import ORMTenantCustomerRepository

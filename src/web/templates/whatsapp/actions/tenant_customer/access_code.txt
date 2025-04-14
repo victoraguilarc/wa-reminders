@@ -1,0 +1,5 @@
+{% load i18n %}
+{% blocktrans %}
+*🔒Access Code in "_{{ tenant_name }}_*"
+{% endblocktrans %}
+👋 {% trans 'Hello' %}{% if first_name %}{{ first_name }}{% endif %}.

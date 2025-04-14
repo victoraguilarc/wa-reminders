@@ -1,0 +1,5 @@
+{% load i18n %}{% blocktrans %}
+*⚡️Booking confirmation!*
+
+You've successfully reserved a trial class for: _*"{{session_name}}"*_ session at *{{session_time}}Hrs* on _*{{session_date}}*_, at the *"{{tenant_name}}"* academy
+{% endblocktrans %}

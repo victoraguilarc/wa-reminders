@@ -1,0 +1,23 @@
+{% load i18n %}
+
+{% blocktrans %}
+Welcome to Collectives!.
+
+Thanks to join us, now you can start using our services in {{ tenant_name }}.
+{% endblocktrans %}
+
+---
+Collectives.
+
+
+
+
+
+
+
+
+
+
+
+
+

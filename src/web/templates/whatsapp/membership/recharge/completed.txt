@@ -1,0 +1,6 @@
+{% load i18n %}{% blocktrans %}
+*🔄️ Membership Renewed!*
+
+You have renewed your membership: *"{{ membership_plan_name }}"* at 🏫 _*{{ tenant_name }}*_
+{% endblocktrans %}
+{% include "whatsapp/common/customer_account.txt" %}

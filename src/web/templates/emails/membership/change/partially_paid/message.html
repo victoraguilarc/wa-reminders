@@ -1,0 +1,44 @@
+{% extends "emails/base.html" %}
+{% load i18n static %}
+
+{% block icon %}
+  {% static 'emails/email.png' %}
+{% endblock %}
+
+{% block title %}
+  {% blocktranslate %}
+    Membership Activated
+  {% endblocktranslate %}
+{% endblock %}
+
+{% autoescape off %}
+
+  {% block message %}
+    {% blocktranslate %}
+      You have activated a membership: <i><b>"{{ membership_plan_name }}"</b></i> at <b>"{{ tenant_name }}"</b>.
+    {% endblocktranslate %}
+    {% blocktranslate %}
+      Your membership still has a <b>pending payment</b>, don't forget to complete the payment in the next classes.
+    {% endblocktranslate %}<br>
+    <small>
+      {% blocktranslate %}
+        This is your access code, it will help you to enter in classes.
+      {% endblocktranslate %}
+    </small>
+  {% endblock %}
+
+  {% block feedback_image %}
+    {% include "emails/common/partials/access_code.html" %}
+  {% endblock %}
+
+  {% block secondary_message %}
+    {% blocktranslate %}
+      You can also check your account by clicking the button below.
+    {% endblocktranslate %}
+  {% endblock %}
+
+  {% block action_label %}
+    {% trans 'GO TO MY ACCOUNT' %}
+  {% endblock %}
+
+{% endautoescape %}

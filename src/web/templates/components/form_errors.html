@@ -1,0 +1,12 @@
+{% if form_errors %}
+  <div class="border-l-4 border-yellow-400 bg-yellow-50 p-4 text-left">
+    <div class="flex">
+      <div class="ml-1">
+        {% for form_error in form_errors %}
+          <p class="text-sm text-yellow-700">{{ form_error|escape }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+

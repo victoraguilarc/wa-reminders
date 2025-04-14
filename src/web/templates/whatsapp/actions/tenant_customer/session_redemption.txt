@@ -1,0 +1,6 @@
+{% load i18n %}{% blocktrans %}
+*🔒 Login at {{ tenant_name }}*
+
+👋 Hello {{ first_name }},
+You have requested to log in, ✨ please open the link below to complete the process 👇
+{% endblocktrans %}

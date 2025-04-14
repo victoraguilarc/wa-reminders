@@ -1,0 +1,25 @@
+{% load i18n %}
+
+{% blocktrans %}
+Reset Password
+
+We sent you this email because you requested to restore your account's password, to do it just click on the link below.
+{% endblocktrans %}
+
+{{action_link}}
+
+---
+Collectives
+
+
+
+
+
+
+
+
+
+
+
+
+

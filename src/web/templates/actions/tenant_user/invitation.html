@@ -1,0 +1,56 @@
+{% extends "actions/base.html" %}
+{% load i18n %}
+
+{% block title %}
+  {% trans 'User Invitation' %}
+{% endblock %}
+
+
+{% block content_title %}
+  {% trans 'Collaborator Invitation' %}
+{% endblock %}
+
+{% block content_message %}
+  <div class="pb-3 flex items-center justify-center text-indigo-400">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building-2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+    <span class="px-2 leading-3 uppercase">{{ tenant_name }}</span>
+  </div>
+  <p class="mb-2 text-gray-500">
+    {% trans 'Put your info to complete the invitation.' %}<br>
+    <b>{{ email }}</b>
+  </p>
+  <div class="flex min-h-full flex-col justify-center px-2 py-5 lg:px-8">
+    <div class="mt-2 sm:mx-auto sm:w-full sm:max-w-sm">
+      {% include 'components/form_errors.html' with form_errors=form.non_field_errors %}
+
+      <form class="space-y-4 text-left" action="" method="POST">
+        {% csrf_token %}
+        <div>
+          {# field: first_name #}
+          {% trans 'First Name' as first_name_label %}
+          {% include 'components/composed_input.html' with input_label=first_name_label input_errors=form.first_name.errors input_type="text" input_id="first_name" input_name="first_name" input_value=form.first_name.value %}
+
+          {# field: paternal_surname #}
+          {% trans 'Paternal Surname' as paternal_surname_label %}
+          {% include 'components/composed_input.html' with input_label=paternal_surname_label input_error=form.paternal_surname.errors input_type="text" input_id="paternal_surname" input_name="paternal_surname" input_value=form.paternal_surname.value %}
+
+          {# field: maternal_surname #}
+          {% trans 'Maternal Surname' as maternal_surname_label %}
+          {% include 'components/composed_input.html' with input_label=maternal_surname_label input_error=form.maternal_surname.errors input_type="text" input_id="maternal_surname" input_name="maternal_surname" input_value=form.maternal_surname.value %}
+        </div>
+
+        <div class="border-t-2 border-dashed pt-3 pb-3">
+          {# field: password #}
+          {% trans 'Password' as password_label %}
+          {% include 'components/composed_input.html' with input_label=password_label input_error=form.password.errors input_type="password" required='true' input_id="password" input_name="password" input_value=form.password.value %}
+        </div>
+
+        <div>
+          {% trans 'Complete' as button_label %}
+          {% include 'components/submit_button.html' with button_label=button_label %}
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+{% block go_back %}{% endblock %}

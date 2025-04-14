@@ -1,0 +1,25 @@
+{% extends "emails/base.html" %}
+{% load i18n static %}
+
+{% block icon %}
+  {% static 'emails/email.png' %}
+{% endblock %}
+
+{% block title %}
+  {% trans "Reset Password" %}
+{% endblock %}
+
+{% autoescape off %}
+
+{% block message %}
+    {% blocktranslate %}
+      We sent you this email because you requested to restore your account's password,
+      to do it just click on the button below.
+    {% endblocktranslate %}
+{% endblock %}
+
+
+{% block action_label %}
+  {% trans 'RESET MY PASSWORD' %}
+{% endblock %}
+{% endautoescape %}

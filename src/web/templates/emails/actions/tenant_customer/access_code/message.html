@@ -1,0 +1,45 @@
+{% extends "emails/base.html" %}
+{% load i18n static %}
+
+{% block icon %}
+  {% static 'emails/email.png' %}
+{% endblock %}
+
+{% block title %}
+  {% blocktranslate %}
+    QR Access Code
+  {% endblocktranslate %}
+{% endblock %}
+
+{% autoescape off %}
+{% block message %}
+  {% blocktranslate %}
+    Hello {{ first_name }},
+  {% endblocktranslate %}
+  <br>
+  {% blocktranslate %}
+    We sent you this email because you requested your QR Access Code.
+  {% endblocktranslate %}
+  
+{% endblock %}
+  
+{% block feedback_image %}
+  {% include "emails/common/partials/access_code.html" %}
+{% endblock %}
+
+{% block action_label %}
+  {% trans 'LOGIN' %}
+{% endblock %}
+{% endautoescape %}
+
+
+
+
+
+
+
+
+
+
+
+

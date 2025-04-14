@@ -1,0 +1,1356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-22 06:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config/settings/components/common.py:123
+msgid "Spanish"
+msgstr ""
+
+#: config/settings/components/common.py:124
+msgid "English"
+msgstr ""
+
+#: src/auth/presentation/forms/tenant_owner.py:23
+msgid "Put your password again"
+msgstr ""
+
+#: src/auth/presentation/forms/tenant_owner.py:40
+#: src/pending_actions/presentation/forms/reset_password.py:15
+#: tests/src/auth/presentation/forms/test_reset_password.py:20
+msgid "Passwords Mismatch"
+msgstr ""
+
+#: src/common/database/admin/notification.py:34
+msgid "Strategies"
+msgstr ""
+
+#: src/common/database/admin/tenant_class.py:14
+msgid "Schedule"
+msgstr ""
+
+#: src/common/database/admin/tenant_class.py:15
+msgid "Schedules"
+msgstr ""
+
+#: src/common/database/admin/user.py:23
+msgid "Email"
+msgstr ""
+
+#: src/common/database/admin/user.py:93
+msgid "Personal Information"
+msgstr ""
+
+#: src/common/database/admin/user.py:103
+msgid "Permissions"
+msgstr ""
+
+#: src/common/database/admin/user.py:146
+msgid "Phone Number"
+msgstr ""
+
+#: src/common/database/models/mixins/users.py:23
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr ""
+
+#: src/common/database/models/mixins/users.py:26
+msgid "A user with that username already exists."
+msgstr ""
+
+#: src/common/database/models/mixins/users.py:30
+msgid "staff status"
+msgstr ""
+
+#: src/common/database/models/mixins/users.py:32
+msgid "Designates whether the user can log into this admin site."
+msgstr ""
+
+#: src/common/database/models/mixins/users.py:35
+msgid "active"
+msgstr ""
+
+#: src/common/database/models/mixins/users.py:38
+msgid ""
+"Designates whether this user should be treated as active.Unselect this "
+"instead of deleting accounts."
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:12
+msgid "Monday"
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:13
+msgid "Tuesday"
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:14
+msgid "Wednesday"
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:15
+msgid "Thursday"
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:16
+msgid "Friday"
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:17
+msgid "Saturday"
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:18
+msgid "Sunday"
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:19
+msgid "Administrator"
+msgstr ""
+
+#: src/common/infrastructure/django_locales.py:20
+msgid "Payment Reminder"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/base.py:31
+#: src/common/presentation/api/exceptions/collection.py:107
+#: src/web/templates/errors/500.html:4
+msgid "Server Error"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/base.py:39
+msgid "Invalid input."
+msgstr ""
+
+#: src/common/presentation/api/exceptions/base.py:47
+msgid "Incorrect authentication credentials."
+msgstr ""
+
+#: src/common/presentation/api/exceptions/base.py:55
+#: src/common/presentation/api/exceptions/collection.py:112
+msgid "Authentication credentials were not provided."
+msgstr ""
+
+#: src/common/presentation/api/exceptions/base.py:63
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: src/common/presentation/api/exceptions/base.py:71
+msgid "Not found."
+msgstr ""
+
+#: src/common/presentation/api/exceptions/base.py:79
+msgid "Method Not Allowed."
+msgstr ""
+
+#: src/common/presentation/api/exceptions/base.py:87
+msgid "Tenant not implemented."
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:116
+msgid "Invalid or Expired token"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:120
+msgid "Authentication Fails"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:124
+#: src/common/presentation/api/exceptions/collection.py:314
+msgid "Tenant Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:128
+msgid "Tenant User Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:132
+msgid "Tenant Customer Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:136
+msgid "User Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:140
+msgid "Tenant Access Unauthorized"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:144
+msgid "Has no enough permissions to perform this action"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:148
+msgid "There are no more items"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:157
+msgid "Class Session Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:161
+msgid "Attendee Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:165
+msgid "Invalid Attendee Checkin"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:169
+msgid "This student does not belong to this class"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:173
+msgid "This session schedule does not exist"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:177
+msgid "Current time is out of the class schedule time"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:181
+msgid "You can not book a past session"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:185
+msgid "This session is invalid or not exist"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:189
+msgid "Invalid Credentials"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:193
+msgid "Invalid Credentials for Tenant"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:197
+msgid "Picture Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:202
+msgid "Class Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:206
+msgid "Payment Plan not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:210
+msgid "Student Enrollment Process Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:214
+msgid "Payment Request Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:218
+msgid "Invoice and payment currency codes does not match"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:222
+msgid "Payment Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:226
+msgid "Student Subscription is not completed"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:230
+msgid "Notification Template Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:234
+msgid "Notification Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:238
+msgid "Payment Intent Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:242
+msgid "Processed Payment Intent cant't be updated"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:246
+msgid "Subscriptions aren't supported for this type of object"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:250
+msgid "One time payments aren't supported for this type of object"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:254
+msgid "Not Sincronized Payment Plan"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:258
+msgid "Payment Method Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:262
+msgid "Payment Method Not Implemented"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:266
+msgid "Payment Account Not Configured"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:270
+msgid "Membership Plan Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:274
+msgid "Membership Purchase Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:278
+msgid "Membership Recharge Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:282
+msgid "There is no MembershipPurchase associated to this PaymentRequest"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:286
+msgid "There is no MembershipRecharge associated to this PaymentRequest"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:290
+msgid "Membership Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:294
+msgid "Membership does not match the requirements"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:298
+msgid "Membership is not active"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:302
+msgid "Membership is expired"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:306
+msgid "Insufficient membership passes balance"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:310
+msgid "Payment Intent has invalid payload"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:318
+msgid "Tenant Picture Not Found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:322
+msgid "Tenant limit excedeed"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:326
+msgid "Tenant Customer not found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:330
+msgid "Tenant Customer is not reachable"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:334
+msgid "Tenant Customer Lead not found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:338
+msgid "Tenant User not found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:342
+msgid "Invalid enrollments metadata"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:346
+msgid "Invalid Password"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:350
+msgid "The new password must be different from the current password"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:354
+msgid "This email is already being used"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:358
+msgid "This email is already verified"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:362
+msgid "This phone number is already being used"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:366
+msgid "This phone number is already verified"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:370
+msgid "User must have at least one auth method"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:374
+msgid "Customer has no email address"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:378
+msgid "Customer's email is already verified"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:382
+msgid "Customer has no phone number"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:386
+msgid "Customer's phone number is already verified"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:390
+msgid "Pending Action not found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:394
+msgid "the provided token is invalid"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:398
+msgid "Invalid Permission"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/collection.py:402
+msgid "Tenant Role not found"
+msgstr ""
+
+#: src/common/presentation/api/exceptions/handler.py:64
+msgid "There are validation errors in the request"
+msgstr ""
+
+#: src/common/presentation/api/rest_fields.py:82
+msgid "Invalid type. This is not an base64 string: {}"
+msgstr ""
+
+#: src/common/presentation/api/rest_fields.py:116
+msgid "Please upload a valid image."
+msgstr ""
+
+#: src/common/presentation/api/rest_fields.py:117
+msgid "The type of the image couldn't be determined."
+msgstr ""
+
+#: src/common/presentation/api/rest_fields.py:168
+msgid "Please upload a valid file."
+msgstr ""
+
+#: src/common/presentation/api/rest_fields.py:169
+msgid "The type of the file couldn't be determined."
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:14
+#: src/permissions/infrastructure/permissions.py:87
+msgid "View Customers"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:19
+#: src/permissions/infrastructure/permissions.py:92
+msgid "View Leads"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:24
+msgid "View Collaborators"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:29
+#: src/permissions/infrastructure/permissions.py:97
+msgid "View Memberships"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:34
+msgid "View Plans"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:39
+msgid "View Payments"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:44
+msgid "View Classes"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:49
+#: src/permissions/infrastructure/permissions.py:102
+msgid "View Sessions"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:54
+#: src/permissions/infrastructure/permissions.py:107
+msgid "View Attendees"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:59
+msgid "View Metrics"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:64
+msgid "View Events"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:69
+msgid "View Roles"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:74
+#: src/permissions/infrastructure/permissions.py:112
+msgid "Open Scan"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:79
+msgid "Register membership"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:117
+msgid "Register Membership"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:128
+msgid "Unknown Permission"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:141
+msgid "Admin"
+msgstr ""
+
+#: src/permissions/infrastructure/permissions.py:157
+msgid "Staff"
+msgstr ""
+
+#: src/users/presentation/exceptions.py:9
+msgid "Invalid Phone Number"
+msgstr ""
+
+#: src/web/templates/actions/base.html:24 src/web/templates/errors/base.html:20
+msgid "Back to Home"
+msgstr ""
+
+#: src/web/templates/actions/common/inactive_account.html:5
+msgid "Inactive Account"
+msgstr ""
+
+#: src/web/templates/actions/common/inactive_account.html:9
+msgid "Inactive Account!"
+msgstr ""
+
+#: src/web/templates/actions/common/inactive_account.html:13
+msgid ""
+"\n"
+"    Your account is not active now, please contact the admin to solve it.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/actions/common/inactive_feature.html:5
+msgid "Inactive Feature"
+msgstr ""
+
+#: src/web/templates/actions/common/inactive_feature.html:9
+msgid "Inactive Feature!"
+msgstr ""
+
+#: src/web/templates/actions/common/inactive_feature.html:13
+msgid ""
+"\n"
+"    This feature is not active yet, please contact the admin for more info.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/actions/common/invalid_pending_action.html:5
+msgid "Invalid Action"
+msgstr ""
+
+#: src/web/templates/actions/common/invalid_pending_action.html:9
+msgid "Invalid Action!"
+msgstr ""
+
+#: src/web/templates/actions/common/invalid_pending_action.html:13
+msgid ""
+"\n"
+"    The action link <b>is invalid or is expired.</b> Try with another new "
+"one.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/actions/email_address/verification.html:5
+#: src/web/templates/emails/actions/email_address/verification/message.html:9
+#: src/web/templates/emails/actions/email_address/verification/subject.txt:1
+msgid "Email Verification"
+msgstr ""
+
+#: src/web/templates/actions/email_address/verification.html:10
+msgid "Successful Email Verification!"
+msgstr ""
+
+#: src/web/templates/actions/email_address/verification.html:12
+#: src/web/templates/actions/phone_number/verification.html:12
+msgid "Invalid Verification!"
+msgstr ""
+
+#: src/web/templates/actions/email_address/verification.html:19
+#, python-format
+msgid ""
+"\n"
+"    Your email address: <b>%(email)s</b> has been verified Successfully!!.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/actions/phone_number/verification.html:5
+#: src/web/templates/emails/actions/phone_number/verification/message.html:9
+#: src/web/templates/emails/actions/phone_number/verification/subject.txt:1
+msgid "Phone Verification"
+msgstr ""
+
+#: src/web/templates/actions/phone_number/verification.html:10
+msgid "Successful Phone Verification!"
+msgstr ""
+
+#: src/web/templates/actions/phone_number/verification.html:19
+#, python-format
+msgid ""
+"\n"
+"    Your phone number: <b>%(phone_number)s</b> has been verified "
+"Successfully!!.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation.html:5
+msgid "User Invitation"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation.html:10
+#: src/web/templates/emails/actions/tenant_user/invitation/message.html:9
+msgid "Collaborator Invitation"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation.html:19
+msgid "Put your info to complete the invitation."
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation.html:30
+msgid "First Name"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation.html:34
+msgid "Paternal Surname"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation.html:38
+msgid "Maternal Surname"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation.html:44
+msgid "Password"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation.html:49
+msgid "Complete"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation_done.html:5
+msgid "Invitation Completed"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation_done.html:9
+msgid "Invitation Completed!"
+msgstr ""
+
+#: src/web/templates/actions/tenant_user/invitation_done.html:13
+msgid ""
+"\n"
+"    Your invitation <b>has been completed</b> successfully.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/actions/user/reset_password.html:5
+#: src/web/templates/actions/user/reset_password.html:10
+#: src/web/templates/emails/actions/user/reset_password/message.html:9
+#: src/web/templates/emails/actions/user/reset_password/subject.txt:1
+msgid "Reset Password"
+msgstr ""
+
+#: src/web/templates/actions/user/reset_password.html:15
+msgid "Enter and confirm your new password."
+msgstr ""
+
+#: src/web/templates/actions/user/reset_password.html:25
+msgid "New Password"
+msgstr ""
+
+#: src/web/templates/actions/user/reset_password.html:29
+msgid "Confirm Password"
+msgstr ""
+
+#: src/web/templates/actions/user/reset_password.html:33
+msgid "Change Password"
+msgstr ""
+
+#: src/web/templates/actions/user/reset_password_done.html:5
+msgid "Password Updated"
+msgstr ""
+
+#: src/web/templates/actions/user/reset_password_done.html:9
+msgid "Password Updated!"
+msgstr ""
+
+#: src/web/templates/actions/user/reset_password_done.html:13
+msgid ""
+"\n"
+"    Your account password <b>has been updated</b> successfully.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/admin/dropdown_filter.html:3
+#, python-format
+msgid " By %(filter_title)s "
+msgstr ""
+
+#: src/web/templates/emails/actions/email_address/verification/message.html:14
+msgid ""
+"\n"
+"        Please click the button below to complete the email verification.\n"
+"      "
+msgstr ""
+
+#: src/web/templates/emails/actions/email_address/verification/message.html:20
+msgid "CONFIRM EMAIL"
+msgstr ""
+
+#: src/web/templates/emails/actions/email_address/verification/message.txt:3
+msgid ""
+"\n"
+"Email Verification\n"
+"\n"
+"Please click the link below to complete the email verification.\n"
+"\n"
+msgstr ""
+
+#: src/web/templates/emails/actions/phone_number/verification/message.html:14
+msgid ""
+"\n"
+"        Please click the button below to complete the phone verification.\n"
+"      "
+msgstr ""
+
+#: src/web/templates/emails/actions/phone_number/verification/message.html:20
+msgid "CONFIRM PHONE NUMBER"
+msgstr ""
+
+#: src/web/templates/emails/actions/phone_number/verification/message.txt:3
+msgid ""
+"\n"
+"Phone Verification\n"
+"\n"
+"Please click the link below to complete the phone verification.\n"
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/access_code/message.html:9
+msgid ""
+"\n"
+"    QR Access Code\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/access_code/message.html:16
+#: src/web/templates/emails/actions/tenant_customer/session_redemption/message.html:16
+#, python-format
+msgid ""
+"\n"
+"    Hello %(first_name)s,\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/access_code/message.html:20
+msgid ""
+"\n"
+"    We sent you this email because you requested your QR Access Code.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/access_code/message.html:31
+#: src/web/templates/emails/actions/tenant_customer/session_redemption/message.html:31
+msgid "LOGIN"
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/access_code/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"Hello %(first_name)s,\n"
+"\n"
+"We sent you this email because you requested your QR Access Code.\n"
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/access_code/subject.txt:1
+msgid "QR Access Code"
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/session_redemption/message.html:9
+#, python-format
+msgid ""
+"\n"
+"    Login at %(tenant_name)s\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/session_redemption/message.html:20
+msgid ""
+"\n"
+"    You have requested to log in, please click the button below to complete "
+"the process.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/session_redemption/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"Hello %(first_name)s,\n"
+"\n"
+"You have requested to log in at %(tenant_name)s, please click the link below "
+"to complete the process\n"
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_customer/session_redemption/subject.txt:1
+msgid "Login"
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_user/invitation/message.html:15
+#, python-format
+msgid ""
+"\n"
+"      You were invited to become part of <b>%(tenant_name)s</b> "
+"collaborators team,\n"
+"      please click on the button below to complete the invitation.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_user/invitation/message.html:22
+msgid "COMPLETE INVITATION"
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_user/invitation/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"Collaborator Invitation\n"
+"\n"
+"You were invited to become part of \"%(tenant_name)s\" collaborators team,\n"
+"please click on the link below to complete the invitation.\n"
+msgstr ""
+
+#: src/web/templates/emails/actions/tenant_user/invitation/subject.txt:1
+msgid "Collaborator Invitation!"
+msgstr ""
+
+#: src/web/templates/emails/actions/user/reset_password/message.html:15
+msgid ""
+"\n"
+"      We sent you this email because you requested to restore your account's "
+"password,\n"
+"      to do it just click on the button below.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/actions/user/reset_password/message.html:23
+msgid "RESET MY PASSWORD"
+msgstr ""
+
+#: src/web/templates/emails/actions/user/reset_password/message.txt:3
+msgid ""
+"\n"
+"Reset Password\n"
+"\n"
+"We sent you this email because you requested to restore your account's "
+"password, to do it just click on the link below.\n"
+msgstr ""
+
+#: src/web/templates/emails/class_session/trial_booking/created/message.html:9
+msgid ""
+"\n"
+"    Booking confirmation!\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/class_session/trial_booking/created/message.html:16
+#, python-format
+msgid ""
+"\n"
+"      You've successfully reserved a trial class for: "
+"<i><b>\"%(session_name)s\"</b></i> session at\n"
+"      <b>%(session_time)sHrs</b> on <i><b>%(session_date)s</b></i>, at the "
+"<b>\"%(tenant_name)s\"</b> academy\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/class_session/trial_booking/created/message.html:22
+msgid ""
+"\n"
+"        This is your access code, it will help you to enter the class.\n"
+"      "
+msgstr ""
+
+#: src/web/templates/emails/class_session/trial_booking/created/message.html:33
+#: src/web/templates/emails/membership/change/completed/message.html:33
+#: src/web/templates/emails/membership/change/partially_paid/message.html:35
+#: src/web/templates/emails/membership/purchase/partially_paid/message.html:35
+#: src/web/templates/emails/membership/recharge/completed/message.html:32
+#: src/web/templates/emails/membership/recharge/partially_paid/message.html:36
+msgid ""
+"\n"
+"      You can also check your account by clicking the button below.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/class_session/trial_booking/created/message.html:39
+#: src/web/templates/emails/membership/change/completed/message.html:39
+#: src/web/templates/emails/membership/change/partially_paid/message.html:41
+#: src/web/templates/emails/membership/deactivation/message.html:22
+#: src/web/templates/emails/membership/purchase/completed/message.html:39
+#: src/web/templates/emails/membership/purchase/partially_paid/message.html:41
+#: src/web/templates/emails/membership/recharge/completed/message.html:38
+#: src/web/templates/emails/membership/recharge/partially_paid/message.html:42
+msgid "GO TO MY ACCOUNT"
+msgstr ""
+
+#: src/web/templates/emails/class_session/trial_booking/created/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"You've successfully reserved a trial class for: \"%(session_name)s\" session "
+"at %(session_time)sHrs on %(session_date)s, at the \"%(tenant_name)s\" "
+"academy\n"
+"\n"
+"This is your access code, it will help you to enter the class.\n"
+"\n"
+"%(access_code_url)s\n"
+"\n"
+"You can also check your account by opening the link below.\n"
+msgstr ""
+
+#: src/web/templates/emails/class_session/trial_booking/created/subject.txt:1
+msgid "Booking confirmation!"
+msgstr ""
+
+#: src/web/templates/emails/common/partials/access_code.html:17
+msgid "Here is your access code to enter classes."
+msgstr ""
+
+#: src/web/templates/emails/membership/change/completed/message.html:9
+#: src/web/templates/emails/membership/change/partially_paid/message.html:9
+#: src/web/templates/emails/membership/purchase/completed/message.html:9
+#: src/web/templates/emails/membership/purchase/partially_paid/message.html:9
+msgid ""
+"\n"
+"    Membership Activated\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/membership/change/completed/message.html:17
+#: src/web/templates/emails/membership/change/partially_paid/message.html:17
+#: src/web/templates/emails/membership/purchase/partially_paid/message.html:17
+#, python-format
+msgid ""
+"\n"
+"      You have activated a membership: <i><b>\"%(membership_plan_name)s\"</"
+"b></i> at <b>\"%(tenant_name)s\"</b>.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/membership/change/completed/message.html:22
+#: src/web/templates/emails/membership/change/partially_paid/message.html:24
+#: src/web/templates/emails/membership/purchase/partially_paid/message.html:24
+#: src/web/templates/emails/membership/recharge/completed/message.html:21
+#: src/web/templates/emails/membership/recharge/partially_paid/message.html:25
+msgid ""
+"\n"
+"        This is your access code, it will help you to enter in classes.\n"
+"      "
+msgstr ""
+
+#: src/web/templates/emails/membership/change/completed/message.txt:3
+#: src/web/templates/emails/membership/purchase/completed/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"You have activated a membership: \"%(membership_plan_name)s\" at "
+"\"%(tenant_name)s\".\n"
+"This is your access code, it will help you to enter in classes.\n"
+"\n"
+"%(access_code)s\n"
+"\n"
+"You can also check your account by opening the link below.\n"
+msgstr ""
+
+#: src/web/templates/emails/membership/change/completed/subject.txt:1
+#: src/web/templates/emails/membership/change/partially_paid/subject.txt:1
+msgid "Membership Updated!"
+msgstr ""
+
+#: src/web/templates/emails/membership/change/partially_paid/message.html:20
+#: src/web/templates/emails/membership/purchase/partially_paid/message.html:20
+#: src/web/templates/emails/membership/recharge/partially_paid/message.html:20
+msgid ""
+"\n"
+"      Your membership still has a <b>pending payment</b>, don't forget to "
+"complete the payment in the next classes.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/membership/change/partially_paid/message.txt:2
+#: src/web/templates/emails/membership/purchase/partially_paid/message.txt:2
+#, python-format
+msgid ""
+"\n"
+"You have activated a membership: \"%(membership_plan_name)s\" at "
+"\"%(tenant_name)s\".\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment in the next classes.\n"
+"This is your access code, it will help you to enter in classes.\n"
+"\n"
+"%(access_code)s\n"
+"\n"
+"You can also check your account by opening the link below.\n"
+msgstr ""
+
+#: src/web/templates/emails/membership/deactivation/message.html:9
+msgid "Membership Deactivated!"
+msgstr ""
+
+#: src/web/templates/emails/membership/deactivation/message.html:15
+#, python-format
+msgid ""
+"\n"
+"    Your membership <i>%(membership_plan_name)s</i> has been deactivated in "
+"<b>%(tenant_name)s</b>.\n"
+"    You can also check your account by clicking the button below.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/membership/deactivation/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"Your membership \"{ membership_plan_name }}\" has been deactivated in "
+"%(tenant_name)s.\n"
+"You can also check your account by opening the link below.\n"
+msgstr ""
+
+#: src/web/templates/emails/membership/deactivation/subject.txt:1
+msgid "Membership Deactivated"
+msgstr ""
+
+#: src/web/templates/emails/membership/purchase/completed/message.html:17
+#, python-format
+msgid ""
+"\n"
+"    You have activated a membership: <i><b>\"%(membership_plan_name)s\"</b></"
+"i> at <b>\"%(tenant_name)s\"</b>.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/membership/purchase/completed/message.html:22
+msgid ""
+"\n"
+"      This is your access code, it will help you to enter in classes.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/membership/purchase/completed/message.html:33
+msgid ""
+"\n"
+"    You can also check your account by clicking the button below.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/emails/membership/purchase/completed/subject.txt:1
+#: src/web/templates/emails/membership/purchase/partially_paid/subject.txt:1
+msgid "Membership Activated!"
+msgstr ""
+
+#: src/web/templates/emails/membership/recharge/completed/message.html:9
+#: src/web/templates/emails/membership/recharge/completed/subject.txt:1
+#: src/web/templates/emails/membership/recharge/partially_paid/message.html:9
+#: src/web/templates/emails/membership/recharge/partially_paid/subject.txt:1
+msgid "Membership Renewed!"
+msgstr ""
+
+#: src/web/templates/emails/membership/recharge/completed/message.html:15
+#: src/web/templates/emails/membership/recharge/partially_paid/message.html:15
+#, python-format
+msgid ""
+"\n"
+"      You have renewed your membership: <i><b>\"%(membership_plan_name)s\"</"
+"b></i> at <b>\"%(tenant_name)s\"</b>.\n"
+"      You can now continue enjoying the classes.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/membership/recharge/completed/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"You have renewed your membership: \"%(membership_plan_name)s\" at "
+"\"%(tenant_name)s\".\n"
+"You can now continue enjoying the classes.\n"
+"\n"
+"This is your access code, it will help you to enter in classes.\n"
+"\n"
+"%(access_code)s\n"
+"\n"
+"You can also check your account by clicking the button below.\n"
+msgstr ""
+
+#: src/web/templates/emails/membership/recharge/partially_paid/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"You have renewed your membership: \"%(membership_plan_name)s\" at "
+"\"%(tenant_name)s\".\n"
+"You can now continue enjoying the classes.\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment in the next classes.\n"
+"This is your access code, it will help you to enter in classes.\n"
+"\n"
+"%(access_code)s\n"
+"\n"
+"You can also check your account by clicking the button below.\n"
+msgstr ""
+
+#: src/web/templates/emails/tenants/new_tenant/message.html:9
+#: src/web/templates/emails/tenants/new_tenant/subject.txt:1
+msgid "Welcome to Collectives"
+msgstr ""
+
+#: src/web/templates/emails/tenants/new_tenant/message.html:14
+#, python-format
+msgid ""
+"\n"
+"      You have registered the <b>%(tenant_name)s</b> academy,\n"
+"      thanks for joining Collectives.\n"
+"    "
+msgstr ""
+
+#: src/web/templates/emails/tenants/new_tenant/message.txt:3
+#, python-format
+msgid ""
+"\n"
+"Welcome to Collectives!.\n"
+"\n"
+"Thanks to join us, now you can start using our services in %(tenant_name)s.\n"
+msgstr ""
+
+#: src/web/templates/errors/400.html:4
+msgid "Bad Request"
+msgstr ""
+
+#: src/web/templates/errors/400.html:5
+msgid "Bad Request!"
+msgstr ""
+
+#: src/web/templates/errors/400.html:8
+msgid ""
+"\n"
+"  The request noesn't have the minimum required to run this action.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/errors/403.html:4
+msgid "Access Denied"
+msgstr ""
+
+#: src/web/templates/errors/403.html:5
+msgid "Access Denied!"
+msgstr ""
+
+#: src/web/templates/errors/403.html:8
+msgid ""
+"\n"
+"  You don't have enogh permissions to get this page, please, contact us at.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/errors/404.html:4
+msgid "Not Found"
+msgstr ""
+
+#: src/web/templates/errors/404.html:5
+msgid "Not Found!"
+msgstr ""
+
+#: src/web/templates/errors/404.html:8
+msgid ""
+"\n"
+"  Page not found, this resource don't exist or its under construction.\n"
+"  "
+msgstr ""
+
+#: src/web/templates/errors/500.html:5
+msgid "Intternal Server Error!"
+msgstr ""
+
+#: src/web/templates/errors/500.html:9
+msgid ""
+"\n"
+"  It's occurred an error in the server, please contact us to get more "
+"information at\n"
+"  "
+msgstr ""
+
+#: src/web/templates/errors/base.html:23
+msgid "Contact support"
+msgstr ""
+
+#: src/web/templates/whatsapp/actions/phone_number/verification.txt:2
+msgid ""
+"\n"
+"*📲 Phone Verification*\n"
+"\n"
+"Please open the link below to complete the phone verification 👇\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/actions/tenant_customer/access_code.txt:1
+#, python-format
+msgid ""
+"\n"
+"*🔒 QR Access Code for  _%(tenant_name)s_*\n"
+"\n"
+"👋 Hello %(first_name)s.\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/actions/tenant_customer/session_redemption.txt:1
+#, python-format
+msgid ""
+"\n"
+"*🔒 Login at %(tenant_name)s*\n"
+"\n"
+"👋 Hello %(first_name)s,\n"
+"You have requested to log in, ✨ please open the link below to complete the "
+"process 👇\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/class_session/trial_bookings/created.txt:1
+#, python-format
+msgid ""
+"\n"
+"*⚡️Booking confirmation!*\n"
+"\n"
+"You've successfully reserved a trial class for: _*\"%(session_name)s\"*_ "
+"session at *%(session_time)sHrs* on _*%(session_date)s*_, at the "
+"*\"%(tenant_name)s\"* academy\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/common/access_code.txt:1
+msgid "🔑 This is your access code, it will help you to enter in classes"
+msgstr ""
+
+#: src/web/templates/whatsapp/common/customer_account.txt:1
+msgid "You can check your student account by opening the link below 👇️"
+msgstr ""
+
+#: src/web/templates/whatsapp/membership/change/completed.txt:1
+#, python-format
+msgid ""
+"\n"
+"*⏫ Membership Updated!*\n"
+"\n"
+"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/membership/change/partially_paid.txt:1
+#, python-format
+msgid ""
+"\n"
+"*⏫ Membership Updated!*\n"
+"\n"
+"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment 💸 in the next classes\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/membership/deactivation.txt:1
+#, python-format
+msgid ""
+"\n"
+"*❌Membership Deactivated!*\n"
+"\n"
+"You membership: *\"%(membership_plan_name)s\"* has been deactivaed at 🏫 "
+"_*%(tenant_name)s*_\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/membership/purchase/completed.txt:1
+#, python-format
+msgid ""
+"\n"
+"*⚡️Membership Activated!*\n"
+"\n"
+"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/membership/purchase/partially_paid.txt:1
+#, python-format
+msgid ""
+"\n"
+"*⚡️Membership Updated!*\n"
+"\n"
+"You have activated a membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment 💸 in the next classes\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/membership/recharge/completed.txt:1
+#, python-format
+msgid ""
+"\n"
+"*🔄️ Membership Renewed!*\n"
+"\n"
+"You have renewed your membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_\n"
+msgstr ""
+
+#: src/web/templates/whatsapp/membership/recharge/partially_paid.txt:1
+#, python-format
+msgid ""
+"\n"
+"*🔄 Membership Renewed!*\n"
+"\n"
+"You have renewed your membership: *\"%(membership_plan_name)s\"* at 🏫 "
+"_*%(tenant_name)s*_.\n"
+"Your membership still has a pending payment, don't forget to complete the "
+"payment 💸 in the next classes.\n"
+msgstr ""
+
+#: tests/src/auth/presentation/forms/test_reset_password.py:27
+#: tests/src/auth/presentation/forms/test_reset_password.py:28
+msgid "This field is required."
+msgstr ""

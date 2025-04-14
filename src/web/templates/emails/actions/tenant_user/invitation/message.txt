@@ -1,0 +1,26 @@
+{% load i18n %}
+
+{% blocktrans %}
+Collaborator Invitation
+
+You were invited to become part of "{{ tenant_name }}" collaborators team,
+please click on the link below to complete the invitation.
+{% endblocktrans %}
+
+{{action_link}}
+
+---
+Collectives
+
+
+
+
+
+
+
+
+
+
+
+
+

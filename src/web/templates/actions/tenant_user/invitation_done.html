@@ -1,0 +1,17 @@
+{% extends "actions/base.html" %}
+{% load i18n static %}
+
+{% block title %}
+  {% trans 'Invitation Completed' %}
+{% endblock %}
+
+{% block content_title %}
+  {% trans 'Invitation Completed!' %}
+{% endblock %}
+
+{% block content_message %}
+  {% blocktrans %}
+    Your invitation <b>has been completed</b> successfully.
+  {% endblocktrans %}
+{% endblock %}
+

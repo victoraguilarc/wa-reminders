@@ -1,0 +1,2 @@
+{% load i18n %}{% blocktrans %}
+🔒 This is your access code in "*{{tenant_name}}*", it will help you to enter in classes 🔑{% endblocktrans %}

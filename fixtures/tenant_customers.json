@@ -1,0 +1,296 @@
+[
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "02db2ea4-3324-46c2-a4a6-45b5d341aa22",
+    "fields": {
+      "created_at": "2021-08-23T21:27:22.664Z",
+      "updated_at": "2024-01-30T20:57:24.513Z",
+      "email_address": "0a746885-a5ae-494a-b0c1-a76f91a54c8c",
+      "phone_number": null,
+      "first_name": "Noe",
+      "paternal_surname": "Guardiola",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "4d77acd6-fd9c-4598-967a-bf6664037f36",
+      "status": "CREATED",
+      "alias": "WX7AnULxsgn5Y6VUfr8f2p",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "0f66fe41-ab50-4206-a637-6d87f738536f",
+    "fields": {
+      "created_at": "2023-12-29T19:14:01.779Z",
+      "updated_at": "2023-12-29T19:15:19.478Z",
+      "email_address": null,
+      "phone_number": null,
+      "first_name": "Primary",
+      "paternal_surname": "Tester",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "0550ca75-d89f-49a3-9b2b-08e2be96c681",
+      "user": "92f94211-483e-4a7e-ad04-aad173374c1b",
+      "status": "ACTIVE",
+      "alias": "L983YfKjcXg3we4HaaJae8",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "2a805cee-d5a9-4ea1-b113-47746733d57b",
+    "fields": {
+      "created_at": "2022-03-28T04:37:05.935Z",
+      "updated_at": "2024-01-30T20:55:42.102Z",
+      "email_address": "4d348e84-85c7-44f7-8cf8-1d12b7c44dd1",
+      "phone_number": null,
+      "first_name": "Abril",
+      "paternal_surname": "Solano",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "5ffd0681-403c-4e50-be48-a033df450ab2",
+      "status": "CREATED",
+      "alias": "EBPfNA3ih4kz8DDt8BvcUj",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "2bb762fb-e366-4056-bf5a-fdf2bc7fbaf1",
+    "fields": {
+      "created_at": "2021-08-23T21:26:53.280Z",
+      "updated_at": "2024-01-30T20:57:44.045Z",
+      "email_address": "27a83c52-df89-4c95-8584-8a5cddf18706",
+      "phone_number": null,
+      "first_name": "Esther",
+      "paternal_surname": "Sebastian",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "7bbdd3d3-18f3-4e61-bc2c-66e96ed6d85f",
+      "status": "CREATED",
+      "alias": "Qc6DcTZ7QGCVREDfBL3hTH",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "6c90c8e7-471c-4622-9d00-490a070c2c8a",
+    "fields": {
+      "created_at": "2021-08-23T21:27:29.532Z",
+      "updated_at": "2024-01-30T20:56:34.206Z",
+      "email_address": "cd9c2c41-4e97-448c-a718-18e037deefe3",
+      "phone_number": null,
+      "first_name": "Carlos",
+      "paternal_surname": "Correa",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "03e099b2-3c00-4709-a2fc-473f9afb46cd",
+      "status": "CREATED",
+      "alias": "Urjb6xG6s54vsuWuXiuoYH",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "79ce133f-ab3d-4b35-a535-ae458e05544f",
+    "fields": {
+      "created_at": "2022-03-28T04:38:01.497Z",
+      "updated_at": "2024-01-30T20:55:22.176Z",
+      "email_address": "81ac98c7-0565-45e7-ba70-bcd100ab13ba",
+      "phone_number": null,
+      "first_name": "Hector",
+      "paternal_surname": "Valle",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "0813579d-b1d1-411a-bb45-3784fb0e684a",
+      "status": "CREATED",
+      "alias": "N3957JCmQA8itPCPn6Xpe4",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "898d29ce-c6fb-4872-972f-ea6961051442",
+    "fields": {
+      "created_at": "2022-03-28T04:41:41.978Z",
+      "updated_at": "2022-03-28T04:41:44.425Z",
+      "email_address": null,
+      "phone_number": null,
+      "first_name": "Victor",
+      "paternal_surname": "Aguilar",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "0550ca75-d89f-49a3-9b2b-08e2be96c681",
+      "user": "27ed1c6a-ec70-4f52-af0c-8c4590d8b557",
+      "status": "ACTIVE",
+      "alias": "2AFp2dufnS97Cvku8aUWVt",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "a290468b-7ec4-4c27-9dd5-dfd6698c706e",
+    "fields": {
+      "created_at": "2021-08-23T20:42:24.138Z",
+      "updated_at": "2024-01-30T21:03:16.872Z",
+      "email_address": "016d72e3-379a-4774-a5fe-5112c60e74f5",
+      "phone_number": "105c9337-09f6-4eb9-b244-d0495422c3f1",
+      "first_name": "Victor",
+      "paternal_surname": "Aguilar",
+      "maternal_surname": "C",
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "facf6573-334c-4ee1-b35a-e26cb5256e72",
+      "status": "CREATED",
+      "alias": "ezkoWCuMhx7nfhj2ZrpvW6",
+      "birth_date": "1990-01-17",
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "b05176dc-a858-465c-a9a7-4215b14c3503",
+    "fields": {
+      "created_at": "2021-08-23T21:27:08.981Z",
+      "updated_at": "2024-01-30T20:57:06.485Z",
+      "email_address": "47948ff7-46f0-4a11-aa7a-97146062e3cb",
+      "phone_number": null,
+      "first_name": "Pilar",
+      "paternal_surname": "Vilchez",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "663bd6d6-722f-477a-8c1e-d1872efc691c",
+      "status": "CREATED",
+      "alias": "5DyJzTKwaXHVVYXVrYFaxn",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "b96184bb-aa07-4ce7-b3e7-1f511fd7e53b",
+    "fields": {
+      "created_at": "2021-08-23T20:43:55.767Z",
+      "updated_at": "2024-01-30T20:58:28.445Z",
+      "email_address": "53a481ff-5419-4de4-8585-363e8079f091",
+      "phone_number": null,
+      "first_name": "Domingo",
+      "paternal_surname": "Ubeda",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "3a9cd428-805d-49bb-9148-5dda097bd0f2",
+      "status": "CREATED",
+      "alias": "3ar3B85HasfYVX4imAoCpb",
+      "birth_date": "1991-08-23",
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "d8fbc99c-aeae-4988-a06a-1eb16ef2a573",
+    "fields": {
+      "created_at": "2021-08-23T20:43:09.342Z",
+      "updated_at": "2024-01-30T20:58:43.003Z",
+      "email_address": "4b13e15a-bb35-412c-bec2-ff7598a4e0d5",
+      "phone_number": null,
+      "first_name": "Erika",
+      "paternal_surname": "Puerto",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "44d28247-1d64-4bfc-ab2b-f7211455c3fc",
+      "status": "CREATED",
+      "alias": "LKH9KcpGbEPMwxvU6j884P",
+      "birth_date": "1990-08-23",
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "e62475af-74e3-4b00-b7af-aed4d7ba0fb2",
+    "fields": {
+      "created_at": "2023-12-29T19:12:06.952Z",
+      "updated_at": "2024-01-30T20:54:36.183Z",
+      "email_address": "9a098157-71e3-4fa3-9197-ea058bacbc27",
+      "phone_number": null,
+      "first_name": "Beta",
+      "paternal_surname": "Tester II",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "da2a68dc-6ca7-41bc-93c3-13f7477be234",
+      "status": "CREATED",
+      "alias": "MqVkhT7Rdd3Nn6zckWxrCX",
+      "birth_date": null,
+      "gender": "MALE"
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "e7d93cf0-3e4f-466a-a090-09ce238a1671",
+    "fields": {
+      "created_at": "2021-08-23T21:27:39.383Z",
+      "updated_at": "2024-01-30T20:56:12.581Z",
+      "email_address": "3673ae14-ce83-4c14-8ae6-75c718f5b718",
+      "phone_number": null,
+      "first_name": "Miguel",
+      "paternal_surname": "Rodas",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "2ee5153a-3342-41b2-a4da-59d3173ebec7",
+      "status": "CREATED",
+      "alias": "SrG6ihvivUg5KU2zAjwpuS",
+      "birth_date": null,
+      "gender": null
+    }
+  },
+  {
+    "model": "database.tenantcustomerorm",
+    "pk": "fd2220c9-cbde-4a3c-802c-18a3b35f9720",
+    "fields": {
+      "created_at": "2021-08-23T21:25:59.604Z",
+      "updated_at": "2024-01-30T20:58:04.438Z",
+      "email_address": "de0473bb-7b20-4432-a9a3-c9a5c47f30ef",
+      "phone_number": null,
+      "first_name": "Trinidad",
+      "paternal_surname": "Puente",
+      "maternal_surname": null,
+      "photo": "",
+      "lang": "es",
+      "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
+      "user": "6726df79-d7d3-4387-8aa8-5896b9feaa9b",
+      "status": "CREATED",
+      "alias": "bTQfGjmF6eDuuNweFZfFCH",
+      "birth_date": null,
+      "gender": null
+    }
+  }
+]

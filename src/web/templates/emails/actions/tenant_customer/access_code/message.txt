@@ -1,0 +1,25 @@
+{% load i18n %}
+
+{% blocktrans %}
+Hello {{ first_name }},
+
+We sent you this email because you requested your QR Access Code.
+{% endblocktrans %}
+
+{{action_link}}
+---
+Collectives
+
+
+
+
+
+
+
+
+
+
+
+
+
+
