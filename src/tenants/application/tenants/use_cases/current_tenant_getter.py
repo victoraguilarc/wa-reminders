@@ -22,12 +22,7 @@ class UserTenantContainerGetter(object):
         if not tenant_container:
             return None
 
-        user_permissions = self.repository.get_user_permissions(
-            user_id=self.user_id,
-            tenant_id=tenant_container.tenant.id,
+        return UserTenantContainer(
+            tenant=tenant_container.tenant,
+            owner=tenant_container.owner,
         )
-
-        user_tenant_container = tenant_container.to_user_tenant_container
-        user_tenant_container.permissions = user_permissions
-
-        return user_tenant_container

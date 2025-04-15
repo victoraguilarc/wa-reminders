@@ -31,5 +31,5 @@ class ReminderCreator(UseCase):
                 recipients=self.recipients or [],
             ),
         )
-        reminder.job_id = self.job_scheduler(reminder)
+        reminder.scheduled_job_id = self.job_scheduler(reminder)
         return self.repository.persist(instance=reminder)

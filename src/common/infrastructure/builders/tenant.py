@@ -1,10 +1,12 @@
 from src.common.database.models import TenantORM
 from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_container import TenantContainer
 from src.common.domain.enums.countries import CountryIsoCode
 from src.common.domain.enums.currencies import CurrencyCode
 from src.common.domain.enums.locales import TimeZone, Language
 from src.common.domain.enums.tenants import TenantStatus
 from src.common.domain.value_objects import TenantId, TenantSlug, UserId
+from src.common.infrastructure.builders.user import build_user
 
 
 def build_tenant(orm_instance: TenantORM) -> Tenant:
@@ -31,4 +33,16 @@ def build_tenant(orm_instance: TenantORM) -> Tenant:
         membership_changes_with_remaining=orm_instance.membership_changes_with_remaining,
         max_free_trials=orm_instance.max_free_trials,
         num_whatsapp_sessions=orm_instance.num_whatsapp_sessions,
+    )
+
+
+def build_tenant_container(
+    orm_instance: TenantORM,
+) -> TenantContainer:
+    return TenantContainer(
+        tenant=build_tenant(orm_instance),
+        owner=(
+            build_user(orm_instance.owner)
+            if orm_instance.owner else None
+        ),
     )

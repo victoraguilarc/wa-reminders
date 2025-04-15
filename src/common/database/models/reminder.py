@@ -15,8 +15,8 @@ def generate_hex():
 
 
 class ReminderORM(TenantMixin, UUIDTimestampMixin):
-    job_id = models.CharField(
-        verbose_name='Job ID',
+    scheduled_job_id = models.CharField(
+        verbose_name='Scheduled Job ID',
         max_length=50,
         blank=True,
         null=True,
@@ -39,7 +39,7 @@ class ReminderORM(TenantMixin, UUIDTimestampMixin):
     )
 
     def __str__(self):
-        return self.uuid
+        return str(self.uuid)
 
     class Meta:
         db_table = 'reminders'
@@ -69,7 +69,7 @@ class ReminderRecipientORM(UUIDTimestampMixin):
 
 
     def __str__(self):
-        return self.uuid
+        return str(self.uuid)
 
     class Meta:
         db_table = 'reminder_recipients'

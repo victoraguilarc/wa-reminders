@@ -13,9 +13,9 @@ def build_reminder(
 ) -> Reminder:
     orm_recipients = orm_recipients or []
     return Reminder(
-        id=ReminderId(orm_instance.id),
+        id=ReminderId(orm_instance.uuid),
         tenant_id=TenantId(orm_instance.tenant_id),
-        job_id=orm_instance.job_id,
+        scheduled_job_id=orm_instance.scheduled_job_id,
         content=orm_instance.content,
         scheduled_time=orm_instance.scheduled_time,
         status=ReminderStatus.from_value(orm_instance.status),
@@ -30,7 +30,7 @@ def build_reminder_recipient(
     orm_instance: ReminderRecipientORM,
 ) -> ReminderRecipient:
     return ReminderRecipient(
-        id=ReminderRecipientId(orm_instance.id),
+        id=ReminderRecipientId(orm_instance.uuid),
         phone_number=build_phone_number(orm_instance.phone_number),
         status=ReminderRecipientStatus.from_value(orm_instance.status),
     )

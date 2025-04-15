@@ -24,7 +24,5 @@ class ReminderUpdater(GetReminderMixin, UseCase):
             validated_data=self.validated_data,
         )
 
-        reminder.job_id = self.job_updater(reminder)
+        reminder.scheduled_job_id = self.job_updater(reminder)
         return self.repository.persist(instance=reminder)
-
-

@@ -10,7 +10,7 @@ from src.notifications.application.reminders.use_cases.finder import ReminderFin
 from src.notifications.application.reminders.use_cases.updater import ReminderUpdater
 from src.notifications.infrastructure.tasks.reminders import update_reminder_job, cancel_reminder_job
 from src.notifications.presentation.api.responses.reminder import ReminderResponse
-from src.notifications.presentation.api.validators.reminder import CreateReminderValidator
+from src.notifications.presentation.api.validators.reminder import UpdateReminderValidator
 
 
 class ReminderView(RequiredTenantUserAPIView):
@@ -26,7 +26,7 @@ class ReminderView(RequiredTenantUserAPIView):
         return Response(response.render(self.locale_context))
 
     def put(self, request, reminder_id: UUID):
-        validator = CreateReminderValidator(data=request.data)
+        validator = UpdateReminderValidator(data=request.data)
         validator.is_valid(raise_exception=True)
         validated_data = validator.validated_data
 

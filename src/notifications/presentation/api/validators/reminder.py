@@ -18,7 +18,7 @@ class ReminderRecipientValidator(serializers.Serializer):
 class CreateReminderValidator(serializers.Serializer):
     content = serializers.CharField()
     scheduled_time = serializers.DateTimeField()
-    status = serializers.ChoiceField(choices=ReminderStatus.choices())
+    status = serializers.ChoiceField(choices=ReminderStatus.choices(), required=False)
     recipients = serializers.ListSerializer(
         child=ReminderRecipientValidator(),
         default=[],
@@ -32,8 +32,8 @@ class UpdateReminderValidator(serializers.Serializer):
         choices=ReminderStatus.choices(),
         required=False
     )
-    recipients = serializers.ListSerializer(
-        child=ReminderRecipientValidator(),
-        default=[],
-        required=False,
-    )
+    # recipients = serializers.ListSerializer(
+    #     child=ReminderRecipientValidator(),
+    #     default=[],
+    #     required=False,
+    # )

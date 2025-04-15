@@ -21,7 +21,7 @@ class Reminder(object):
     content: str
     scheduled_time: datetime
     status: ReminderStatus
-    job_id: Optional[str] = None
+    scheduled_job_id: Optional[str] = None
     recipients: list[ReminderRecipient] = None
 
     def __post_init__(self):

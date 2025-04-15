@@ -24,13 +24,15 @@ class ReminderPresenter(object):
 
     @property
     def to_dict(self):
-        return {
+        data = {
             "id": self.instance.id,
             "content": self.instance.content,
             "scheduled_time": self.instance.scheduled_time.isoformat(),
             "status": str(self.instance.status),
-            "recipients": [
+        }
+        if self.instance.recipients:
+            data["recipients"] = [
                 ReminderRecipientPresenter(instance=recipient).to_dict
                 for recipient in self.instance.recipients
-            ],
-        }
+            ]
+        return data

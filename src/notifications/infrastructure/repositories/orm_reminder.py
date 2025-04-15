@@ -12,8 +12,9 @@ from src.notifications.domain.repositories.reminder import ReminderRepository
 class ORMReminderRepository(ReminderRepository):
     def find(self, instance_id: ReminderId) -> Optional[Reminder]:
         try:
-            orm_instance = ReminderORM.objects.get(id=instance_id)
-            orm_recipients = ReminderORM.objects.filter(reminder=orm_instance)
+            orm_instance = ReminderORM.objects.get(uuid=instance_id)
+            orm_recipients = ReminderRecipientORM.objects.filter(reminder=orm_instance)
+
             return build_reminder(
                 orm_instance=orm_instance,
                 orm_recipients=orm_recipients,
@@ -22,29 +23,32 @@ class ORMReminderRepository(ReminderRepository):
             return None
 
     def persist(self, instance: Reminder) -> Reminder:
+        persist_dict = {
+            "tenant_id": instance.tenant_id,
+            "content": instance.content,
+            "scheduled_time": instance.scheduled_time,
+            "scheduled_job_id": instance.scheduled_job_id,
+        }
+        if instance.status:
+            persist_dict["status"] = str(instance.status)
+
         orm_instance, created = ReminderORM.objects.update_or_create(
-            id=instance.id,
-            defaults={
-                "tenant_id": instance.tenant_id,
-                "content": instance.content,
-                "scheduled_time": instance.scheduled_time,
-                "status": str(instance.status),
-            },
+            uuid=instance.id,
+            defaults=persist_dict,
         )
 
         if instance.recipients:
-            ReminderORM.objects.filter(reminder=orm_instance).delete()
+            ReminderRecipientORM.objects.filter(reminder=orm_instance).delete()
             orm_recipients = [
                 ReminderRecipientORM(
                     reminder=orm_instance,
                     phone_number_id=recipient.phone_number.id,
-                    status=str(recipient.status),
                 )
                 for recipient in instance.recipients
             ]
             ReminderRecipientORM.objects.bulk_create(orm_recipients)
 
-        orm_recipients = ReminderORM.objects.filter(reminder=orm_instance)
+        orm_recipients = ReminderRecipientORM.objects.filter(reminder=orm_instance)
         return build_reminder(
             orm_instance=orm_instance,
             orm_recipients=orm_recipients,
@@ -52,7 +56,7 @@ class ORMReminderRepository(ReminderRepository):
 
     def delete(self, instance_id: ReminderId):
         ReminderRecipientORM.objects.filter(reminder_id=instance_id).delete()
-        ReminderORM.objects.filter(id=instance_id).delete()
+        ReminderORM.objects.filter(uuid=instance_id).delete()
 
     def filter(self, tenant_id: TenantId) -> List[Reminder]:
         orm_instances = ReminderORM.objects.filter(tenant_id=tenant_id)

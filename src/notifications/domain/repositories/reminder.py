@@ -23,3 +23,4 @@ class ReminderRepository(ABC):
     @abstractmethod
     def filter(self, tenant_id: TenantId) -> List[Reminder]:
         raise NotImplementedError
+

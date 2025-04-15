@@ -4,11 +4,20 @@
 # https://docs.djangoproject.com/en/2.2/topics/cache/
 from config.settings.components import env
 
-REDIS_CACHE_URL = env('REDIS_CACHE_URL', default='redis://redis:6379/0')
+
+REDIS_HOST = env("REDIS_HOST", default="redis")
+REDIS_PORT = env("REDIS_PORT", default=6379)
+
+RQ_QUEUES = {
+    "default": {
+        "URL": f"redis://{REDIS_HOST}:{REDIS_PORT}/queues",
+    },
+}
+
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': REDIS_CACHE_URL,
+        "LOCATION": f"redis://{REDIS_HOST}:{REDIS_PORT}/cache",
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },

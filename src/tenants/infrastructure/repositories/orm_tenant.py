@@ -12,11 +12,12 @@ from src.common.database.models import (
 from src.common.domain.entities.list_filters import ListFilters
 from src.common.domain.entities.pagination import Page
 from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_container import TenantContainer
 from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.enums.tenants import TenantStatus
 from src.common.domain.enums.users import TenantUserStatus
 from src.common.domain.value_objects import TenantId, TenantSlug, UserId
-from src.common.infrastructure.builders.tenant import build_tenant
+from src.common.infrastructure.builders.tenant import build_tenant, build_tenant_container
 from src.common.infrastructure.builders.tenant_wa_session import build_tenant_whatsapp_session
 from src.common.infrastructure.mixins.pagination import ORMPaginationMixin
 from src.tenants.domain.repositories.tenant import TenantRepository
@@ -28,6 +29,14 @@ class ORMTenantRepository(ORMPaginationMixin, TenantRepository):
         if not tenant:
             return None
         return build_tenant(tenant)
+
+    def find_container(self, tenant_id: TenantId) -> Optional[TenantContainer]:
+        orm_instance = self._find(tenant_id)
+        if not orm_instance:
+            return None
+        return build_tenant_container(
+            orm_instance=orm_instance,
+        )
 
     def find_by_slug(self, slug: TenantSlug) -> Optional[Tenant]:
         try:
@@ -53,6 +62,22 @@ class ORMTenantRepository(ORMPaginationMixin, TenantRepository):
     def get_tenants_counter(self, user_id: UserId) -> int:
         return TenantORM.objects.filter(owner_id=user_id).count()
 
+    def get_user_tenant_container_fallback(self, user_id: UserId) -> Optional[TenantContainer]:
+        user_orm = self._find_user(user_id)
+        orm_instances = self._get_user_tenants(user_id)
+
+        if not orm_instances:
+            return None
+
+        orm_instance = orm_instances.first()
+
+        if not user_orm.current_tenant:
+            user_orm.current_tenant = orm_instance
+            user_orm.save(update_fields=['current_tenant'])
+
+        return build_tenant_container(
+            orm_instance=orm_instance,
+        )
 
     def get_active_tenants(self) -> List[Tenant]:
         orm_instances = self._get_tenant_objects().filter(
@@ -99,7 +124,7 @@ class ORMTenantRepository(ORMPaginationMixin, TenantRepository):
 
     @classmethod
     def _get_tenant_objects(cls) -> QuerySet:
-        return TenantORM.objects.select_related('tenant_tier')
+        return TenantORM.objects.select_related('owner')
 
     def _get_user_tenants(self, user_id: UserId) -> Union[QuerySet, List[Tenant]]:
         tenant_uuids = (

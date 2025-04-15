@@ -4,6 +4,7 @@ from typing import List, Optional
 from src.common.domain.entities.list_filters import ListFilters
 from src.common.domain.entities.pagination import Page
 from src.common.domain.entities.tenant import Tenant
+from src.common.domain.entities.tenant_container import TenantContainer
 from src.common.domain.entities.tenant_wa_session import TenantWhatsappSession
 from src.common.domain.value_objects import TenantId, TenantSlug, UserId
 
@@ -14,11 +15,23 @@ class TenantRepository(ABC):
         raise NotImplementedError
 
     @abstractmethod
+    def find_container(self, tenant_id: TenantId) -> Optional[TenantContainer]:
+        raise NotImplementedError
+
+
+    @abstractmethod
     def find_by_slug(self, slug: TenantSlug) -> Optional[Tenant]:
         raise NotImplementedError
 
     @abstractmethod
     def find_by_wa_session(self, session_name: str) -> Optional[TenantWhatsappSession]:
+        raise NotImplementedError
+
+    @abstractmethod
+    def get_user_tenant_container_fallback(
+        self,
+        user_id: UserId,
+    ) -> Optional[TenantContainer]:
         raise NotImplementedError
 
     @abstractmethod
