@@ -10,6 +10,7 @@ from src.common.domain.context.domain import DomainContext
 from src.common.helpers.singlenton import SingletonMeta
 from src.common.infrastructure.messaging.sqs_task_scheduler import SQSTaskScheduler
 from src.common.infrastructure.stream_events.pusher_publisher import PusherStreamEventPublisher
+from src.notifications.infrastructure.repositories.orm_reminder import ORMReminderRepository
 from src.notifications.infrastructure.senders.django_email_sender import DjangoEmailSender
 from src.notifications.infrastructure.senders.http_whatsapp_sender import HttpWhatsappSender
 from src.pending_actions.infrastructure.repositories.orm_pending_action import ORMPendingActionRepository
@@ -39,8 +40,8 @@ class DomainSingleton(metaclass=SingletonMeta):
         tenant_user_repository=ORMTenantUserRepository(),
         tenant_customer_repository=ORMTenantCustomerRepository(),
 
-        # Onboarding
         session_user_repository=ORMSessionUserRepository(),
+
         # Pending Actions
         pending_action_repository=ORMPendingActionRepository(),
 
@@ -59,10 +60,12 @@ class DomainSingleton(metaclass=SingletonMeta):
                 ssl=True,
             ),
         ),
+
         # Notifications
         email_sender=DjangoEmailSender(),
         whatsapp_sender=HttpWhatsappSender(
             api_hostanme=settings.WHATSAPP_API_HOSTNAME,
             api_key=settings.WHATSAPP_API_KEY,
         ),
+        reminder_repository=ORMReminderRepository(),
     )

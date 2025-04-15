@@ -12,10 +12,7 @@
       "country_iso_code": "BO",
       "timezone": "America/La_Paz",
       "currency_code": "BOB",
-      "logo": "",
-      "grace_period": 5,
-      "checkin_window": 60,
-      "is_active": true
+      "logo": ""
     }
   },
   {
@@ -31,10 +28,7 @@
       "country_iso_code": "MX",
       "timezone": "America/Mexico_City",
       "currency_code": "MXN",
-      "logo": "",
-      "grace_period": 5,
-      "checkin_window": 60,
-      "is_active": true
+      "logo": ""
     }
   }
 ]

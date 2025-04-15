@@ -2,12 +2,11 @@
 
 from typing import List, Optional
 
-from src.notifications.domain.repositories.repositories import ReminderRepository
-
 from src.common.database.models.reminder import ReminderORM, ReminderRecipientORM
 from src.common.domain.entities.reminder import Reminder
 from src.common.domain.value_objects import ReminderId, TenantId
 from src.common.infrastructure.builders.reminder import build_reminder
+from src.notifications.domain.repositories.reminder import ReminderRepository
 
 
 class ORMReminderRepository(ReminderRepository):

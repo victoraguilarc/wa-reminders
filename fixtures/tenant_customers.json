@@ -15,7 +15,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "4d77acd6-fd9c-4598-967a-bf6664037f36",
       "status": "CREATED",
-      "alias": "WX7AnULxsgn5Y6VUfr8f2p",
       "birth_date": null,
       "gender": null
     }
@@ -36,7 +35,6 @@
       "tenant": "0550ca75-d89f-49a3-9b2b-08e2be96c681",
       "user": "92f94211-483e-4a7e-ad04-aad173374c1b",
       "status": "ACTIVE",
-      "alias": "L983YfKjcXg3we4HaaJae8",
       "birth_date": null,
       "gender": null
     }
@@ -57,7 +55,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "5ffd0681-403c-4e50-be48-a033df450ab2",
       "status": "CREATED",
-      "alias": "EBPfNA3ih4kz8DDt8BvcUj",
       "birth_date": null,
       "gender": null
     }
@@ -78,7 +75,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "7bbdd3d3-18f3-4e61-bc2c-66e96ed6d85f",
       "status": "CREATED",
-      "alias": "Qc6DcTZ7QGCVREDfBL3hTH",
       "birth_date": null,
       "gender": null
     }
@@ -99,7 +95,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "03e099b2-3c00-4709-a2fc-473f9afb46cd",
       "status": "CREATED",
-      "alias": "Urjb6xG6s54vsuWuXiuoYH",
       "birth_date": null,
       "gender": null
     }
@@ -120,7 +115,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "0813579d-b1d1-411a-bb45-3784fb0e684a",
       "status": "CREATED",
-      "alias": "N3957JCmQA8itPCPn6Xpe4",
       "birth_date": null,
       "gender": null
     }
@@ -141,7 +135,6 @@
       "tenant": "0550ca75-d89f-49a3-9b2b-08e2be96c681",
       "user": "27ed1c6a-ec70-4f52-af0c-8c4590d8b557",
       "status": "ACTIVE",
-      "alias": "2AFp2dufnS97Cvku8aUWVt",
       "birth_date": null,
       "gender": null
     }
@@ -162,7 +155,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "facf6573-334c-4ee1-b35a-e26cb5256e72",
       "status": "CREATED",
-      "alias": "ezkoWCuMhx7nfhj2ZrpvW6",
       "birth_date": "1990-01-17",
       "gender": null
     }
@@ -183,7 +175,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "663bd6d6-722f-477a-8c1e-d1872efc691c",
       "status": "CREATED",
-      "alias": "5DyJzTKwaXHVVYXVrYFaxn",
       "birth_date": null,
       "gender": null
     }
@@ -204,7 +195,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "3a9cd428-805d-49bb-9148-5dda097bd0f2",
       "status": "CREATED",
-      "alias": "3ar3B85HasfYVX4imAoCpb",
       "birth_date": "1991-08-23",
       "gender": null
     }
@@ -225,7 +215,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "44d28247-1d64-4bfc-ab2b-f7211455c3fc",
       "status": "CREATED",
-      "alias": "LKH9KcpGbEPMwxvU6j884P",
       "birth_date": "1990-08-23",
       "gender": null
     }
@@ -246,7 +235,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "da2a68dc-6ca7-41bc-93c3-13f7477be234",
       "status": "CREATED",
-      "alias": "MqVkhT7Rdd3Nn6zckWxrCX",
       "birth_date": null,
       "gender": "MALE"
     }
@@ -267,7 +255,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "2ee5153a-3342-41b2-a4da-59d3173ebec7",
       "status": "CREATED",
-      "alias": "SrG6ihvivUg5KU2zAjwpuS",
       "birth_date": null,
       "gender": null
     }
@@ -288,7 +275,6 @@
       "tenant": "fc119fa0-c085-46c4-85de-400ac8883bf5",
       "user": "6726df79-d7d3-4387-8aa8-5896b9feaa9b",
       "status": "CREATED",
-      "alias": "bTQfGjmF6eDuuNweFZfFCH",
       "birth_date": null,
       "gender": null
     }

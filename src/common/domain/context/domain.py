@@ -7,6 +7,7 @@ from src.common.domain.interfaces.stream_publisher import StreamEventPublisher
 from src.common.domain.messaging.async_tasks import TaskScheduler
 from src.notifications.domain.interfaces.email_sender import EmailSender
 from src.notifications.domain.interfaces.whatsapp_sender import WhatsappSender
+from src.notifications.domain.repositories.reminder import ReminderRepository
 from src.pending_actions.domain.repositories import PendingActionRepository
 from src.tenants.domain.repositories.tenant import TenantRepository
 from src.tenants.domain.repositories.tenant_wa_session import TenantWhatsappSessionRepository
@@ -45,4 +46,5 @@ class DomainContext(object):
     # Notifications
     email_sender: EmailSender
     whatsapp_sender: WhatsappSender
+    reminder_repository: ReminderRepository
 

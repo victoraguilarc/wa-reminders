@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from datetime import datetime
+from typing import Optional
 
 from src.common.domain.entities.phone_number import PhoneNumber
 from src.common.domain.enums.reminders import ReminderRecipientStatus, ReminderStatus
@@ -13,7 +14,6 @@ class ReminderRecipient(object):
     status: ReminderRecipientStatus
 
 
-
 @dataclass
 class Reminder(object):
     id: ReminderRecipientId
@@ -21,6 +21,7 @@ class Reminder(object):
     content: str
     scheduled_time: datetime
     status: ReminderStatus
+    job_id: Optional[str] = None
     recipients: list[ReminderRecipient] = None
 
     def __post_init__(self):

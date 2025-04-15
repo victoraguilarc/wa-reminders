@@ -38,6 +38,7 @@ from src.common.presentation.api.exceptions.base import (
     APIUnauthorized,
     GenericError,
 )
+from src.notifications.domain.exceptions import ReminderNotFoundError
 from src.pending_actions.domain.exceptions import (
     InvalidPendingActionError,
     PendingActionNotFoundError,
@@ -214,6 +215,10 @@ error_codes = {
     InvalidPendingActionError: APIBadRequest(
         code='pendingActions.InvalidPendingToken',
         detail=_('the provided token is invalid'),
+    ),
+    ReminderNotFoundError: APINotFound(
+        code='notifications.ReminderNotFound',
+        detail=_('Reminder not found'),
     ),
 }
 

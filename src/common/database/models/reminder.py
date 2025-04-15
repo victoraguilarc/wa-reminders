@@ -15,6 +15,13 @@ def generate_hex():
 
 
 class ReminderORM(TenantMixin, UUIDTimestampMixin):
+    job_id = models.CharField(
+        verbose_name='Job ID',
+        max_length=50,
+        blank=True,
+        null=True,
+        db_index=True,
+    )
     content = models.TextField(
         verbose_name='Content',
         help_text='The content of the reminder',

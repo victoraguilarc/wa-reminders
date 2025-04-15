@@ -15,6 +15,7 @@ def build_reminder(
     return Reminder(
         id=ReminderId(orm_instance.id),
         tenant_id=TenantId(orm_instance.tenant_id),
+        job_id=orm_instance.job_id,
         content=orm_instance.content,
         scheduled_time=orm_instance.scheduled_time,
         status=ReminderStatus.from_value(orm_instance.status),
