@@ -4,7 +4,6 @@ from dataclasses import dataclass
 
 from src.auth.domain.repositories import SessionRepository, SessionUserRepository
 from src.common.domain.interfaces.stream_publisher import StreamEventPublisher
-from src.common.domain.messaging.async_tasks import TaskScheduler
 from src.notifications.domain.interfaces.email_sender import EmailSender
 from src.notifications.domain.interfaces.whatsapp_sender import WhatsappSender
 from src.notifications.domain.repositories.reminder import ReminderRepository
@@ -40,7 +39,6 @@ class DomainContext(object):
     pending_action_repository: PendingActionRepository
 
     # tenants
-    task_scheduler: TaskScheduler
     stream_events_publisher: StreamEventPublisher
 
     # Notifications

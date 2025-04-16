@@ -19,27 +19,12 @@ up:
 	@echo "Server up..."
 	$(COMPOSE) up
 
-watch_logs:
-	$(COMPOSE) logs -t -f django
-
-front:
-	$(COMPOSE) run --rm django python manage.py tailwind start
-
-front_install:
-	$(COMPOSE) run --rm django python manage.py tailwind install
-
-front_build:
-	$(COMPOSE) run --rm django python manage.py tailwind build
-
 down:
 	@echo "Server up..."
 	$(COMPOSE) down
 
 run:
 	$(COMPOSE) run --rm django $(ARG)
-
-tunnel:
-	cloudflared tunnel --config tunnel.yml run
 
 command:
 	$(COMPOSE) run --rm django python manage.py $(ARG)
@@ -114,18 +99,6 @@ stop:
 restart: stop up
 	@echo "Containers restarted"
 
-show_urls:
-	@echo "Show api routes"
-	$(COMPOSE) run --rm django python manage.py show_urls
-
-selenium:
-	@echo "Starting selenium..."
-	$(COMPOSE) start selenium
-
-printenv:
-	$(COMPOSE) run --rm django python merge_envs.py
-	@echo "New [.env] file generated"
-
 test:
 	$(COMPOSE_TEST) run --rm django bash -c "DJANGO_ENV=testing pytest --pyargs $(ARG)"
 
@@ -149,9 +122,6 @@ coverage_tests:
 bash:
 	@echo "Opening a shell session"
 	$(COMPOSE) run --rm django bash
-
-isort:
-
 
 lint:
 	@echo "Linting..."
@@ -194,19 +164,3 @@ prod_up:
 prod_shell:
 	@echo "Opening container bash session"
 	$(COMPOSE_PROD) run --rm django bash
-
-
-aws_shell:
-	aws-vault exec collectives
-
-upload_secrets:
-	$(COMPOSE) run --rm django bash -c 'CHAMBER_KMS_KEY_ALIAS=$(CHAMBER_NAMESPACE) /chamber import --normalize-keys $(CHAMBER_NAMESPACE) .secrets/$(CHAMBER_NAMESPACE).json'
-
-download_secrets:
-	$(COMPOSE) run --rm django bash -c 'CHAMBER_KMS_KEY_ALIAS=$(CHAMBER_NAMESPACE) /chamber export --format json $(CHAMBER_NAMESPACE) | jq . > .secrets/$(CHAMBER_NAMESPACE).latest.json'
-
-list_secrets:
-	$(COMPOSE) run --rm django bash -c 'CHAMBER_KMS_KEY_ALIAS=$(CHAMBER_NAMESPACE) /chamber list $(CHAMBER_NAMESPACE)'
-
-delete_secrets:
-	$(COMPOSE) run --rm django bash -c "CHAMBER_KMS_KEY_ALIAS=$(CHAMBER_NAMESPACE) /chamber list $(CHAMBER_NAMESPACE) | tail -n +1 | awk '{print $1}' | xargs -n1 /chamber delete $(STACK)"

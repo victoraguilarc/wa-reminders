@@ -8,7 +8,6 @@ from src.auth.infrastructure.repositories import (
 )
 from src.common.domain.context.domain import DomainContext
 from src.common.helpers.singlenton import SingletonMeta
-from src.common.infrastructure.messaging.sqs_task_scheduler import SQSTaskScheduler
 from src.common.infrastructure.stream_events.pusher_publisher import PusherStreamEventPublisher
 from src.notifications.infrastructure.repositories.orm_reminder import ORMReminderRepository
 from src.notifications.infrastructure.senders.django_email_sender import DjangoEmailSender
@@ -48,9 +47,6 @@ class DomainSingleton(metaclass=SingletonMeta):
         # Tenants
         whatsapp_session_repository=ORMTenantWhatsappSessionRepository(),
 
-        task_scheduler=SQSTaskScheduler(
-            queue_url=settings.ASYNC_TASKS_QUEUE_URL,
-        ),
         stream_events_publisher=PusherStreamEventPublisher(
             pusher_client=pusher.Pusher(
                 app_id=settings.PUSHER_APP_ID,

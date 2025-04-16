@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from dataclasses import dataclass
-from typing import Dict, List, Type
+from typing import Dict, List, Type, Optional
 
 from src.common.domain.messaging.async_tasks import TaskScheduler
 from src.common.domain.messaging.commands import Command, CommandBus, CommandHandler
@@ -12,7 +12,7 @@ from src.common.infrastructure.messaging._exceptions import (
 
 @dataclass
 class MemoryCommandBus(CommandBus):
-    task_scheduler: TaskScheduler
+    task_scheduler: Optional[TaskScheduler] = None
 
     def __post_init__(self):
         self._commands: Dict[Type[Command], CommandHandler] = {}
@@ -38,7 +38,7 @@ class MemoryCommandBus(CommandBus):
         if command.__class__ not in self._commands:
             raise CommandHandlerDoesNotExistException(command.__class__)
 
-        if run_async:
+        if run_async and self.task_scheduler:
             self.task_scheduler.enqueue(command)
             return
         self._commands[command.__class__].execute(command)
