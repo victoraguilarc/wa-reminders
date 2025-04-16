@@ -26,7 +26,6 @@ You need to have installed `git`, `docker`, `ssh` and a decent `terminal`.
 
 Probably you need to user the following command for another situations.
 
-* `make django` to enable `debug` mode during development.
 * `make migrations` run django makemigrations command
 * `make migrate` run django migrate command
 * `make superuser` make a superuserfor develoment
@@ -61,4 +60,6 @@ make review
 
 ### How to test reminders
 
-To test reminders you need try using the postman collection.
+To test reminders you need try using the postman collection which is in the `fixtures` folder.
+
+> The main code to review how the reminders work is in the `notifications` app.
