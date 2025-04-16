@@ -1,13 +1,19 @@
 # -*- coding: utf-8 -*-
+import os
 
 from django.apps import AppConfig
 
 
 class CommonConfig(AppConfig):
-    """Configuration for project utilities."""
-
     name = 'src.common'
     verbose_name = 'Common'
 
     def ready(self):
-        pass
+        # if 'runserver' not in sys.argv:
+        #     return
+
+        if os.environ.get('RUN_MAIN') != 'true':
+            return
+
+        # from src.notifications.infrastructure.scheduled_tasks import register_jobs
+        # register_jobs()

@@ -1,7 +1,0 @@
-{% load i18n %}{% blocktrans %}
-*❌Membership Deactivated!*
-
-You membership: *"{{ membership_plan_name }}"* has been deactivaed at 🏫 _*{{ tenant_name }}*_
-{% endblocktrans %}
-
-

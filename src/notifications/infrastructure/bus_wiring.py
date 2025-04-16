@@ -8,7 +8,7 @@ from src.common.application.commands.notifications import (
     SendWhatsappCommand,
     SendWhatsappSequenceCommand,
 )
-from src.common.infrastructure.context_builder import AppContextBuilder
+from src.common.infrastructure.context_builder import AppContextBuilder, AppContext
 from src.notifications.application.messaging.handlers import SendEmailHandler
 from src.notifications.application.messaging.handlers.publish_stream_event import (
     PublishStreamEventHandler,
@@ -19,7 +19,7 @@ from src.notifications.application.messaging.handlers.send_whatsapp import (
 )
 
 
-def wire_handlers():
+def wire_handlers() -> AppContext:
     app_context = AppContextBuilder.from_env()
     domain_context, bus = app_context.domain, app_context.bus
 
@@ -50,3 +50,4 @@ def wire_handlers():
             event_publisher=domain_context.stream_events_publisher,
         ),
     )
+    return app_context

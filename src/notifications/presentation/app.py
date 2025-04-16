@@ -14,3 +14,5 @@ class NotificationsConfig(AppConfig):
         from src.notifications.infrastructure.bus_wiring import wire_handlers
 
         wire_handlers()
+
+

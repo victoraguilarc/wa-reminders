@@ -3,7 +3,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
 
-from src.common.domain.entities.reminder import Reminder
+from src.common.domain.entities.reminder import Reminder, ReminderRecipient
 from src.common.domain.value_objects import ReminderId, TenantId
 
 
@@ -13,7 +13,18 @@ class ReminderRepository(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def persist(self, instance: Reminder) -> Reminder:
+    def persist(
+        self,
+        instance: Reminder,
+        persist_recipients: bool = True,
+    ) -> Reminder:
+        raise NotImplementedError
+
+    @abstractmethod
+    def persist_recipient(
+        self,
+        instance: ReminderRecipient,
+    ) -> ReminderRecipient:
         raise NotImplementedError
 
     @abstractmethod

@@ -3,6 +3,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 from src.common.domain.enums.reminders import ReminderStatus
+from src.common.helpers.time import TimeUtils
 from src.common.presentation.api import RequiredTenantUserAPIView
 from src.notifications.application.reminders.use_cases.creator import ReminderCreator
 from src.notifications.application.reminders.use_cases.lister import RemiderLister
@@ -29,6 +30,7 @@ class RemindersView(RequiredTenantUserAPIView):
         validator = CreateReminderValidator(data=request.data)
         validator.is_valid(raise_exception=True)
         validated_data = validator.validated_data
+        tenant_timezone = str(self.tenant_context.tenant.timezone)
 
         recipients = RecipientsBuilder(
             recipients_data=validated_data.get("recipients", []),
@@ -38,7 +40,10 @@ class RemindersView(RequiredTenantUserAPIView):
         reminder = ReminderCreator(
             tenant_id=self.tenant_context.tenant.id,
             content=validated_data["content"],
-            scheduled_time=validated_data["scheduled_time"],
+            scheduled_time=TimeUtils.replace_timezone(
+                date_time=validated_data["scheduled_time"],
+                time_zone=tenant_timezone,
+            ),
             status=ReminderStatus.from_value(validated_data.get("status")),
             job_scheduler=create_reminder_job,
             repository=self.domain_context.reminder_repository,

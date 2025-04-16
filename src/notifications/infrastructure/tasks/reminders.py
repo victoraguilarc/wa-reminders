@@ -1,48 +1,76 @@
 from typing import Optional
+from uuid import UUID
 
-import django_rq
+from apscheduler.jobstores.base import JobLookupError
+from loguru import logger
 
-from src.common.application.queries.notifications import GetTenantWhatsappSessionNameQuery
 from src.common.domain.entities.reminder import Reminder
 from src.common.infrastructure.context_builder import AppContextBuilder
 from src.notifications.application.reminders.use_cases.performer import ReminderPerformer
-from src.tenants.domain.exceptions import TenantWhatsappSessionNotFoundError
 
 
-def perform_reminder(reminder: Reminder):
+def perform_reminder(reminder_id: str | UUID):
     app_context = AppContextBuilder.from_env()
     domain_context, bus = app_context.domain, app_context.bus
 
-    whatsapp_session: Optional[str] = bus.query_bus.ask(
-        query=GetTenantWhatsappSessionNameQuery(
-            tenant_id=reminder.tenant_id,
-        ),
-    )
-
-    if not whatsapp_session:
-        raise TenantWhatsappSessionNotFoundError
-
     ReminderPerformer(
-        reminder_id=reminder.id,
+        reminder_id=reminder_id,
         repository=domain_context.reminder_repository,
         whatsapp_sender=domain_context.whatsapp_sender,
-        whatsapp_session=whatsapp_session,
+        whatsapp_session='default',
     ).execute()
 
 
 def create_reminder_job(reminder: Reminder) -> str:
-    scheduler = django_rq.get_scheduler('default')
-    scheduled_job = scheduler.enqueue_at(reminder.scheduled_time, perform_reminder, reminder.id)
+    app_context = AppContextBuilder.from_env()
+    scheduler = app_context.scheduler
 
-    import ipdb;
-    ipdb.set_trace()
+    scheduled_job = scheduler.add_job(
+        func=perform_reminder,
+        trigger='date',
+        run_date=reminder.scheduled_time,
+        args=[reminder.id],
+    )
+    logger.info(f">>> Created reminder job: {scheduled_job.id}")
 
-    return "job_id_placeholder"
+    return scheduled_job.id
 
 
-def update_reminder_job(reminder: Reminder) -> str:
-    return "job_id_placeholder"
+def update_reminder_job(reminder: Reminder) -> Optional[str]:
+    app_context = AppContextBuilder.from_env()
+    scheduler = app_context.scheduler
+
+    if not reminder.scheduled_job_id:
+        return None
+
+    try:
+        scheduler.modify_job(
+            reminder.scheduled_job_id,
+            trigger='date',
+            run_date=reminder.scheduled_time,
+            args=[reminder.id],
+        )
+        logger.info(f">>> Updated reminder job: {reminder.scheduled_job_id}")
+        return reminder.scheduled_job_id
+
+    except JobLookupError as e:
+        logger.warning(f">>> Failed to update reminder job: {reminder.scheduled_job_id}, Error: {e}")
+        return None
 
 
 def cancel_reminder_job(reminder: Reminder) :
-    return "job_id_placeholder"
+    app_context = AppContextBuilder.from_env()
+    scheduler = app_context.scheduler
+
+    if not reminder.scheduled_job_id:
+        return None
+
+    try:
+        logger.info(f">>> Canceling reminder job: {reminder.scheduled_job_id}")
+        scheduler.remove_job(reminder.scheduled_job_id)
+    except JobLookupError as e:
+        logger.warning(f">>> Failed to update reminder job: {reminder.scheduled_job_id}, Error: {e}")
+        return None
+
+
+

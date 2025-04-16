@@ -65,6 +65,7 @@ THIRD_PARTY_APPS: Tuple[str, ...] = (
 LOCAL_APPS: Tuple[str, ...] = (
     'src.auth.presentation.app.AuthConfig',
     'src.common.database.app.DatabaseConfig',
+    'src.common.presentation.app.CommonConfig',
     'src.notifications.presentation.app.NotificationsConfig',
     'src.pending_actions.presentation.app.PendingActionsConfig',
     'src.tenants.presentation.app.TenantsConfig',

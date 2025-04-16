@@ -2,6 +2,8 @@ name: wa-reminders
 
 volumes:
   postgres_data:
+  mongo_data:
+  mongo_config:
 
 
 services:
@@ -23,7 +25,6 @@ services:
       driver: none
     ports:
       - "8025:8025"
-
   django:
     build:
       context: .
@@ -40,6 +41,27 @@ services:
     volumes:
       - .:/app
     command: /start
+
+  mongo:
+    image: mongo:noble
+    env_file:
+      - .env
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+      - mongo_config:/data/configdb
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env
+    environment:
+      ME_CONFIG_MONGODB_URL: ${MONGODB_URL}
+      ME_CONFIG_BASICAUTH: false
 
 
 

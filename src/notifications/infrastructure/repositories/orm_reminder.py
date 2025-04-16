@@ -3,9 +3,9 @@
 from typing import List, Optional
 
 from src.common.database.models.reminder import ReminderORM, ReminderRecipientORM
-from src.common.domain.entities.reminder import Reminder
+from src.common.domain.entities.reminder import Reminder, ReminderRecipient
 from src.common.domain.value_objects import ReminderId, TenantId
-from src.common.infrastructure.builders.reminder import build_reminder
+from src.common.infrastructure.builders.reminder import build_reminder, build_reminder_recipient
 from src.notifications.domain.repositories.reminder import ReminderRepository
 
 
@@ -22,7 +22,11 @@ class ORMReminderRepository(ReminderRepository):
         except Exception as e:
             return None
 
-    def persist(self, instance: Reminder) -> Reminder:
+    def persist(
+        self,
+        instance: Reminder,
+        persist_recipients: bool = True,
+    ) -> Reminder:
         persist_dict = {
             "tenant_id": instance.tenant_id,
             "content": instance.content,
@@ -37,7 +41,7 @@ class ORMReminderRepository(ReminderRepository):
             defaults=persist_dict,
         )
 
-        if instance.recipients:
+        if persist_recipients and instance.recipients:
             ReminderRecipientORM.objects.filter(reminder=orm_instance).delete()
             orm_recipients = [
                 ReminderRecipientORM(
@@ -53,6 +57,19 @@ class ORMReminderRepository(ReminderRepository):
             orm_instance=orm_instance,
             orm_recipients=orm_recipients,
         )
+
+    def persist_recipient(
+        self,
+        instance: ReminderRecipient,
+    ) -> ReminderRecipient:
+        orm_instance, created = ReminderRecipientORM.objects.update_or_create(
+            uuid=instance.id,
+            defaults={
+                "phone_number_id": instance.phone_number.id,
+                "status": str(instance.status),
+            },
+        )
+        return build_reminder_recipient(orm_instance=orm_instance)
 
     def delete(self, instance_id: ReminderId):
         ReminderRecipientORM.objects.filter(reminder_id=instance_id).delete()

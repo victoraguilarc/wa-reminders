@@ -1,7 +1,0 @@
-{% load i18n %}{% blocktrans %}
-*⚡️Membership Updated!*
-
-You have activated a membership: *"{{ membership_plan_name }}"* at 🏫 _*{{ tenant_name }}*_
-Your membership still has a pending payment, don't forget to complete the payment 💸 in the next classes
-{% endblocktrans %}
-

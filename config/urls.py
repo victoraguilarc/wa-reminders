@@ -16,8 +16,7 @@ urlpatterns = [
     # ADMIN
     path(settings.ADMIN_URL, admin.site.urls),
     path('tinymce/', include('tinymce.urls')),
-
-    # HOME
+                  # HOME
     path(route='', view=TemplateView.as_view(template_name="home.html"), name='home'),
 
     # ROBOTS & FAVICON

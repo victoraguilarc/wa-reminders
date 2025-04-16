@@ -23,3 +23,4 @@ CACHES = {
         },
     },
 }
+MONGODB_URL = env("MONGODB_URL", default="mongodb://mongo:27017")
