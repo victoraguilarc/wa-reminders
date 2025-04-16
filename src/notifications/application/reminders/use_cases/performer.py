@@ -47,7 +47,7 @@ class ReminderPerformer(GetReminderMixin, UseCase):
                     session_name=self.whatsapp_session,
                 )
                 recipient.sent()
-                self.repository.persist_recipient(recipient)
+                self.repository.persist_recipient(reminder.id, recipient)
 
             reminder.completed()
             self.repository.persist(reminder, persist_recipients=False)

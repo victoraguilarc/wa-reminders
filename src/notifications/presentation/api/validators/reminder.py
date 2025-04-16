@@ -14,7 +14,6 @@ class ReminderRecipientValidator(serializers.Serializer):
     )
 
 
-
 class CreateReminderValidator(serializers.Serializer):
     content = serializers.CharField()
     scheduled_time = serializers.DateTimeField()
@@ -32,8 +31,3 @@ class UpdateReminderValidator(serializers.Serializer):
         choices=ReminderStatus.choices(),
         required=False
     )
-    # recipients = serializers.ListSerializer(
-    #     child=ReminderRecipientValidator(),
-    #     default=[],
-    #     required=False,
-    # )

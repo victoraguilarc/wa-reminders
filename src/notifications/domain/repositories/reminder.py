@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 from typing import List, Optional
 
 from src.common.domain.entities.reminder import Reminder, ReminderRecipient
-from src.common.domain.value_objects import ReminderId, TenantId
+from src.common.domain.value_objects import ReminderId, TenantId, ReminderRecipientId
 
 
 class ReminderRepository(ABC):
@@ -23,12 +23,17 @@ class ReminderRepository(ABC):
     @abstractmethod
     def persist_recipient(
         self,
+        reminder_id: ReminderId,
         instance: ReminderRecipient,
     ) -> ReminderRecipient:
         raise NotImplementedError
 
     @abstractmethod
     def delete(self, instance_id: ReminderId):
+        raise NotImplementedError
+
+    @abstractmethod
+    def delete_recipient(self, instance_id: ReminderRecipientId):
         raise NotImplementedError
 
     @abstractmethod

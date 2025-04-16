@@ -4,7 +4,7 @@ from typing import List, Optional
 
 from src.common.database.models.reminder import ReminderORM, ReminderRecipientORM
 from src.common.domain.entities.reminder import Reminder, ReminderRecipient
-from src.common.domain.value_objects import ReminderId, TenantId
+from src.common.domain.value_objects import ReminderId, TenantId, ReminderRecipientId
 from src.common.infrastructure.builders.reminder import build_reminder, build_reminder_recipient
 from src.notifications.domain.repositories.reminder import ReminderRepository
 
@@ -60,11 +60,13 @@ class ORMReminderRepository(ReminderRepository):
 
     def persist_recipient(
         self,
+        reminder_id: ReminderId,
         instance: ReminderRecipient,
     ) -> ReminderRecipient:
         orm_instance, created = ReminderRecipientORM.objects.update_or_create(
             uuid=instance.id,
             defaults={
+                "reminder_id": reminder_id,
                 "phone_number_id": instance.phone_number.id,
                 "status": str(instance.status),
             },
@@ -74,6 +76,9 @@ class ORMReminderRepository(ReminderRepository):
     def delete(self, instance_id: ReminderId):
         ReminderRecipientORM.objects.filter(reminder_id=instance_id).delete()
         ReminderORM.objects.filter(uuid=instance_id).delete()
+
+    def delete_recipient(self, instance_id: ReminderRecipientId):
+        ReminderRecipientORM.objects.filter(uuid=instance_id).delete()
 
     def filter(self, tenant_id: TenantId) -> List[Reminder]:
         orm_instances = ReminderORM.objects.filter(tenant_id=tenant_id)
