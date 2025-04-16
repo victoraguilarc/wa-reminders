@@ -46,12 +46,6 @@ Probably you need to user the following command for another situations.
 
 ### Code Quality
 
-Firstly we need to configure pre-commit hooks, we need to do this just one time.
-
-* `brew install pre-commit` installs pre-commit
-* `pre-commit install` install hooks in the current repo.
-* `pre-commit autoupdate` enables the pre-commit autoupdate.
-
 Recurring commands:
 
 * `make coverage` run pytest and generate the coverage report.
@@ -65,9 +59,6 @@ Composed commonly used command:
 make review
 ```
 
-### Pre commit actions
+### How to test reminders
 
-* `make isort` Fix posible import issues
-* `make lint` Check code quality based on PEP-8 styleguidees
-* `make tests` Run the tests with unittest
-* `make pytest` Run the tests with pytest
+To test reminders you need try using the postman collection.

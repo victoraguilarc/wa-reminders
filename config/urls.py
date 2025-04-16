@@ -8,9 +8,9 @@ from django.views.generic import RedirectView, TemplateView
 
 from src.common.presentation.views.errors import error400, error403, error404, error500
 
-admin.site.site_header = 'Xiberty'
-admin.site.site_title = 'Xiberty Admin'
-admin.site.index_title = 'Xiberty Admin'
+admin.site.site_header = 'Whatsapp Reminders'
+admin.site.site_title = 'Whatsapp Reminders Admin'
+admin.site.index_title = 'Whatsapp Reminders Admin'
 
 urlpatterns = [
     # ADMIN
