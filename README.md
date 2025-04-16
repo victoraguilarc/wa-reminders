@@ -21,7 +21,7 @@ You need to have installed `git`, `docker`, `ssh` and a decent `terminal`.
 
 1. `make build` to build docker image of the repo.
 2. `make fixtures` to populate database (optional).
-3. `make up` to run development container.
+3. `make up` run development container and open http://localhost:8000 in the browser.
 4. `make debug` to run container in debug mode
 
 Probably you need to user the following command for another situations.
@@ -30,14 +30,6 @@ Probably you need to user the following command for another situations.
 * `make migrations` run django makemigrations command
 * `make migrate` run django migrate command
 * `make superuser` make a superuserfor develoment
-
-### Frontend
-
-Some regular html views uses tailwindcss for styles.
-
-1. `make front_install`. to init frontend development resources.
-2. `make front_build` to build styles assets for production.
-3. `make front`. to start frontend development server.
 
 
 #### Translation
